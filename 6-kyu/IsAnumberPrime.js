@@ -13,9 +13,20 @@ that has no positive divisors other than 1 and itself.  */
 
 
 function isPrime(num) {
-  for(var i = 2; i < num; i++)
-    if(num % i === 0) return false;
-  return num > 1;
+  if (num < 2) {
+     return false;
+  }
+if (num === 2) {
+     return true;
+  }
+  
+  const maximumDividor = Math.sqrt(num) + 1;
+for (let i = 2; i < maximumDividor; i++) {
+     if (num % i === 0) {
+       return false;
+     }
+  }
+return true;
 }
 
-console.log(isPrime());
+isPrime();
