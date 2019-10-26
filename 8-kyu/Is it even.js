@@ -20,3 +20,23 @@ const testEven = n => {
 }
 
 testEven(3);
+
+
+// Another methods:
+
+1. 
+function testEven(n) {
+  return n % 2 === 0 ? true : false;
+}
+
+
+2.
+const testEven = n => !(n % 2);
+
+
+3.
+function testEven2(n) {
+  return !(n % 2);
+}
+
+
