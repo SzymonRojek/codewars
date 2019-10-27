@@ -34,3 +34,15 @@ function makeUpperCase(str) {
 }
 
 console.log(makeUpperCase('this is another example'));
+
+
+4.
+let a = "how are you";
+
+function makeUpperCase(str) {
+
+  return  str.toUpperCase(); 
+
+};
+
+makeUpperCase(a);
