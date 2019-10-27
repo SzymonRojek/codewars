@@ -46,3 +46,13 @@ function makeUpperCase(str) {
 };
 
 makeUpperCase(a);
+
+
+5.
+const makeUpperCase = str => {
+
+  return str.split('').map((s) => s.toUpperCase()).join('');
+
+}
+
+(makeUpperCase('something new');
