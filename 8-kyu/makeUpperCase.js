@@ -14,10 +14,12 @@ function makeUpperCase(str) {
 makeUpperCase('i am learning js');
 
 
+
 2.
 const makeUpperCase = (s) => s.toUpperCase();
 
 makeUpperCase('hi');
+
 
 
 3.
@@ -36,6 +38,7 @@ function makeUpperCase(str) {
 console.log(makeUpperCase('this is another example'));
 
 
+
 4.
 let a = "how are you";
 
@@ -48,6 +51,7 @@ function makeUpperCase(str) {
 makeUpperCase(a);
 
 
+
 5.
 const makeUpperCase = str => {
 
@@ -55,4 +59,7 @@ const makeUpperCase = str => {
 
 }
 
-(makeUpperCase('something new');
+makeUpperCase('something new');
+
+
+
