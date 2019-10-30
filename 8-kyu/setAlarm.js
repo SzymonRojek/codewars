@@ -28,3 +28,9 @@ function setAlarm(employed, vacation){
              return false;}
  };
  
+
+ 2.
+ function setAlarm(employed, vacation){
+  return employed === true && vacation === false ? true : false
+  
+  }
