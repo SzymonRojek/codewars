@@ -29,8 +29,20 @@ function setAlarm(employed, vacation){
  };
  
 
+
  2.
  function setAlarm(employed, vacation){
   return employed === true && vacation === false ? true : false
   
-  }
+  };
+
+
+
+  3.
+  const setAlarm = (e, v) => e && !v;
+
+
+  4.
+  function setAlarm(employed, vacation){
+    return employed !== vacation && employed ? true : false; 
+  };
