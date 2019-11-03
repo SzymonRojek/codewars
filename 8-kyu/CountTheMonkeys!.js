@@ -29,3 +29,14 @@ function monkeyCount(n) {
 function monkeyCount(n) {
   return Array.from(Array(n + 1).keys()).slice(1);
  };
+
+
+ // 3.
+
+ let monkeyCount = (n) => {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+};
