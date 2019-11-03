@@ -12,7 +12,7 @@ monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 monkeyCount(1) // --> [1]   */
 
 
-1.
+// 1.
 
 function monkeyCount(n) {
   let monkeyArray = [];
@@ -20,4 +20,12 @@ function monkeyCount(n) {
     monkeyArray.push(i);
   }
   return monkeyArray;
-}
+};
+
+
+
+// 2.
+
+function monkeyCount(n) {
+  return Array.from(Array(n + 1).keys()).slice(1);
+ };
