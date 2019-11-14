@@ -46,6 +46,7 @@ const noSpace = x => {
 
 
  // 5
+
  function noSpace(x){
   var data = x.split(" ");
   var result = "";
@@ -88,5 +89,13 @@ const noSpace = x => {
   var a = x.split(' ');
   return a.join('');
 }
+
+ console.log(noSpace('jj   ddd rr 33 3')); // jjdddrr333
+
+
+
+ // 8 
+
+ const noSpace = x => x.split(' ').filter(x => x !== '').join('')
 
  console.log(noSpace('jj   ddd rr 33 3')); // jjdddrr333
