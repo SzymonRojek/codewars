@@ -42,3 +42,17 @@ const noSpace = x => {
  }
 
  console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
+
+
+
+ // 5
+
+ const noSpace = x => {
+  return x.split("")
+    .map(function(val){
+      return val == " " ? "" : val
+    })
+    .join("");
+}
+
+ console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
