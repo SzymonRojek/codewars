@@ -20,3 +20,16 @@ console.log(newX);
 
 let newX1 = newX.join('');
 console.log(newX1); //8aaaaaddddr
+
+
+
+// 3 arrow function
+
+const space = x => {
+  return x.split(' ').join('');
+  }
+  
+  
+  console.log(space('dd d  edd')); // dddedd
+  
+  
