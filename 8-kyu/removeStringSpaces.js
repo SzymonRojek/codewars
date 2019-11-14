@@ -46,13 +46,36 @@ const noSpace = x => {
 
 
  // 5
+ function noSpace(x){
+  var data = x.split(" ");
+  var result = "";
+
+  for (var i = 0; i < data.length; i++) {
+    if (data[i] != " ") {
+      result += data[i];
+    }
+  }
+
+  return result;
+}
+
+ console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
+
+
+
+ // 6
 
  const noSpace = x => {
-  return x.split("")
-    .map(function(val){
-      return val == " " ? "" : val
-    })
-    .join("");
+  let data = x.split(" ");
+  let result = "";
+
+  for (var i = 0; i < data.length; i++) {
+    if (data[i] != " ") {
+      result += data[i];
+    }
+  }
+
+  return result;
 }
 
  console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
