@@ -32,4 +32,13 @@ const space = x => {
   
   console.log(space('dd d  edd')); // dddedd
   
-  
+
+
+// 4 
+
+const noSpace = x => {
+  let arr =  x.split(' ');
+  return arr.reduce((a,b)=>a+b);
+ }
+
+ console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
