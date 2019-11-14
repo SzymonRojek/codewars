@@ -79,3 +79,14 @@ const noSpace = x => {
 }
 
  console.log(noSpace('jja    aaaa jjjj')); // jjaaaaajjjj
+
+
+
+ // 7
+
+ const noSpace = x => {
+  var a = x.split(' ');
+  return a.join('');
+}
+
+ console.log(noSpace('jj   ddd rr 33 3')); // jjdddrr333
