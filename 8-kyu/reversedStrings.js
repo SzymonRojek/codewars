@@ -48,3 +48,16 @@ function solution(str) {
   
 }
 console.log(solution('hello')) // olleh
+
+
+// 6
+
+function solution(str){
+  let reversed = '';
+  for (let i=str.length-1; i>=0; i--){
+  const letter = str[i];
+  reversed += letter;
+ }
+ return reversed;
+ }
+console.log(solution('ja')) // aj
