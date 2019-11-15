@@ -61,3 +61,13 @@ function solution(str){
  return reversed;
  }
 console.log(solution('ja')) // aj
+
+/* explination: 
+
+why i=str.length-1
+starts from the last element in the array/ but always we are counting from 0, that is a reason why is -1. For instance length of array is 6 - but last element in the array is [5]
+
+i--
+it is looping on the other way 
+
+*/
