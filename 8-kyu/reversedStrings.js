@@ -23,3 +23,12 @@ const solution = str => {
 }
 
 console.log(solution('yeah')) // haey
+
+
+// 4
+
+function solution(str){
+  return str.length > 0 ? solution(str.substring(1)) + str.charAt(0) : '';
+}
+
+console.log(solution('morning')) // gninrom
