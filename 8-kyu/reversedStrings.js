@@ -13,3 +13,13 @@ console.log(solution('world')) // 'dlrow'
 let solution = x => [...x].reverse().join('');
 
 
+// 3
+
+const solution = str => {
+  if (str === "")
+    return "";
+  else
+    return solution(str.substr(1)) + str.charAt(0);
+}
+
+console.log(solution('yeah')) // haey
