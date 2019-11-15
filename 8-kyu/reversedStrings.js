@@ -53,13 +53,21 @@ console.log(solution('hello')) // olleh
 // 6
 
 function solution(str){
+
   let reversed = '';
+
   for (let i=str.length-1; i>=0; i--){
+
   const letter = str[i];
+
   reversed += letter;
+
  }
+
  return reversed;
+
  }
+
 console.log(solution('ja')) // aj
 
 /* explination: 
@@ -71,3 +79,19 @@ i--
 it is looping on the other way 
 
 */
+
+
+// 7 
+
+function solution(str){
+  let j = '';
+
+  for(let i = str.length - 1; i >= 0; i--){
+    j = j + str[i];
+  }
+  
+  str = j;
+  return str;
+}
+
+console.log(solution('Poland')); // dnaloP
