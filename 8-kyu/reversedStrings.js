@@ -6,3 +6,10 @@
 const solution = x => x.split('').reverse().join('');
 
 console.log(solution('world')) // 'dlrow'
+
+
+// 2
+
+let solution = x => [...x].reverse().join('');
+
+
