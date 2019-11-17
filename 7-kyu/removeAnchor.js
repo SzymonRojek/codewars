@@ -100,3 +100,17 @@ const removeUrlAnchor = url => {
 console.log(removeUrlAnchor('www.codewars.com#about')); 
 // www.codewars.com
 
+
+
+// 8
+
+
+const removeUrlAnchor = url => {
+
+  const filteredUrl = url.substring(0, url.indexOf('#'));
+  return filteredUrl === '' ? url : filteredUrl;
+
+  }
+
+console.log(removeUrlAnchor('www.codewars.com#about')); 
+// www.codewars.com
