@@ -48,6 +48,7 @@ console.log(removeUrlAnchor('www.codewars.com#about'));
 // www.codewars.com
 
 
+
 // 5
 
 
@@ -68,5 +69,22 @@ function removeUrlAnchor(url){
 console.log(removeUrlAnchor('www.codewars.com#about')); 
 // www.codewars.com
 
+
+
+// 6
+
+
+// Write the function which removes everything after the anchor (#):
+
+const removeUrlAnchor = url => {
+
+  if(url.match("#")){
+  return url.slice(0, url.indexOf("#"));
+  }
+  return url;
+  
+}
+console.log(removeUrlAnchor('www.codewars.com#about')); 
+// www.codewars.com
 
 
