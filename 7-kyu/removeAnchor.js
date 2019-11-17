@@ -2,6 +2,8 @@
 
 Complete the function/method so that it returns the url with anything after the anchor (#) removed. */
 
+
+
 // 1
 
 function removeUrlAnchor(url){
@@ -11,10 +13,41 @@ function removeUrlAnchor(url){
 console.log(removeUrlAnchor('www.codewars.com#about')); // www.codewars.com
 
 
+
 // 2
 
 const removeAnchor = url => url.split('#').shift();
 
 console.log(removeAnchor('www.codewars.com#about')); 
+
+
+
+// 3
+
+const removeAnchor = url => url.split('#')[0];
+
+console.log(removeAnchor('www.codewars.com#about')); 
+// www.codewars.com
+
+
+
+// 4
+
+function removeUrlAnchor(url){
+
+  const index = url.indexOf('#')
+
+   if(url.includes('#')){
+   return url.slice(0, index)
+ } else{
+   return url
+ }
+ }
+
+console.log(removeUrlAnchor('www.codewars.com#about')); 
+// www.codewars.com
+
+
+
 
 
