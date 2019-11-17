@@ -4,7 +4,7 @@ Complete the function/method so that it returns the url with anything after the 
 
 
 
-// 1
+//  1
 
 function removeUrlAnchor(url){
   return url.split('#').shift();
@@ -14,7 +14,7 @@ console.log(removeUrlAnchor('www.codewars.com#about')); // www.codewars.com
 
 
 
-// 2
+//  2
 
 const removeAnchor = url => url.split('#').shift();
 
@@ -31,7 +31,7 @@ console.log(removeAnchor('www.codewars.com#about'));
 
 
 
-// 4
+//  4
 
 function removeUrlAnchor(url){
 
@@ -49,7 +49,7 @@ console.log(removeUrlAnchor('www.codewars.com#about'));
 
 
 
-// 5
+//  5
 
 
 // Write the function which removes everything after the anchor (#):
@@ -71,7 +71,7 @@ console.log(removeUrlAnchor('www.codewars.com#about'));
 
 
 
-// 6
+//  6
 
 
 // Write the function which removes everything after the anchor (#):
@@ -87,4 +87,16 @@ const removeUrlAnchor = url => {
 console.log(removeUrlAnchor('www.codewars.com#about')); 
 // www.codewars.com
 
+
+
+//  7
+
+const removeUrlAnchor = url => {
+
+  let str_array = url.split("#");
+  return str_array[0];
+  
+}
+console.log(removeUrlAnchor('www.codewars.com#about')); 
+// www.codewars.com
 
