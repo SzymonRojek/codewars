@@ -8,5 +8,13 @@ function removeUrlAnchor(url){
   return url.split('#').shift();
 }
 
-
 console.log(removeUrlAnchor('www.codewars.com#about')); // www.codewars.com
+
+
+// 2
+
+const removeAnchor = url => url.split('#').shift();
+
+console.log(removeAnchor('www.codewars.com#about')); 
+
+
