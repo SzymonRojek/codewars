@@ -130,4 +130,25 @@ const removeUrlAnchor = url => {
   }
   
   return newUrl.join('');
+
 }
+
+
+
+// 10
+
+
+
+
+const removeUrlAnchor = url => {
+  let i = 0;
+  while(i < url.length){
+    i++;
+    if(url[i]==='#') return url.slice(0,i);
+  }
+  return url;
+}
+
+console.log(removeUrlAnchor('www.codewars.com#about')); 
+// www.codewars.com
+
