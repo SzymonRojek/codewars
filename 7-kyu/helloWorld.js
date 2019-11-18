@@ -10,3 +10,12 @@ const hello = name => {
 }
 
 console.log(hello('world')); // Hello world
+
+
+// 2 
+
+function hello(name) {
+  return "Hello " + name;
+}
+
+console.log(hello('Gosia')); // Hello Gosia
