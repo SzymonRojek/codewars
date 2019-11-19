@@ -46,3 +46,9 @@ function hello(name) {
   str += name;
   return str;
 }
+console.log('Hello World'); // Hello World
+
+// 6
+
+const hello = String.prototype.concat.bind('Hello ');
+console.log('Hello World'); // Hello World
