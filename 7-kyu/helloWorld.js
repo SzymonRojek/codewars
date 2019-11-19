@@ -9,7 +9,7 @@ const hello = name => {
    return greetings + ' ' + name
 }
 
-console.log(hello('world')); // Hello world
+console.log(hello('World')); // Hello world
 
 
 // 2 
@@ -19,3 +19,11 @@ function hello(name) {
 }
 
 console.log(hello('Gosia')); // Hello Gosia
+
+
+// 3
+
+function hello(name) {
+  return `Hello ${name.toString()}`
+}
+console.log('Hello World'); // Hello World
