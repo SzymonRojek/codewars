@@ -37,3 +37,12 @@ function hello(name) {
   return ['H','e','l','l','o',' '].concat(name.toString().split('')).join('')
 }
 console.log('Hello World'); // Hello World
+
+
+// 5
+
+function hello(name) {
+  var str = "Hello ";
+  str += name;
+  return str;
+}
