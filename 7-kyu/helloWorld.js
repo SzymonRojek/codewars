@@ -1,6 +1,7 @@
 
 // Given an argument that may be a String or a Number, return a simple greeting.
 
+
 // 1
 
 const hello = name => {
@@ -10,6 +11,7 @@ const hello = name => {
 }
 
 console.log(hello('World')); // Hello world
+
 
 
 // 2 
@@ -39,6 +41,7 @@ function hello(name) {
 console.log('Hello World'); // Hello World
 
 
+
 // 5
 
 function hello(name) {
@@ -47,6 +50,8 @@ function hello(name) {
   return str;
 }
 console.log('Hello World'); // Hello World
+
+
 
 // 6
 
