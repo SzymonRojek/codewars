@@ -57,3 +57,17 @@ console.log('Hello World'); // Hello World
 
 const hello = String.prototype.concat.bind('Hello ');
 console.log('Hello World'); // Hello World
+
+
+
+// 7
+
+const hello = name => 'Hello ' + name;
+console.log('Hello World'); // Hello World
+
+
+
+// 8
+
+const hello = name => `Hello ${String(name)}`;
+console.log('Hello World'); // Hello World
