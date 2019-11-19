@@ -21,9 +21,19 @@ function hello(name) {
 console.log(hello('Gosia')); // Hello Gosia
 
 
+
 // 3
 
 function hello(name) {
   return `Hello ${name.toString()}`
+}
+console.log('Hello World'); // Hello World
+
+
+
+// 4
+
+function hello(name) {
+  return ['H','e','l','l','o',' '].concat(name.toString().split('')).join('')
 }
 console.log('Hello World'); // Hello World
