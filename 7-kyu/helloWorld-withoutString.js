@@ -61,3 +61,15 @@ let str ='Hello, World!';
 const helloWorld=()=> str;
 
 console.log(helloWorld()); // Hello, World!
+
+
+
+// 4
+
+const helloWorld = () => {
+  let result = String(/Hello, World!/)
+    
+  return result.slice(1,-1);
+};
+  
+  console.log(helloWorld()); // Hello, World!
