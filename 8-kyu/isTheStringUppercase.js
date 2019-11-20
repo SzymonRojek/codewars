@@ -73,3 +73,28 @@ String.prototype.isUpperCase = function IsUpperCase() {
 
 console.log("Hello".isUpperCase()); // false
 console.log("HELLO".isUpperCase()); // true
+
+
+
+
+// change every first letter to uppercase for each word 
+
+// 1
+
+const changeMe = x => {
+  
+  let str = x.split(' ')
+  console.log(str);
+  ["World", "is", "amazing,", "isn't", "it?"]
+
+  for (var i = 0;  i < str.length; i++) {
+    /* alternatively: 
+    str[i] = str[i][0].toUpperCase() + str[i].substr(1); */
+    
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].substr(1);  
+}
+  return str.join(' ');
+};
+ 
+console.log(changeMe("World is amazing, isn't it?")); 
+// World Is Amazing, Isn't It?
