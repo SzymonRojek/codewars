@@ -14,3 +14,13 @@ console.log("Hello".isUpperCase()); // false
 console.log("HELLO".isUpperCase()); // true
 
 
+
+// 2
+
+const isUpperCase = str => {
+  return str == str.toUpperCase() || str != str.toLowerCase();
+}
+
+console.log(isUpperCase('BLEEE')); // true
+
+console.log(isUpperCase('bleee')); // false
