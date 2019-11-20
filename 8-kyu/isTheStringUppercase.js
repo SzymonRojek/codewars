@@ -41,3 +41,12 @@ console.log("Hello".isUpperCase()); // false
 console.log("HELLO".isUpperCase()); // true
 
 
+
+// 4
+
+String.prototype.isUpperCase = function() {
+  return this.toUpperCase() == this;
+}
+
+console.log("Hello".isUpperCase()); // false
+console.log("HELLO".isUpperCase()); // true
