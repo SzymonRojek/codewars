@@ -10,6 +10,7 @@ String.prototype.isUpperCase = function() {
 };
 
 console.log("Hello".isUpperCase()); // false
+
 console.log("HELLO".isUpperCase()); // true
 
 
