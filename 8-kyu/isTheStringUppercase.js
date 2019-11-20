@@ -76,10 +76,7 @@ console.log("HELLO".isUpperCase()); // true
 
 
 
-
-// change every first letter to uppercase for each word 
-
-// 1
+// 1: change every first letter to uppercase for each word 
 
 const changeMe = x => {
   
@@ -90,11 +87,32 @@ const changeMe = x => {
   for (var i = 0;  i < str.length; i++) {
     /* alternatively: 
     str[i] = str[i][0].toUpperCase() + str[i].substr(1); */
-    
+
     str[i] = str[i].charAt(0).toUpperCase() + str[i].substr(1);  
 }
   return str.join(' ');
 };
  
-console.log(changeMe("World is amazing, isn't it?")); 
+console.log(changeMe("world is amazing, isn't it?")); 
 // World Is Amazing, Isn't It?
+
+
+
+/* 2: I have a sentence with uppercase and lowercase letters - reduce them to small and only enlarge the first letters of each word */
+
+const changeLetters = str => {
+
+  let sentenceStr = str.toLowerCase().split(' ');
+  console.log(sentenceStr); // ["i'm", "a", "little", "tea", "pot"]
+
+  for (var i = 0; i < sentenceStr.length; i++) {
+      // I do not need to check if i is larger than splitStr length, as your for does that for you
+      // Assign it back to the array
+      sentenceStr[i] = sentenceStr[i].charAt(0).toUpperCase() + sentenceStr[i].substring(1);     
+  }
+  // Directly return the joined string
+  return sentenceStr.join(' '); 
+}
+
+console.log(changeLetters("I'M a liTTle tEa pot"));
+// I'm A Little Tea Pot
