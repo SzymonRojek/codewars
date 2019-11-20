@@ -50,3 +50,14 @@ const helloWorld = () => {
 };
 
 console.log(helloWorld()); // Hello, World!
+
+
+
+// 3
+
+let str ='Hello, World!'; 
+// created global variable and use in the function
+
+const helloWorld=()=> str;
+
+console.log(helloWorld()); // Hello, World!
