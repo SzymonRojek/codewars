@@ -24,3 +24,20 @@ const isUpperCase = str => {
 console.log(isUpperCase('BLEEE')); // true
 
 console.log(isUpperCase('bleee')); // false
+
+
+
+// 3
+
+String.prototype.isUpperCase = function(){
+  if(this.toString() == this.toUpperCase()){
+    return true;
+  } else{
+    return false;
+  }
+}
+
+console.log("Hello".isUpperCase()); // false
+console.log("HELLO".isUpperCase()); // true
+
+
