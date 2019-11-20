@@ -50,3 +50,26 @@ String.prototype.isUpperCase = function() {
 
 console.log("Hello".isUpperCase()); // false
 console.log("HELLO".isUpperCase()); // true
+
+
+
+// 5
+
+String.prototype.isUpperCase = function IsUpperCase() {
+
+  let str = this.toString();
+ 
+   if (typeof str === "string") {
+ 
+     let lowerletters = "lowletters";  
+     for (let i = 0; i < str.length; i++) {  
+         if (lowerletters.includes(str.charAt(i))) {
+             return false;
+         }
+     }    
+   return true ;
+   }
+ }
+
+console.log("Hello".isUpperCase()); // false
+console.log("HELLO".isUpperCase()); // true
