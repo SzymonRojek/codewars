@@ -9,3 +9,12 @@ arr.sum();
 
 let arr = [10,28,14,33];
 arr.sum();  */ 
+
+
+// 1
+
+Array.prototype.sum = function() {
+  return this.reduce((a, b) => a + b, 0);
+};
+
+console.log([1,2,3,4].sum()); // 10
