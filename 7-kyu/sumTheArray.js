@@ -29,7 +29,23 @@ Array.prototype.sum= function(){
 
   for (var i=0; i<this.length; ++i)
     sum += this[i];
-    
+
   return sum;
 }
 console.log([1,2,3,4].sum()); // 10
+
+
+
+// 3
+
+Array.prototype.sum = function() {
+  function getSum(total, num) {
+    return total + num;
+  }
+  return this.reduce(getSum, 0);
+}
+console.log([1,2,3,4].sum()); // 10
+
+
+
+
