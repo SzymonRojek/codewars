@@ -48,4 +48,16 @@ console.log([1,2,3,4].sum()); // 10
 
 
 
+// 4
+
+Array.prototype.sum = function(){
+  let result = 0;
+  this.forEach( num => {
+    result += num;
+  });
+  return result;
+}
+
+console.log([1,2,3,4].sum()); // 10
+
 
