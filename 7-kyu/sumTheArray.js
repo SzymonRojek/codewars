@@ -61,3 +61,18 @@ Array.prototype.sum = function(){
 console.log([1,2,3,4].sum()); // 10
 
 
+
+// 5
+
+Array.prototype.sum = function(){
+  if(this.length===0){
+    return 0;
+  }
+let z = 0;
+  for(let i = 0; i<this.length; i+=1){
+    z = z+this[i]
+  }
+  return z
+}
+
+console.log([1,2,3,4].sum()); // 10
