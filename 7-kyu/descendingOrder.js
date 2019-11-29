@@ -21,3 +21,11 @@ console.log(descendingOrder(103245)); // 543210
 
 
 
+// 2
+
+function descendingOrder(n){
+  return parseInt(String(n).split('').sort().reverse().join(''));
+}
+
+
+
