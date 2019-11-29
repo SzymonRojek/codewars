@@ -17,7 +17,10 @@ const descendingOrder = n => {
 
 console.log(descendingOrder(103245)); // 543210
 
-/* [...n + ""] - it means: take all digits from n and change them to strings */
+/* [...n + ""] - it means: take all digits from n and change them to strings 
+
+instead of it:
+let arr = String(n).split('').sort((a, b) => b - a).join(''); */
 
 
 
