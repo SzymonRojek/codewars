@@ -21,11 +21,21 @@ console.log(descendingOrder(103245)); // 543210
 
 
 
-// 2
+//  2
 
-function descendingOrder(n){
+function descendingOrder (n) {
   return parseInt(String(n).split('').sort().reverse().join(''));
 }
 
+console.log(descendingOrder(103245)); // 543210
 
 
+//  3
+
+function descendingOrder(n){
+  return parseInt(n.toString().split('').sort(function(a, b){
+    return b - a;
+  }).join(''));
+}
+
+console.log(descendingOrder(103245)); // 543210
