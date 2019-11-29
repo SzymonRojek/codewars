@@ -60,3 +60,13 @@ function descendingOrder(n){
 }
 
 console.log(descendingOrder(103245)); // 543210
+
+
+
+//  5
+
+function descendingOrder(n){
+  return +('' + n).split('').sort(function(a, b){return b - a}).join('');
+}
+
+console.log(descendingOrder(103245)); // 543210
