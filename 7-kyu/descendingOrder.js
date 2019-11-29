@@ -30,12 +30,33 @@ function descendingOrder (n) {
 console.log(descendingOrder(103245)); // 543210
 
 
+
 //  3
 
 function descendingOrder(n){
   return parseInt(n.toString().split('').sort(function(a, b){
     return b - a;
   }).join(''));
+}
+
+console.log(descendingOrder(103245)); // 543210
+
+
+
+//  4
+
+function descendingOrder(n){
+  let array = []
+  for ( let i = 0; i < String(n).length; i++ ){
+    array.push(parseInt(String(n)[i]))
+  }
+  
+  array.sort(function(a, b) {
+  return b-a
+  })
+  
+  return parseInt(array.join(''));
+  
 }
 
 console.log(descendingOrder(103245)); // 543210
