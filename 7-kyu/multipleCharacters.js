@@ -135,3 +135,18 @@ console.log(spam(2)); // huehue
 
 
 
+//  11
+
+const spam = n => {
+
+  let str = '';
+  let i = 0;
+  
+  while(i < n){
+      str+="hue";
+      i++;
+  }
+  return str;
+}
+
+console.log(spam(2)); // huehue
