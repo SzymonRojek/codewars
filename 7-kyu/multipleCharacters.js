@@ -110,8 +110,28 @@ const spam = number => {
     for (let x = 0; x < number; x += 1) {
         message += 'hue';
      }
-     
+
      return message;
   }
 
 console.log(spam(2)); // huehue
+
+
+
+// 10
+
+
+
+const spam = n => {
+
+  let string = '';
+
+  for(var i = 0; i < n; i++) string += 'hue';
+
+  return string;
+}
+
+console.log(spam(2)); // huehue
+
+
+
