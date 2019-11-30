@@ -25,3 +25,12 @@ const spam = number => {
 
 }
 console.log(spam(2)); // huehue
+
+
+
+//  2
+
+
+const spam = number => Array(++number).join("hue");
+
+console.log(spam(2)); // huehue
