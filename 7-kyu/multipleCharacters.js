@@ -191,3 +191,17 @@ console.log(spam(2)); // huehue
 
 
 
+//  14
+
+let str = 'hue';
+
+const spam = number => {
+
+  let result = str.repeat(number);
+  
+  return result
+}
+
+console.log(spam(2)); // huehue
+
+
