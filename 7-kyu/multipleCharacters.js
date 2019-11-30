@@ -96,3 +96,22 @@ const spam = number => {
 }
 
 console.log(spam(2)); // huehue
+
+
+
+//  9
+
+const spam = number => {
+
+  let message = '';
+
+    //TODO: Not returning the expected value.
+
+    for (let x = 0; x < number; x += 1) {
+        message += 'hue';
+     }
+     
+     return message;
+  }
+
+console.log(spam(2)); // huehue
