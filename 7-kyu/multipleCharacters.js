@@ -81,3 +81,18 @@ console.log(spam(2)); // huehue
 const spam = number => (number != 0)? 'hue' + spam(number - 1) : '';
 
 console.log(spam(2)); // huehue
+
+
+
+// 8
+
+const spam = number => {
+
+  let word = '';
+
+  while (number-- > 0) word += 'hue';
+  
+  return word;
+}
+
+console.log(spam(2)); // huehue
