@@ -1,5 +1,6 @@
 /*  Description:
-Here we have a function that help us spam our hearty laughter. But is not working! I need you to find out why...
+Here we have a function that help us spam our hearty laughter. 
+But is not working! I need you to find out why...
 
 Expected results:
 
@@ -70,5 +71,13 @@ console.log(spam(2)); // huehue
 //  6
 
 const spam = n => "hue".repeat(n);
+
+console.log(spam(2)); // huehue
+
+
+
+//  7
+
+const spam = number => (number != 0)? 'hue' + spam(number - 1) : '';
 
 console.log(spam(2)); // huehue
