@@ -50,3 +50,17 @@ console.log(spam(2)); // huehue
 const spam = number => new Array(number + 1).join('hue');
 
 console.log(spam(2)); // huehue
+
+
+
+//  5
+
+
+const spam = number => {
+  let o = '';
+  
+  while(number--){o += 'hue'}
+  return o;
+}
+
+console.log(spam(2)); // huehue
