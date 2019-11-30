@@ -170,3 +170,24 @@ const spam = number => {
 console.log(spam(2)); // huehue
 
 
+
+// 13
+
+const spam = number => {
+ 
+  const list = [];
+
+  let i = 0;
+
+  while(i < number){
+    i++
+    list.push('hue');
+  }
+  
+  return list.join('');
+}
+
+console.log(spam(2)); // huehue
+
+
+
