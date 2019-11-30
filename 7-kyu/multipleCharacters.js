@@ -150,3 +150,23 @@ const spam = n => {
 }
 
 console.log(spam(2)); // huehue
+
+
+
+//  12
+
+const spam = number => {
+
+  var arr = [];
+
+  while (arr.length < number) {
+
+      arr.push('hue');
+  }
+
+  return arr.join('');
+}
+
+console.log(spam(2)); // huehue
+
+
