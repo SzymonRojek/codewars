@@ -64,3 +64,11 @@ const spam = number => {
 }
 
 console.log(spam(2)); // huehue
+
+
+
+//  6
+
+const spam = n => "hue".repeat(n);
+
+console.log(spam(2)); // huehue
