@@ -34,3 +34,11 @@ console.log(spam(2)); // huehue
 const spam = number => Array(++number).join("hue");
 
 console.log(spam(2)); // huehue
+
+
+
+//  3
+
+const spam = number => "hue".repeat(number);
+
+console.log(spam(2)); // huehue
