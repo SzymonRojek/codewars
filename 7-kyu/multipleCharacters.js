@@ -107,7 +107,7 @@ const spam = number => {
 
     //TODO: Not returning the expected value.
 
-    for (let x = 0; x < number; x += 1) {
+    for (let x = 0; x < number; x++) {
         message += 'hue';
      }
 
@@ -143,13 +143,20 @@ const spam = n => {
   let i = 0;
   
   while(i < n){
-      str+="hue";
+      str+= 'hue ';
       i++;
+      
   }
+
+  /* while(n > i){
+      str+= 'hue ';
+      n--;
+  } */
+
   return str;
 }
 
-console.log(spam(2)); // huehue
+console.log(spam(2)); // hue hue
 
 
 
@@ -157,7 +164,7 @@ console.log(spam(2)); // huehue
 
 const spam = number => {
 
-  var arr = [];
+  let arr = [];
 
   while (arr.length < number) {
 
@@ -180,8 +187,14 @@ const spam = number => {
   let i = 0;
 
   while(i < number){
-    i++
+    i++;
     list.push('hue');
+    /*
+    or I can write: 
+
+    list.push('hue);
+    number--;
+    */
   }
   
   return list.join('');
