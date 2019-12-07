@@ -32,3 +32,11 @@ const add = (a, b) => a == b;
 //  3
 
 const add = (a, b) => (`${a}`)==(`${b}`);
+
+
+
+//  4
+
+const add = (a, b) => a + '' === b + '';
+
+console.log(add(2, '2')); // true
