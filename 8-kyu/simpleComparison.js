@@ -62,3 +62,11 @@ const add = (a, b) => {
 }
 
 console.log(add(2, '3')); // false
+
+
+
+//  7
+
+const add = (a, b) => (a == b) ? true : false;
+
+console.log(add(2, '3')); // false
