@@ -26,3 +26,9 @@ console.log(add(2, '2')); // true
 //  2
 
 const add = (a, b) => a == b;
+
+
+
+//  3
+
+const add = (a, b) => (`${a}`)==(`${b}`);
