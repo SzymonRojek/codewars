@@ -70,3 +70,11 @@ console.log(add(2, '3')); // false
 const add = (a, b) => (a == b) ? true : false;
 
 console.log(add(2, '3')); // false
+
+
+
+//  8
+
+function add(a, b){
+  return String(a) == String(b) ? true : false;
+}
