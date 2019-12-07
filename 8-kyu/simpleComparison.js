@@ -48,3 +48,17 @@ console.log(add(2, '2')); // true
 const add = (a, b) => eval(a-b) == 0;
 
 console.log(add(2, '2')); // true
+
+
+
+//  6
+
+const add = (a, b) => {
+  // convert both to string and compare
+  let n = String(a);
+  let m = String(b);
+  
+  return (n === m ? true : false);
+}
+
+console.log(add(2, '3')); // false
