@@ -16,7 +16,13 @@ including .toString(), .join(), .split(), parseInt and .Number() */
 
 const add = (a, b) => {
 
-  if(a == b) {return true} else { return false}
+  if(a == b) {return true} else { return false};
 }
 
 console.log(add(2, '2')); // true
+
+
+
+//  2
+
+const add = (a, b) => a == b;
