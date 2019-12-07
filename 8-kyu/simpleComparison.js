@@ -40,3 +40,11 @@ const add = (a, b) => (`${a}`)==(`${b}`);
 const add = (a, b) => a + '' === b + '';
 
 console.log(add(2, '2')); // true
+
+
+
+//  5
+
+const add = (a, b) => eval(a-b) == 0;
+
+console.log(add(2, '2')); // true
