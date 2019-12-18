@@ -24,4 +24,13 @@ const nthChar = words => {
   }
   return n;
 };
-console.log(nthChar(['yoda', 'best', 'has']));
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  2
+
+
+const nthChar = words => words.map((word, index) => word[index]).join('');
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
