@@ -14,3 +14,14 @@ Note: Test cases contain valid input only - i.e. a
 string array or an empty array; and each word will have 
 enough letters. */
 
+
+//  1
+
+const nthChar = words => {
+  let n = '';
+  for (let i = 0; i < words.length; i++) {
+          n += words[i].charAt(i);
+  }
+  return n;
+};
+console.log(nthChar(['yoda', 'best', 'has']));
