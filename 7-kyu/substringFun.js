@@ -66,3 +66,11 @@ function nthChar(words) {
 }
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  6
+
+const nthChar = words => words.reduce((acc, x, i) => acc + x[i], '');
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
