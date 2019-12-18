@@ -74,3 +74,13 @@ console.log(nthChar(['yoda', 'best', 'has'])); // yes
 const nthChar = words => words.reduce((acc, x, i) => acc + x[i], '');
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  7
+
+function nthChar(words) {
+  return words.map(Function.prototype.call, String.prototype.charAt).join('');
+}
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
