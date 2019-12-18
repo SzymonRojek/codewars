@@ -54,3 +54,15 @@ function nthChar(words) {
 }
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  5
+
+function nthChar(words) {
+  let str = '';
+  for (let i = 0; i < words.length; ++i) str += words[i][i];
+  return str;
+}
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
