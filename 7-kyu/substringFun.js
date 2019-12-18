@@ -84,3 +84,18 @@ function nthChar(words) {
 }
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  8
+
+function nthChar(words) {
+  let count = 0;
+  let result = '';
+  for (const i in words) {
+          result += words[i][count++];
+  }
+  return result;
+}
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
