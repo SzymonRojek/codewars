@@ -44,3 +44,13 @@ function nthChar(words) {
 }
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  4
+
+function nthChar(words) {
+  return words.reduce((acc, val, index) => acc + val[index], '');
+}
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
