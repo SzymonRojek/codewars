@@ -34,3 +34,13 @@ console.log(nthChar(['yoda', 'best', 'has'])); // yes
 const nthChar = words => words.map((word, index) => word[index]).join('');
 
 console.log(nthChar(['yoda', 'best', 'has'])); // yes
+
+
+
+//  3
+
+function nthChar(words) {
+  return words.map((str, i) => str.charAt(i)).join('');
+}
+
+console.log(nthChar(['yoda', 'best', 'has'])); // yes
