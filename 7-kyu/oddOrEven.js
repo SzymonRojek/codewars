@@ -58,3 +58,11 @@ console.log(oddOrEven([1, 2, 3, 4])); // even
 const oddOrEven = x => (x.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even');
 
 console.log(oddOrEven([1, 2, 3, 4])); // even
+
+
+
+//  4
+
+const oddOrEven = arr => ['even', 'odd'][Math.abs(arr.reduce((a, b) => a + b, 0)) % 2];
+
+console.log(oddOrEven([1, 2, 3, 4])); // even
