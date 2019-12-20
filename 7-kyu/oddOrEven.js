@@ -8,3 +8,27 @@ Example:
 oddOrEven([0]) returns "even"
 oddOrEven([2, 5, 34, 6]) returns "odd"
 oddOrEven([0, -1, -5]) returns "even" */
+
+
+//  1
+
+const oddOrEven = x => {
+  // create a variable number and sum all digits in the array
+
+  let sum = 0;
+
+  for (let i = 0; i < x.length; i++) {
+          sum += x[i];
+  }
+
+  // create a condition if and return odd or even 
+
+  if (sum % 2 === 0) {
+          return 'even';
+  }
+  return 'odd';
+
+
+};
+
+console.log(oddOrEven([1, 2])); // odd
