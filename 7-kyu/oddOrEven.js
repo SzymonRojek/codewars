@@ -50,3 +50,11 @@ const oddOrEven = x => {
 };
 
 console.log(oddOrEven([1, 2, 3, 4])); // even
+
+
+
+//  3
+
+const oddOrEven = x => (x.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even');
+
+console.log(oddOrEven([1, 2, 3, 4])); // even
