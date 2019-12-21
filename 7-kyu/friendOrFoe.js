@@ -11,3 +11,28 @@ i.e.
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output.
 */
+
+
+//  1
+
+const friend = friends => {
+  // place to store myFriends;
+
+  const myFriends = [];
+
+  // iterate over the friends;
+
+  for (let i = 0; i < friends.length; i++) {
+          const friend = friends[i];
+
+          // if the friend name is length 4
+          if (friend.length === 4) {
+                  // push into my friends
+                  myFriends.push(friend);
+          }
+  }
+
+  return myFriends;
+};
+
+console.log(friend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"] 
