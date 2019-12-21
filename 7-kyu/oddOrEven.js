@@ -76,3 +76,11 @@ function oddOrEven(array) {
      }
 
 console.log(oddOrEven([1, 2, 3, 4])); // even
+
+
+
+//  6
+
+const oddOrEven = x => (x.reduce((a, b) => a + b, 0) & 1 ? 'odd' : 'even');
+
+console.log(oddOrEven([1, 2, 3, 4, 5]));
