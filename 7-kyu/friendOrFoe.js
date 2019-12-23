@@ -63,66 +63,57 @@ console.log(whoIsaRealFriend(['Ryan', 'Ilona', 'Mark'])); //  ["Ilona"];
 
 
 
-//  4
+//  4   with if statement
 
-const names = ['Ryan', 'Ilona', 'Mark'];
+const allFriends = ['Ryan', 'Ilona', 'Mark'];
 
 const realFriends = [];
 
-const badFriends = [];
+const fakeFriends = [];
 
-names.forEach(function(item) {
-        if (item.length === 5) {
-                realFriends.push(item);
+allFriends.forEach(friend => {
+
+        if (friend.length === 5) {
+                realFriends.push(friend);
         } else {
-                badFriends.push(item);
+                fakeFriends.push(friend);
         }
 });
 
-console.log(`my good friend is: ${realFriends}`); // ["Ilona"];
-console.log(`my bad friends are: ${badFriends}`); // ['Ryan', 'Mark']
+console.log(realFriends); // ["Ilona"];
 
 
 
-//  5
+//  5 with itenary operator
 
-function WhoIsMyRealFriend(allFriends) {
-  const realFriends = [];
-  const notFriends = [];
+const allFriends = ['Ryan', 'Ilona', 'Mark'];
 
-  allFriends.forEach(WhoIsMyRealFriend => {
-          if (WhoIsMyRealFriend.length === 5) {
-                  realFriends.push(WhoIsMyRealFriend);
-          } else {
-                  notFriends.push(WhoIsMyRealFriend);
-          }
-  });
+const realFriends = [];
 
-  console.log(notFriends); // ["Ryan", "Mark"]
-  
-  return realFriends;
-}
+const fakeFriends = [];
 
-console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
+allFriends.forEach(friend => (friend.length === 5 ? realFriends.push(friend) : fakeFriends.push(friend)));
+
+console.log(realFriends); // ["Ilona"];
 
 
-
-// 6 the same but with fat arrow
+//  6 another solution with if statement
 
 const WhoIsMyRealFriend = allFriends => {
         const realFriends = [];
         const notFriends = [];
 
-        allFriends.forEach(WhoIsMyRealFriend => {
-                if (WhoIsMyRealFriend.length === 5) {
-                        realFriends.push(WhoIsMyRealFriend);
+        allFriends.forEach(friend => {
+                if (friend.length === 5) {
+                        realFriends.push(friend);
                 } else {
-                        notFriends.push(WhoIsMyRealFriend);
+                        notFriends.push(friend);
                 }
         });
 
-        // console.log(notFriends); // ["Ryan", "Mark"]
         return realFriends;
 };
 
 console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
+
+
