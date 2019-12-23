@@ -81,3 +81,26 @@ names.forEach(function(item) {
 
 console.log(`my good friend is: ${realFriends}`); // ["Ilona"];
 console.log(`my bad friends are: ${badFriends}`); // ['Ryan', 'Mark']
+
+
+
+//  5
+
+function WhoIsMyRealFriend(allFriends) {
+  const realFriends = [];
+  const notFriends = [];
+
+  allFriends.forEach(WhoIsMyRealFriend => {
+          if (WhoIsMyRealFriend.length === 5) {
+                  realFriends.push(WhoIsMyRealFriend);
+          } else {
+                  notFriends.push(WhoIsMyRealFriend);
+          }
+  });
+
+  console.log(notFriends); // ["Ryan", "Mark"]
+  
+  return realFriends;
+}
+
+console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
