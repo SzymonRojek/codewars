@@ -31,7 +31,7 @@ const whoIsaRealFriend = allFriends => {
   return realFriends;
 };
 
-console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
+console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"];
 
 
 
@@ -51,4 +51,12 @@ const whoIsaRealFriend = allFriends => {
   return realFriends;
 };
 
-console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
+console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"];
+
+
+
+//  3
+
+const whoIsaRealFriend = allFriends => allFriends.filter(allFriends => allFriends.length === 5);
+
+console.log(whoIsaRealFriend(['Ryan', 'Ilona', 'Mark'])); //  ["Ilona"];
