@@ -133,3 +133,21 @@ console.log(whoIsARealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
 
 
 
+//  8 solution with loop and ternary operator
+
+const whoIsaRealFriend = allFriends => {
+        const realFriends = [];
+
+        for (let i = 0; i < allFriends.length; i++) {
+                // created variable to overwrite allFriends[i]
+                const checkAllFriends = allFriends[i];
+
+                checkAllFriends.length >= 5 ? realFriends.push(checkAllFriends) : false;
+        }
+
+        return realFriends;
+};
+
+console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark', 'Ilona'])); // ["Kieran", "Ilona"]
+
+
