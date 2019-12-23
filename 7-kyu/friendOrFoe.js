@@ -117,3 +117,19 @@ const WhoIsMyRealFriend = allFriends => {
 console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
 
 
+
+//   7 the same with itenary operator
+
+const whoIsARealFriend = allFriends => {
+        const realFriends = [];
+        const fakeFriends = [];
+
+        allFriends.forEach(friend => (friend.length === 5 ? realFriends.push(friend) : fakeFriends.push(friend)));
+
+        return realFriends;
+};
+
+console.log(whoIsARealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
+
+
+
