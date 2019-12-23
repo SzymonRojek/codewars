@@ -104,3 +104,25 @@ function WhoIsMyRealFriend(allFriends) {
 }
 
 console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
+
+
+
+// 6 the same but with fat arrow
+
+const WhoIsMyRealFriend = allFriends => {
+        const realFriends = [];
+        const notFriends = [];
+
+        allFriends.forEach(WhoIsMyRealFriend => {
+                if (WhoIsMyRealFriend.length === 5) {
+                        realFriends.push(WhoIsMyRealFriend);
+                } else {
+                        notFriends.push(WhoIsMyRealFriend);
+                }
+        });
+
+        // console.log(notFriends); // ["Ryan", "Mark"]
+        return realFriends;
+};
+
+console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
