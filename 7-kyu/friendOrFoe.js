@@ -22,6 +22,7 @@ const whoIsaRealFriend = allFriends => {
   // iterate over the allFriends
   for (let i = 0; i < allFriends.length; i++) {
           // if the friend name is length 4
+          
           if (allFriends[i].length === 4) {
                   // push into my realFriend
                   realFriends.push(allFriends[i]);
@@ -30,4 +31,24 @@ const whoIsaRealFriend = allFriends => {
   return realFriends;
 };
 
-console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark']));
+console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
+
+
+
+//  2 
+
+const whoIsaFriend = allFriends => {
+  const realFriends = [];
+
+  for (let i = 0; i < allFriends.length; i++) {
+          // created variable to overwrite allFriends[i]
+          const checkAllFriends = allFriends[i];
+
+          if (checkAllFriends.length === 4) {
+                  realFriends.push(checkAllFriends);
+          }
+  }
+  return realFriends;
+};
+
+console.log(whoIsaFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
