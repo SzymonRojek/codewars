@@ -60,3 +60,24 @@ console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
 const whoIsaRealFriend = allFriends => allFriends.filter(allFriends => allFriends.length === 5);
 
 console.log(whoIsaRealFriend(['Ryan', 'Ilona', 'Mark'])); //  ["Ilona"];
+
+
+
+//  4
+
+const names = ['Ryan', 'Ilona', 'Mark'];
+
+const realFriends = [];
+
+const badFriends = [];
+
+names.forEach(function(item) {
+        if (item.length === 5) {
+                realFriends.push(item);
+        } else {
+                badFriends.push(item);
+        }
+});
+
+console.log(`my good friend is: ${realFriends}`); // ["Ilona"];
+console.log(`my bad friends are: ${badFriends}`); // ['Ryan', 'Mark']
