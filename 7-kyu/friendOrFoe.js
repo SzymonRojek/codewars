@@ -13,7 +13,7 @@ Note: keep the original order of the names in the output.
 
 
 
-//  1
+//  1 solution with loop and if statement
 
 const whoIsaRealFriend = allFriends => {
   // place to store realFriends
@@ -35,7 +35,7 @@ console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
 
 
 
-//  2 
+//  2 solution with loop and if statement
 
 const whoIsaRealFriend = allFriends => {
   const realFriends = [];
@@ -55,7 +55,7 @@ console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark'])); //  ["Ryan", "Mark"]
 
 
 
-//  3
+//  3 solution with filter
 
 const whoIsaRealFriend = allFriends => allFriends.filter(allFriends => allFriends.length === 5);
 
@@ -63,7 +63,7 @@ console.log(whoIsaRealFriend(['Ryan', 'Ilona', 'Mark'])); //  ["Ilona"];
 
 
 
-//  4   with if statement
+//  4  solution with for each and if statement
 
 const allFriends = ['Ryan', 'Ilona', 'Mark'];
 
@@ -84,7 +84,7 @@ console.log(realFriends); // ["Ilona"];
 
 
 
-//  5 with itenary operator
+//  5 for each with itenary operator
 
 const allFriends = ['Ryan', 'Ilona', 'Mark'];
 
