@@ -84,7 +84,7 @@ console.log(realFriends); // ["Ilona"];
 
 
 
-//  5 for each with itenary operator
+//  5 for each with ternary operator
 
 const allFriends = ['Ryan', 'Ilona', 'Mark'];
 
@@ -118,7 +118,7 @@ console.log(whoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
 
 
 
-//   7 the same with itenary operator
+//   7 the same with ternary operator
 
 const whoIsARealFriend = allFriends => {
         const realFriends = [];
@@ -191,6 +191,7 @@ const whoIsARealFriend = people => {
                 const friend = people[i];
 
                 friend.length !== 5 ? people.splice(i, 1) : false;
+                // also you can write undefined, null
         }
         return people;
 };
