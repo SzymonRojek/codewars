@@ -197,3 +197,29 @@ const whoIsARealFriend = people => {
 
 console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
 // ['Ilona', 'Basia'];
+
+
+
+//   12 
+
+const whoIsMyFriend = friends => {
+        const myFriends = [];
+        const fakeFriends = [];
+        const numberOfFriends = friends.length;
+        for (let i = 0; i < numberOfFriends; i++) {
+                const friendName = friends[i];
+                const isFriend = friendName.length === 5;
+
+                // Ternary operator
+                isFriend ? myFriends.push(friendName) : fakeFriends.push(friendName);
+
+                // if (isFriend) {
+                //         myFriends.push(friendName);
+                // } else {
+                //         fakeFriends.push(friendName);
+                // }
+        }
+        return myFriends;
+};
+
+console.log(whoIsMyFriend(['Basia', 'Krzysztof', 'Monika', 'Anna'])); // ["Basia"];
