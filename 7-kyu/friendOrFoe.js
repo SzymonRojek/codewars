@@ -200,6 +200,8 @@ console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
 
 
 
+
+
 //   12 
 
 const whoIsMyFriend = friends => {
