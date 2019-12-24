@@ -99,7 +99,7 @@ console.log(realFriends); // ["Ilona"];
 
 //  6 another solution with if statement
 
-const WhoIsMyRealFriend = allFriends => {
+const whoIsMyRealFriend = allFriends => {
         const realFriends = [];
         const notFriends = [];
 
@@ -114,7 +114,7 @@ const WhoIsMyRealFriend = allFriends => {
         return realFriends;
 };
 
-console.log(WhoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
+console.log(whoIsMyRealFriend(['Ryan', 'Ilona', 'Mark'])); // ["Ilona"];
 
 
 
@@ -165,16 +165,17 @@ whoIsaRealFriend(['Ryan', 'Ilona', 'Mark']); // ["Ilona"];
 
 //   10 solution with splice method and i--
 
-const whoIsARealFriend = allFriends => {
+const whoIsARealFriend = people => {
 
-        for (i = allFriends.length - 1; i >= 0; i--) {
-                const friend = allFriends[i];
+        for (i = people.length - 1; i >= 0; i--) {
+
+                const friend = people[i];
 
                 if (friend.length !== 5) {
-                        allFriends.splice(i, 1);
+                        people.splice(i, 1);
                 }
         }
-        return allFriends;
+        return people;
 };
 
 console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
@@ -184,14 +185,14 @@ console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
 
 //   11 solution splice method with the ternary operator
 
-const whoIsARealFriend = allFriends => {
-        for (i = allFriends.length - 1; i >= 0; i--) {
+const whoIsARealFriend = people => {
+        for (i = people.length - 1; i >= 0; i--) {
                 
-                const friend = allFriends[i];
+                const friend = people[i];
 
-                friend.length !== 5 ? allFriends.splice(i, 1) : false;
+                friend.length !== 5 ? people.splice(i, 1) : false;
         }
-        return allFriends;
+        return people;
 };
 
 console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
