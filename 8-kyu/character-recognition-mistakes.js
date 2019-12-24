@@ -10,3 +10,22 @@ O is misinterpreted as 0
 I is misinterpreted as 1
 The test cases contain numbers only by mistake. */
 
+
+//  1
+
+const correct = string => {
+  for (let i = 0; i < string.length; i++) {
+          string = string.replace('5', 'S');
+          string = string.replace('0', 'O');
+          string = string.replace('1', 'I');
+  }
+  return string;
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
+
+
