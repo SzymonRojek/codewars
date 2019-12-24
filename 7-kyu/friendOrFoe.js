@@ -160,3 +160,22 @@ function whoIsaRealFriend(allFriends) {
 }
 
 whoIsaRealFriend(['Ryan', 'Ilona', 'Mark']); // ["Ilona"];
+
+
+
+//   10 solution with splice method and i--
+
+const whoIsARealFriend = allFriends => {
+
+        for (i = allFriends.length - 1; i >= 0; i--) {
+                const friend = allFriends[i];
+                
+                if (friend.length !== 5) {
+                        allFriends.splice(i, 1);
+                }
+        }
+        return allFriends;
+};
+
+console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
+// ['Ilona', 'Basia'];
