@@ -151,3 +151,12 @@ const whoIsaRealFriend = allFriends => {
 console.log(whoIsaRealFriend(['Ryan', 'Kieran', 'Mark', 'Ilona'])); // ["Kieran", "Ilona"]
 
 
+
+// 9 old idea with return with no arrow function
+
+function whoIsaRealFriend(allFriends) {
+        return allFriends.filter( function (allFriends) { 
+                return allFriends.length === 5 });
+}
+
+whoIsaRealFriend(['Ryan', 'Ilona', 'Mark']); // ["Ilona"];
