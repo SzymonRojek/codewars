@@ -102,7 +102,7 @@ const correct = string => {
   const mistakes = { 5: 'S', 1: 'I', 0: 'O' };
 
   return string.replace(/5|0|1/g, letter => mistakes[letter]);
-  // or /[501]/g;
+  // or /[501]/g or /./
 };
 
 console.log(correct('L0ND0N')); // LONDON
@@ -143,7 +143,7 @@ console.log(correct('PAR15')); // PARIS
 
 
 
-//  8
+//  8 .map()
 
 const correct = string => [...string].map(a => ({ '0': 'O', '5': 'S', '1': 'I' }[a] || a)).join('');
 
