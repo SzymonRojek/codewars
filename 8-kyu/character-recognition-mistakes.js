@@ -102,6 +102,7 @@ const correct = string => {
   const mistakes = { 5: 'S', 1: 'I', 0: 'O' };
 
   return string.replace(/5|0|1/g, letter => mistakes[letter]);
+  // or /[501]/g;
 };
 
 console.log(correct('L0ND0N')); // LONDON
@@ -111,3 +112,15 @@ console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
 
 
+
+//  6
+
+const correction = { 5: 'S', 1: 'I', 0: 'O' };
+
+const correct = string => string.replace(/[501]/g, letter => correction[letter]);
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
