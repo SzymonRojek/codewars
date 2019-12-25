@@ -140,3 +140,15 @@ console.log(correct('DUBL1N')); // DUBLIN
 console.log(correct('51NGAP0RE')); // SINGAPORE
 console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
+
+
+
+//  8
+
+const correct = string => [...string].map(a => ({ '0': 'O', '5': 'S', '1': 'I' }[a] || a)).join('');
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
