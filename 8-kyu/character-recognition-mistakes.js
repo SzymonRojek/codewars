@@ -152,3 +152,26 @@ console.log(correct('DUBL1N')); // DUBLIN
 console.log(correct('51NGAP0RE')); // SINGAPORE
 console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
+
+
+
+//  9
+
+const correct = string => {
+  const mistakes = {
+          0: 'O',
+          1: 'I',
+          5: 'S',
+  };
+
+  return string
+          .split('')
+          .map(x => (mistakes.hasOwnProperty(x) ? mistakes[x] : x))
+          .join('');
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
