@@ -74,4 +74,22 @@ console.log(correct('PAR15')); // PARIS
 
 
 
+//  4 
+
+const correct = string => {
+  string.replace(/5|0|1/g, letter => {
+          for (let i = 0; i < letter.length; i++) {
+                  string = string.replace('5', 'S');
+                  string = string.replace('0', '0');
+                  string = string.replace('1', 'I');
+          }
+  });
+  return string;
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
 
