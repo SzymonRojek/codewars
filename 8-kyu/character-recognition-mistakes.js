@@ -93,3 +93,21 @@ console.log(correct('51NGAP0RE')); // SINGAPORE
 console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
 
+
+
+/* 5 solution create an object, then grab the value from the object 
+(the same like switch statement) */
+
+const correct = string => {
+  const mistakes = { 5: 'S', 1: 'I', 0: 'O' };
+
+  return string.replace(/5|0|1/g, letter => mistakes[letter]);
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
+
+
