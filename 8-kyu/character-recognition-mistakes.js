@@ -187,3 +187,18 @@ console.log(correct('DUBL1N')); // DUBLIN
 console.log(correct('51NGAP0RE')); // SINGAPORE
 console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
+
+
+
+//  11
+
+const correct = q => {
+        const d = { '0': 'O', 1: 'I', 5: 'S' };
+        return q.replace(/(0)|(1)|(5)/g, r => d[r]);
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
