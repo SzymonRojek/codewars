@@ -227,7 +227,7 @@ console.log(correct('PAR15')); // PARIS
 
 //  13
 
-function correct(string) {
+const correct = string => {
         let arr = string.split('');
         let result = [];
         
@@ -250,3 +250,24 @@ function correct(string) {
         
         return result.join('');
       }
+
+
+
+//  14
+
+const correct = string => {
+        let newString = '';
+        for (i of string) {
+                if (i === '5') newString += 'S';
+                else if (i === '0') newString += 'O';
+                else if (i === '1') newString += 'I';
+                else newString += i;
+        }
+        return newString;
+};
+
+console.log(correct('L0ND0N')); // LONDON
+console.log(correct('DUBL1N')); // DUBLIN
+console.log(correct('51NGAP0RE')); // SINGAPORE
+console.log(correct('BUDAPE5T')); // BUDAPEST
+console.log(correct('PAR15')); // PARIS
