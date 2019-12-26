@@ -222,3 +222,31 @@ console.log(correct('DUBL1N')); // DUBLIN
 console.log(correct('51NGAP0RE')); // SINGAPORE
 console.log(correct('BUDAPE5T')); // BUDAPEST
 console.log(correct('PAR15')); // PARIS
+
+
+
+//  13
+
+function correct(string) {
+        let arr = string.split('');
+        let result = [];
+        
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === '1') {
+            result.push('I');
+          }
+          
+          else if (arr[i] === '0') {
+            result.push('O');
+          }
+          
+          else if (arr[i] === '5') {
+            result.push('S');
+          }
+          else {
+            result.push(arr[i]);
+          }
+        }
+        
+        return result.join('');
+      }
