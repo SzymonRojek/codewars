@@ -88,7 +88,11 @@ console.log(sumStr('34', '5')); // 39
 
 
 
-//  9
+/* 9 exmaple where I am using casting:
+
++x // cast to Number
+'' + x // cast to String
+!!x // cast to Boolean */
 
 const sumStr = (a, b) => {
   if (a === '') {
