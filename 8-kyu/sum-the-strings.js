@@ -26,3 +26,15 @@ const sumStr = (a, b) => String(Number(a) + Number(b));
 
 console.log(sumStr('4', '5')); // 9
 console.log(sumStr('34', '5')); // 39
+
+
+//  3
+
+const sumStr = (a, b) => {
+  a = Number(a);
+  b = Number(b);
+  return String(a + b);
+};
+
+console.log(sumStr('4', '5')); // 9
+console.log(sumStr('34', '5')); // 39
