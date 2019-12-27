@@ -68,3 +68,11 @@ const sumStr = (a, b) => `${1 * a + 1 * b}`;
 
 console.log(sumStr('', '')); // 9
 console.log(sumStr('34', '5')); // 39
+
+
+
+// 7
+
+const sumStr = (...strings) => strings.reduce((a, b) => `${1 * a + 1 * b}`, 0);
+console.log(sumStr('', '')); // 0
+console.log(sumStr('34', '5')); // 39
