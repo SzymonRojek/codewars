@@ -4,3 +4,17 @@
   sumStr("34", "5")   // should output "39"
   
 If either input is an empty string, consider it as zero. */
+
+
+//  1 
+
+const sumStr = (a, b) => {
+  const firstParameter = a === '' ? 0 : parseInt(a);
+  const secondParameter = b === '' ? 0 : parseInt(b);
+  const result = firstParameter + secondParameter;
+
+  return result.toString();
+};
+
+console.log(sumStr('4', '5')); // 9 
+console.log(sumStr('34', '5')); // 39 
