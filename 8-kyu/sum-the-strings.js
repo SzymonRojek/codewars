@@ -49,3 +49,12 @@ const sumStr = (a, b) => `${+a + +b}`;
 
 console.log(sumStr('4', '5')); // 9
 console.log(sumStr('34', '5')); // 39
+
+
+
+//  5
+
+const sumStr = (a, b) => (parseInt(a) || 0 + parseInt(b) || 0).toString();
+
+console.log(sumStr('', '2')); // 9
+console.log(sumStr('34', '5')); // 39
