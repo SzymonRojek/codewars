@@ -85,3 +85,27 @@ const sumStr = (a, b) => `${Number(a) + Number(b) || 0}`;
 
 console.log(sumStr('', '')); // 0
 console.log(sumStr('34', '5')); // 39
+
+
+
+//  9
+
+const sumStr = (a, b) => {
+  if (a === '') {
+          return `${a + +b}`;
+  }
+
+  if (b === '') {
+          return `${a + b}`;
+  }
+  const check = parseInt(a) + parseInt(b);
+
+  return `${check}`;
+};
+
+
+console.log(sumStr('', '')); // 0
+console.log(sumStr('2', '')); // 2
+console.log(sumStr('', '2')); // 2
+console.log(sumStr('2', '2')); // 4
+
