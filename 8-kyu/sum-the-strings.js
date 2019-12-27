@@ -58,3 +58,13 @@ const sumStr = (a, b) => (parseInt(a) || 0 + parseInt(b) || 0).toString();
 
 console.log(sumStr('', '2')); // 9
 console.log(sumStr('34', '5')); // 39
+
+
+
+//  6
+
+const sumStr = (a, b) => `${1 * a + 1 * b}`;
+// const sumStr=(a,b)=>1*a+1*b+"";
+
+console.log(sumStr('', '')); // 9
+console.log(sumStr('34', '5')); // 39
