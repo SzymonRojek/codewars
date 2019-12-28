@@ -54,3 +54,19 @@ const findShort = s =>
                 .pop().length;
 
 console.log(findShort('bitcoin take over as the')); // 2
+
+
+
+//  5
+
+const findShort = string => {
+        const array = string.split(' ');
+        const shortest = [];
+
+        for (let i = 0; i < array.length; i++) {
+                shortest.push(array[i].length);
+        }
+        return Math.min(...shortest);
+};
+
+console.log(findShort('bitcoin take over assss the')); // 3
