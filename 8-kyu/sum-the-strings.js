@@ -113,3 +113,48 @@ console.log(sumStr('2', '')); // 2
 console.log(sumStr('', '2')); // 2
 console.log(sumStr('2', '2')); // 4
 
+
+
+//  10
+
+const sumStr = (a, b) => {
+ 
+
+  if (a === '') {
+          return a + +b;
+  }
+
+  if (b === '') {
+          return a + b;
+  }
+  const check = parseInt(a) + parseInt(b);
+
+  return check.toString();
+};
+
+console.log(sumStr('8', '8')); // 16
+console.log(sumStr('', '8')); // 8
+console.log(sumStr('2', '2')); // 4
+console.log(sumStr('', '')); // 0
+
+
+
+// 11
+
+const sumStr = (a, b) => {
+ 
+
+ if (a === '' || b === '') {
+          return `${+a + +b}`;
+  }
+
+  const check = parseInt(a) + parseInt(b);
+
+  return check.toString();
+};
+
+console.log(sumStr('8', '8')); // 16
+console.log(sumStr('', '8')); // 8
+console.log(sumStr('2', '2')); // 4
+console.log(sumStr('', '')); // 0
+
