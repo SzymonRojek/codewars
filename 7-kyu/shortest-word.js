@@ -70,3 +70,20 @@ const findShort = string => {
 };
 
 console.log(findShort('bitcoin take over assss the')); // 3
+
+
+
+//  6
+
+const findShort = string => {
+        const array = string.split(' ');
+        let shortest = null;
+
+        for (let i = 0, l = array.length; i < l; ++i) {
+                if (shortest == null || array[i].length < shortest) shortest = array[i].length;
+        }
+
+        return shortest;
+};
+
+console.log(findShort('bitcoin take over assss e')); // 1
