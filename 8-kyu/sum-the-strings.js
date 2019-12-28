@@ -171,3 +171,13 @@ console.log(sumStr('', '3')); // string 3
 console.log(sumStr('', '')); // string 0
 
 
+
+// 13
+
+const sumStr = (a, b) => (1 * a + 1 * b).toString();
+// (+a + +b)
+
+console.log(sumStr('2', '2')); // string 4
+console.log(sumStr('0', '2')); // string 2
+console.log(sumStr('', '3')); // string 3
+console.log(sumStr('', '')); // string 0
