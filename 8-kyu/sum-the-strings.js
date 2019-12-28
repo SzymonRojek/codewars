@@ -158,3 +158,16 @@ console.log(sumStr('', '8')); // 8
 console.log(sumStr('2', '2')); // 4
 console.log(sumStr('', '')); // 0
 
+ 
+
+// 12
+
+const sumStr = (a, b) =>
+        a === '' && b === '' ? '0' : a == 0 ? b : b == 0 ? a : (parseInt(a) + parseInt(b)).toString();
+
+console.log(sumStr('2', '2')); // string 4
+console.log(sumStr('0', '2')); // string 2
+console.log(sumStr('', '3')); // string 3
+console.log(sumStr('', '')); // string 0
+
+
