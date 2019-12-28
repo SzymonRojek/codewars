@@ -16,3 +16,13 @@ const findShort = s => {
   const min = Math.min(...shortestWord);
   return min;
 };
+
+console.log(findShort('Hippp a Immm amppp here')); // 1
+
+
+
+// 2
+
+const findShort = s => Math.min(...s.split(' ').map(x => x.length));
+
+console.log(findShort('Hippp a Immm amppp here')); // 1
