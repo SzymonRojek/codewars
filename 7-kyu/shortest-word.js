@@ -26,3 +26,19 @@ console.log(findShort('Hippp a Immm amppp here')); // 1
 const findShort = s => Math.min(...s.split(' ').map(x => x.length));
 
 console.log(findShort('Hippp a Immm amppp here')); // 1
+
+
+
+// 3
+
+const findShort = s => {
+  s = s
+          .split(' ')
+          .sort((a, b) => b.length - a.length)
+          .pop().length;
+  const shortestWord = [];
+  shortestWord.push(s);
+  return +shortestWord;
+};
+
+console.log(findShort('bitcoin take over as the')); // 2
