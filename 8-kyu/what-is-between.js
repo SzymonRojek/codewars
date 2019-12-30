@@ -49,3 +49,17 @@ function between(a, b) {
   return arr;
 }
 console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
+
+
+
+//  4
+
+const between = (a, b) => {
+  const arr = [];
+  while (a <= b) {
+          arr.push(a++);
+  }
+  return arr;
+};
+
+console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
