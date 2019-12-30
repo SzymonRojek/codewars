@@ -33,3 +33,19 @@ const between = (a, b) => {
 };
 
 console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
+
+
+
+//  3
+
+function between(a, b) {
+  const arr = [];
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
+
+  for (let i = min; i <= max; i++) {
+          arr.push(i);
+  }
+  return arr;
+}
+console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
