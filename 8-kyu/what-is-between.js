@@ -9,6 +9,7 @@ b = 4
 --> [1, 2, 3, 4] */
 
 
+
 //  1 
 
 const between = (a, b) =>
@@ -17,3 +18,18 @@ const between = (a, b) =>
                 .map((_, idx) => a + idx);
 
 console.log(between(-1, 4)); // [-1, 1, 0, 2, 3, 4]
+
+
+
+//  2
+
+const between = (a, b) => {
+  const arr = [];
+
+  for (let i = a; i <= b; i++) {
+          arr.push(i);
+  }
+  return arr;
+};
+
+console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
