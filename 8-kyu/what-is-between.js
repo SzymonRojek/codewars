@@ -57,7 +57,7 @@ console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
 const between = (a, b) => {
   const arr = [];
   while (a <= b) {
-          arr.push(a++);
+          arr.push(a++); //  a += 1;
   }
   return arr;
 };
