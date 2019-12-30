@@ -17,7 +17,7 @@ const between = (a, b) =>
                 .fill()
                 .map((_, idx) => a + idx);
 
-console.log(between(-1, 4)); // [-1, 1, 0, 2, 3, 4]
+console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
 
 
 
