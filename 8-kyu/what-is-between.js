@@ -14,8 +14,8 @@ b = 4
 
 const between = (a, b) =>
         Array(b - a + 1)
-                .fill()
-                .map((_, idx) => a + idx);
+                .fill()  // .fill(a)
+                .map((x, i) => a + i); // .map((x,i) => x + i); .map((x,i)=> a + i)
 
 console.log(between(-1, 4)); // [-1, 0, 1, 2, 3, 4]
 
