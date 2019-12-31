@@ -18,17 +18,11 @@ const well = x => {
 
   if (counting.good === undefined) {
           counting.message = 'Fail!';
-  }
-
-  if (counting.good === 1) {
+  } else if (counting.good === 1) {
           counting.message = 'Publish!';
-  }
-
-  if (counting.good === 2) {
+  } else if (counting.good === 2) {
           counting.message = 'Publish!';
-  }
-
-  if (counting.good > 2) {
+  } else if (counting.good > 2) {
           counting.message = 'I smell a series!';
   }
   return counting.message;
@@ -65,7 +59,7 @@ const well = arr => {
 
 
 
-// 3 more readable than solution 3
+// 3 
 
 const well = arr => {
   let counter = 0;
@@ -76,11 +70,19 @@ const well = arr => {
           }
   });
 
+
+  if (counter === 0) return (message = 'Fail!');
+  if (counter === 1) return (message = 'Publish!');
+  if (counter === 2) return (message = 'Publish!');
+  if (counter > 2) return (message = 'I smell a series!');
+
+  /*
   if (counter === 0) return (message = 'Fail!');
   if (counter > 2) return (message = 'I smell a series!');
   if (counter > 0) return (message = 'Publish!');
+  */
 
-  return message;
+ return message; 
 };
 
 
