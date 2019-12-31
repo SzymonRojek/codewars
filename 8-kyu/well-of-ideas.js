@@ -99,4 +99,28 @@ const well = arr => {
 
 
 
-// 4 more 
+//  5
+
+const well = x => {
+  let counter = 0;
+  let message = '';
+
+  for (let i = 0; i < x.length; ++i) {
+          if (x[i] === 'good') {
+                  counter++;
+          }
+  }
+  if (counter === 0) {
+          message = 'Fail!';
+  } else if (counter === 1) {
+          message = 'Publish!';
+  } else if (counter === 2) {
+          message = 'Publish!';
+  } else if (counter > 2) {
+          message = 'I smell a series!';
+  }
+  return message;
+};
+
+
+
