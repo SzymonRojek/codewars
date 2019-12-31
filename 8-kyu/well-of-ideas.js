@@ -164,3 +164,21 @@ const well = x => {
                         return 'I smell a series!';
         }
 };
+
+
+
+//  9
+
+const well = x => {
+        const counter = x.filter(el => el === 'good').length;
+        switch (true) {
+                case counter === 0:
+                        return 'Fail!';
+
+                case counter < 3:
+                        return 'Publish!';
+
+                default:
+                        return 'I smell a series!';
+        }
+};
