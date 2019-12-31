@@ -62,3 +62,23 @@ const well = arr => {
   }
   return message;
 };
+
+console.log(well(['bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+
+
+
+//  3
+
+const well = arr => {
+  const goodIdeasCount = arr.reduce((total, current) => (current === 'good' ? (total += 1) : total), 0);
+
+  if (goodIdeasCount > 2) return 'I smell a series!';
+  if (goodIdeasCount > 0) return 'Publish!';
+  return 'Fail!';
+};
+
+console.log(well(['bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
