@@ -1,7 +1,10 @@
 /*  Description:
 For every good kata idea there seem to be quite a few bad ones!
 
-In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.  */
+In this kata you need to check the provided array (x) for good
+ideas 'good' and bad ideas 'bad'. If there are one or two good
+ideas, return 'Publish!', if there are more than 2 return 
+'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.  */
 
 
 
@@ -34,3 +37,28 @@ const well = x => {
 console.log(well(['bad', 'bad', 'bad']));
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+
+
+
+//  2
+
+const well = arr => {
+  let counter = 0;
+  let message = '';
+  arr.forEach(el => {
+          if (el === 'good') {
+                  counter++;
+          }
+  });
+
+  if (counter === 0) {
+          message = 'Fail!';
+  } else if (counter === 1) {
+          message = 'Publish!';
+  } else if (counter === 2) {
+          message = 'Publish!';
+  } else if (counter > 2) {
+          message = 'I smell a series!';
+  }
+  return message;
+};
