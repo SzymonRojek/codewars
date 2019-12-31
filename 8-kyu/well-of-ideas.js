@@ -63,13 +63,29 @@ const well = arr => {
   return message;
 };
 
-console.log(well(['bad', 'bad', 'bad']));
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+
+
+// 3 more readable than solution 3
+
+const well = arr => {
+  let counter = 0;
+  let message = '';
+  arr.forEach(el => {
+          if (el === 'good') {
+                  counter++;
+          }
+  });
+
+  if (counter === 0) return (message = 'Fail!');
+  if (counter > 2) return (message = 'I smell a series!');
+  if (counter > 0) return (message = 'Publish!');
+
+  return message;
+};
 
 
 
-//  3
+//  4
 
 const well = arr => {
   const goodIdeasCount = arr.reduce((total, current) => (current === 'good' ? (total += 1) : total), 0);
@@ -79,6 +95,6 @@ const well = arr => {
   return 'Fail!';
 };
 
-console.log(well(['bad', 'bad', 'bad']));
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+
+
+// 4 more 
