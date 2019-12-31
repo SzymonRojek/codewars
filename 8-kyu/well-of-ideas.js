@@ -124,3 +124,20 @@ const well = x => {
 
 
 
+// 6
+
+const well = x => {
+        let count = 0;
+        x.filter(el => {
+                if (el === 'good') {
+                        count++;
+                }
+        });
+
+        return count > 2 ? 'I smell a series!' : count > 0 ? 'Publish!' : 'Fail!';
+};
+
+console.log(well(['bad', 'bad', 'bad'])); // fail
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad'])); // publish if one or two
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+
