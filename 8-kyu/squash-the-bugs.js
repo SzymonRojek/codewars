@@ -49,3 +49,8 @@ const findLongest = str => {
   return longest;
 };
 
+
+
+//  4
+
+const findLongest = str => str.split(' ').reduce((max, word) => (max > word.length ? max : word.length), 0);
