@@ -26,3 +26,10 @@ console.log(findLongest('Take me to tinseltown with you')); // 10
 console.log(findLongest('Sausage chops')); // 7
 console.log(findLongest('Wind your body and wiggle your belly')); // 6
 console.log(findLongest('Lets all go on holiday')); // 7
+
+
+
+//  2
+
+const findLongest = s => Math.max(...s.split(' ').map(x => x.length));
+
