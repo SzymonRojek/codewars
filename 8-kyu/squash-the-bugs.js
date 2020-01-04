@@ -79,3 +79,9 @@ const findLongest = str => {
         const s = str.split(' ');
         return Math.max(...s.map(num => num.length));
 };
+
+
+
+//  8
+
+const findLongest = str => str.split` `.sort((a, b) => b.length - a.length)[0].length;
