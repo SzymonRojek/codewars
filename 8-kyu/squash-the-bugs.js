@@ -64,3 +64,9 @@ const findLongest = s =>
                 this,
                 s.split(' ').map(a => a.length)
         );
+
+
+
+//  6
+
+const findLongest = s => Math.max(...s.split` `.map(v => v.length));
