@@ -70,3 +70,12 @@ const findLongest = s =>
 //  6
 
 const findLongest = s => Math.max(...s.split` `.map(v => v.length));
+
+
+
+//  7
+
+const findLongest = str => {
+        const s = str.split(' ');
+        return Math.max(...s.map(num => num.length));
+};
