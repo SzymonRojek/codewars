@@ -35,3 +35,13 @@ const makeString = s => {
   });
   return newArr.join('');
 };
+
+
+
+//  3
+
+const makeString = s =>
+        s
+                .split(' ')
+                .map(el => el.charAt(0))
+                .join('');
