@@ -42,3 +42,18 @@ const alphabetOrder = str => {
 
         return sortedString.join('');
 };
+
+
+
+//  4
+
+const alphabetOrder = str => {
+        const arr = [];
+
+        for (let i = 0; i < str.length; i++) {
+                arr.push(str[i]);
+        }
+        const b = arr.sort().join('');
+
+        return b;
+};
