@@ -12,12 +12,25 @@ Example:
 //  1
 
 const digitize = n => {
-  
+
   n = `${n}`.split('');
 
   return n.map(Number).reverse();
 };
 
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
+
+
+//  2
+
+const digitize = n =>
+        String(n)
+                .split('')
+                .map(Number)
+                .reverse();
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]       
+
 
 
