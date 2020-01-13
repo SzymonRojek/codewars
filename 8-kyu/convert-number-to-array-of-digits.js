@@ -45,3 +45,10 @@ function digitize(n) {
 
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 
+
+
+//  4
+
+const digitize = n => Array.from(String(n), Number).reverse();
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
