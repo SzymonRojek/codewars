@@ -34,3 +34,14 @@ console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 
 
 
+//  3
+
+function digitize(n) {
+  return (n + '') // `${n}`
+          .split('')
+          .map(Number)
+          .reverse();
+}
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
