@@ -104,3 +104,17 @@ function digitize(n) {
           .map(n => +n);
 }
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
+
+
+//  9
+
+const digitize = n => {
+  n = n
+          .toString()
+          .split('')
+          .reverse();
+  return n.map(el => Number(el));
+};
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
