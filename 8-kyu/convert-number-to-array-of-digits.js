@@ -52,3 +52,16 @@ console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 const digitize = n => Array.from(String(n), Number).reverse();
 
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
+
+
+//  5
+
+function digitize(n) {
+  return n
+          .toString()
+          .split('')
+          .reverse()
+          .map(i => parseInt(i));
+}
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
