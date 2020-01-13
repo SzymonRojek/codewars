@@ -65,3 +65,23 @@ function digitize(n) {
           .map(i => parseInt(i));
 }
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
+
+
+//  6
+
+function digitize(n) {
+  
+  const numArr = [];
+
+  while (n > 0) {
+          numArr.push(n % 10);
+
+          n = Math.floor(n / 10);
+  }
+
+  return numArr;
+}
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
