@@ -92,3 +92,15 @@ console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 const digitize = n => [...String(n)].map(Number).reverse();
 
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
+
+
+
+//  8
+
+function digitize(n) {
+  return `${n}`
+          .split('')
+          .reverse()
+          .map(n => +n);
+}
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
