@@ -71,7 +71,7 @@ console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 //  6
 
 function digitize(n) {
-  
+
   const numArr = [];
 
   while (n > 0) {
@@ -85,3 +85,10 @@ function digitize(n) {
 
 console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 
+
+
+//  7
+
+const digitize = n => [...String(n)].map(Number).reverse();
+
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
