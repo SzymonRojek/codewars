@@ -56,3 +56,14 @@ console.log(move(0, 4)); // 8
 console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
 
+
+
+//  5
+
+const move = (position, roll) => eval(roll * 2 + position);
+
+console.log(move(0, 4)); // 8
+console.log(move(3, 6)); // 15
+console.log(move(2, 5)); // 12
+
+
