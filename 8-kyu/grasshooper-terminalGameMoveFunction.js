@@ -12,3 +12,14 @@ and the roll (1-6) and return the new position.
 
 Example:
 move(3, 6) should equal 15  */
+
+
+
+//  1
+
+const move = (position, roll) => position + roll * 2;
+
+console.log(move(0, 4)); // 8
+console.log(move(3, 6)); // 15
+console.log(move(2, 5)); // 12
+
