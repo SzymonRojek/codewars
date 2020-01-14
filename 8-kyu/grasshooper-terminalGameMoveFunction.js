@@ -14,7 +14,7 @@ Example:
 move(3, 6) should equal 15  */
 
 
-
+console.log(move(3, 6)); // 15
 //  1
 
 const move = (position, roll) => position + roll * 2;
@@ -41,6 +41,8 @@ const move = (position, roll) => {
         if (roll > 0 && roll <= roll) {
                 return position + roll * 2;
         }
+
+        // or if(roll > 0 && roll <= 6) {return position + roll * 2}
 };
 
 console.log(move(0, 4)); // 8
