@@ -80,3 +80,33 @@ const move = (position, roll) => {
 console.log(move(0, 4)); // 8
 console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
+
+
+
+//  7
+
+const move = (position, roll) => {
+  if (roll == 1) {
+          return position + 2;
+  }
+  if (roll == 2) {
+          return position + 4;
+  }
+  if (roll == 3) {
+          return position + 6;
+  }
+  if (roll == 4) {
+          return position + 8;
+  }
+  if (roll == 5) {
+          return position + 10;
+  }
+  if (roll == 6) {
+          return position + 12;
+  }
+  return position;
+};
+
+console.log(move(0, 4)); // 8
+console.log(move(3, 6)); // 15
+console.log(move(2, 5)); // 12
