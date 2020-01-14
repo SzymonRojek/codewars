@@ -24,6 +24,7 @@ console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
 
 
+
 //  2
 
 const move = (position, roll) => position + roll + roll;
@@ -33,13 +34,25 @@ console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
 
 
+
 //  3
 
 const move = (position, roll) => {
-  if (roll > 0 && roll <= roll) {
-          return position + roll * 2;
-  }
+        if (roll > 0 && roll <= roll) {
+                return position + roll * 2;
+        }
 };
+
 console.log(move(0, 4)); // 8
 console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
+
+
+
+//  4
+
+const move = (position, roll) => Math.floor(position + roll * 2);
+console.log(move(0, 4)); // 8
+console.log(move(3, 6)); // 15
+console.log(move(2, 5)); // 12
+
