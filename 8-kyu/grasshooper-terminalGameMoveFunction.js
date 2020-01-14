@@ -67,3 +67,14 @@ console.log(move(3, 6)); // 15
 console.log(move(2, 5)); // 12
 
 
+
+//  6
+
+const move = (position, roll) => {
+  const multiply = roll * 2;
+  const add = position + multiply;
+  return add;
+};
+console.log(move(0, 4)); // 8
+console.log(move(3, 6)); // 15
+console.log(move(2, 5)); // 12
