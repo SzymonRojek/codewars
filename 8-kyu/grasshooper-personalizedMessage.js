@@ -44,3 +44,12 @@ const greet = (name, owner) => `Hello ${name == owner ? 'boss' : 'guest'}`;
 
 console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
 console.log(greet('Greg', 'Daniel')); // 'Hello guest'
+
+
+
+//  4
+
+const greet = (name, owner) => `Hello ${name == owner ? 'boss' : 'guest'}`;
+
+console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
+console.log(greet('Greg', 'Daniel')); // 'Hello guest'
