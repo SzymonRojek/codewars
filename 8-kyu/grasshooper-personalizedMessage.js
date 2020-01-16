@@ -53,3 +53,20 @@ const greet = (name, owner) => `Hello ${name == owner ? 'boss' : 'guest'}`;
 
 console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
 console.log(greet('Greg', 'Daniel')); // 'Hello guest'
+
+
+
+//  5
+
+const greet = (name, owner) => {
+  let result = '';
+  if (name === owner) {
+          result = 'Hello boss';
+  } else {
+          result = 'Hello guest';
+  }
+  return result;
+};
+
+console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
+console.log(greet('Greg', 'Daniel')); // 'Hello guest'
