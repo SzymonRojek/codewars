@@ -12,3 +12,17 @@ Use conditionals to return the proper message:
 case	             return
 name equals owner	 'Hello boss'
 otherwise	         'Hello guest'    */
+
+
+
+//  1
+
+const greet = (name, owner) => {
+  if (name == owner) {
+          return 'Hello boss';
+  }
+  return 'Hello guest';
+};
+
+console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
+console.log(greet('Greg', 'Daniel')); // 'Hello guest'
