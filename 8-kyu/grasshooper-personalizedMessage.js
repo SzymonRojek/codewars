@@ -26,3 +26,12 @@ const greet = (name, owner) => {
 
 console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
 console.log(greet('Greg', 'Daniel')); // 'Hello guest'
+
+
+
+//  2
+
+const greet = (name, owner) => (name === owner ? 'Hello boss' : 'Hello quest');
+
+console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
+console.log(greet('Greg', 'Daniel')); // 'Hello guest'
