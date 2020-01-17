@@ -1,3 +1,5 @@
+
+
 /*  Description:
 Code as fast as you can! You need to double the integer and return it.  */
 
@@ -14,5 +16,14 @@ console.log(doubleInteger(2)); // 4
 
 function doubleInteger(i) {
   return i + i;
+}
+console.log(doubleInteger(2)); // 4
+
+
+
+//  3
+
+function doubleInteger(i) {
+  return parseInt(i) * 2;
 }
 console.log(doubleInteger(2)); // 4
