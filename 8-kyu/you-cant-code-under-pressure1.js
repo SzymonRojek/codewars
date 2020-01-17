@@ -51,3 +51,15 @@ const doubleInteger = i => Number.parseInt(i) * 2;
 console.log(doubleInteger(2)); // 4
 
 
+
+//  6
+
+const doubleInteger = i => {
+  Number.isInteger(i);
+  return i * 2;
+};
+
+console.log(doubleInteger(2)); // 4
+
+
+
