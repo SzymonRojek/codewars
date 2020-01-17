@@ -78,11 +78,7 @@ console.log(greet('Greg', 'Daniel')); // 'Hello guest'
 const greet = (name, owner) => {
   const n = name.localeCompare(owner);
 
-  if (n === 0) {
-          return 'Hello boss';
-  }
-  return 'Hello guest';
-};
+
 
 console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
 console.log(greet('Greg', 'Daniel')); // 'Hello guest'
