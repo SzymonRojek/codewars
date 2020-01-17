@@ -27,3 +27,14 @@ function doubleInteger(i) {
   return parseInt(i) * 2;
 }
 console.log(doubleInteger(2)); // 4
+
+
+
+//  4
+
+function doubleInteger(i) {
+  if (Math.round(i) === i) {
+          return i * 2;
+  }
+}
+console.log(doubleInteger(2)); // 4
