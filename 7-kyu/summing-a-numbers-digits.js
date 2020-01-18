@@ -9,3 +9,20 @@ For example:
   sumDigits(10);  // Returns 1
   sumDigits(99);  // Returns 18
   sumDigits(-32); // Returns 5    */
+
+
+
+  //  1
+
+  const sumDigits = number => {
+    const arr = number
+            .toString()
+            .split('-')
+            .join('');
+    const arr1 = arr.toString().split('');
+    return arr1.map(Number).reduce((a, b) => a + b, 0);
+};
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5
