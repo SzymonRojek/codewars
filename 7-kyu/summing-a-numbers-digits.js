@@ -96,4 +96,17 @@ const sumDigits = number =>
 
 console.log(sumDigits(10)); // 1
 console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5\
+
+
+
+//  6
+
+const sumDigits = n => [...`${Math.abs(n)}`].reduce((s, v) => s + +v, 0);
+
+// const sumDigits = n => [...Math.abs(n)+''].reduce((s,v)=>s+(+v),0)
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
 console.log(sumDigits(-32)); // 5
+
