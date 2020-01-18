@@ -59,3 +59,27 @@ function sumDigits(number) {
 console.log(sumDigits(10)); // 1
 console.log(sumDigits(99)); // 18
 console.log(sumDigits(-32)); // 5
+
+
+
+//  4
+
+function sumDigits(number) {
+  const str_num = `${number}`;
+
+  let result = 0;
+  str_num.split('').forEach(function(el) {
+          const digit = parseInt(el);
+          if (isNaN(digit)) {
+                  return;
+          }
+
+          result += digit;
+  });
+
+  return result;
+}
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5
