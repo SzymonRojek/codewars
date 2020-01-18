@@ -110,3 +110,18 @@ console.log(sumDigits(10)); // 1
 console.log(sumDigits(99)); // 18
 console.log(sumDigits(-32)); // 5
 
+
+
+//  7
+
+function sumDigits(q) {
+  let a = 0;
+  [].map.call(`${Math.abs(q)}`, e => (a += +e));
+  return a;
+}
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5
+
+
