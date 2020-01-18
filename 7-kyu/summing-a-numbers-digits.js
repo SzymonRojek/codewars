@@ -83,3 +83,17 @@ function sumDigits(number) {
 console.log(sumDigits(10)); // 1
 console.log(sumDigits(99)); // 18
 console.log(sumDigits(-32)); // 5
+
+
+
+//  5
+
+const sumDigits = number =>
+        number
+                .toString()
+                .split('')
+                .reduce((sum, n) => (n === '-' ? sum : sum + parseInt(n)), 0);
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5
