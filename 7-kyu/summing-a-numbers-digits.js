@@ -40,3 +40,22 @@ const sumDigits = number =>
 console.log(sumDigits(10)); // 1
 console.log(sumDigits(99)); // 18
 console.log(sumDigits(-32)); // 5
+
+
+
+//  3
+
+function sumDigits(number) {
+  const i = 0;
+  let sum = 0;
+  number = Math.abs(number);
+  while (number != 0) {
+          sum += number % 10;
+          number = Math.floor(number / 10);
+  }
+  return sum;
+}
+
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(-32)); // 5
