@@ -28,5 +28,15 @@ const greet = function() {
           .join('')
           .toLowerCase();
 };
+
 console.log(greet());
 
+
+
+//  3
+
+const greet = function() {
+  return [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 33].map(e => String.fromCharCode(e)).join('');
+};
+
+console.log(greet());
