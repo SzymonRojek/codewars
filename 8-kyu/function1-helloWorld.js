@@ -40,3 +40,18 @@ const greet = function() {
 };
 
 console.log(greet());
+
+
+
+//  4
+
+const greet = function() {
+  const ary = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'];
+  let str = '';
+  for (let i = 0; i < ary.length; i++) {
+          str += ary[i];
+  }
+  return str;
+};
+
+console.log(greet());
