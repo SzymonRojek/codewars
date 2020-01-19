@@ -10,11 +10,13 @@ What is a "hello world" solution you would want to show your friends?   */
 
 
 
+
 //  1
 
 const greet = x => 'hello world!';
 
 console.log(greet());
+
 
 
 //  2
@@ -53,5 +55,13 @@ const greet = function() {
   }
   return str;
 };
+
+console.log(greet());
+
+
+
+//  5
+
+const greet = String.prototype.toString.bind('hello world!');
 
 console.log(greet());
