@@ -17,5 +17,16 @@ const greet = x => 'hello world!';
 console.log(greet());
 
 
+//  2
 
+const greet = function() {
+  const teerg = '!DLROW OLLEH';
+
+  return teerg
+          .split('')
+          .reverse()
+          .join('')
+          .toLowerCase();
+};
+console.log(greet());
 
