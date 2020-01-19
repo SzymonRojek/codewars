@@ -65,3 +65,17 @@ console.log(greet());
 const greet = String.prototype.toString.bind('hello world!');
 
 console.log(greet());
+
+
+
+//  6
+
+function greet() {
+  const hello = ['h', 'e', 'l', 'l', 'o', ' '];
+  const world = ['w', 'o', 'r', 'l', 'd', '!'];
+  const all = hello.concat(world);
+  return all.join('');
+}
+
+console.log(greet());
+
