@@ -96,3 +96,13 @@ const flattenAndSort = array => array.reduce((acc, curr) => acc.concat(curr), []
 //  9
 
 const flattenAndSort = a => Array.prototype.concat(...a).sort((x, y) => x - y);
+
+
+
+//  10
+
+const make = arr => arr.reduce((newArr, elem) => newArr.concat(elem), []);
+
+const sorti = arr => arr.sort((a, b) => a - b);
+
+const flattenAndSort = array => sorti(make(array));
