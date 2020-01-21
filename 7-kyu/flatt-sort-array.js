@@ -77,3 +77,10 @@ const flattenAndSort = array => {
   array.map(items => FatherArray.push(...items));
   return FatherArray.sort((a, b) => a - b);
 };
+
+
+
+//  7
+
+const flattenAndSort = arr =>
+        !Array.isArray(arr) ? arr : arr.reduce((init, el) => init.concat(flattenAndSort(el)), []).sort((a, b) => a - b);
