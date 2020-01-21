@@ -55,3 +55,15 @@ function flattenAndSort(array) {
 
   return newArray.sort((a, b) => a - b);
 }
+
+
+
+//  5
+
+function flattenAndSort(array) {
+  const nov = [];
+  array.forEach(item => {
+          nov.push(...item.sort());
+  });
+  return nov.sort((a, b) => a - b);
+}
