@@ -84,3 +84,9 @@ const flattenAndSort = array => {
 
 const flattenAndSort = arr =>
         !Array.isArray(arr) ? arr : arr.reduce((init, el) => init.concat(flattenAndSort(el)), []).sort((a, b) => a - b);
+
+
+
+//  8
+
+const flattenAndSort = array => array.reduce((acc, curr) => acc.concat(curr), []).sort((a, b) => a - b);
