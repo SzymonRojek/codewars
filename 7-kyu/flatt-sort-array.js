@@ -67,3 +67,13 @@ function flattenAndSort(array) {
   });
   return nov.sort((a, b) => a - b);
 }
+
+
+
+//  6
+
+const flattenAndSort = array => {
+  const FatherArray = [];
+  array.map(items => FatherArray.push(...items));
+  return FatherArray.sort((a, b) => a - b);
+};
