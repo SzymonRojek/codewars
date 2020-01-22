@@ -31,3 +31,14 @@ const arrayPlusArray = (arr1, arr2) => {
   const arr = [...arr1, ...arr2];
   return arr.reduce((a, b) => a + b);
 };
+
+
+
+//  4
+
+const arrayPlusArray = (arr1, arr2) => {
+  const join = arr1.concat(arr2);
+
+  const result = (a, b) => a + b;
+  return join.reduce(result);
+};
