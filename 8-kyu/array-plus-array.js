@@ -53,3 +53,16 @@ const arrayPlusArray = (arr1, arr2) => {
   for (var i = 0; i < arr2.length; i++) suma += arr2[i];
   return suma;
 };
+
+
+//  6
+
+const arrayPlusArray = (arr1, arr2) => {
+  let sumDigits = 0;
+  const addArrays = arr1.concat(arr2);
+
+  for (let i = 0; i < addArrays.length; i++) {
+          sumDigits += addArrays[i];
+  }
+  return sumDigits;
+};
