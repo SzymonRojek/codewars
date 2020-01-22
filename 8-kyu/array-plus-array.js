@@ -66,3 +66,18 @@ const arrayPlusArray = (arr1, arr2) => {
   }
   return sumDigits;
 };
+
+
+
+//  7
+
+function arrayPlusArray() {
+  let res = 0;
+
+  for (let i = 0; i < arguments.length; i += 1) {
+          for (let j = 0; j < arguments[i].length; j += 1) {
+                  res += arguments[i][j];
+          }
+  }
+  return res;
+}
