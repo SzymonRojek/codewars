@@ -93,3 +93,9 @@ function arrayPlusArray(arr1, arr2) {
   }
   return sum;
 }
+
+
+
+//  9
+
+const arrayPlusArray = (arr1, arr2) => [...arr1, ...arr2].reduce((a, b) => a + b);
