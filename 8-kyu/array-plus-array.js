@@ -42,3 +42,14 @@ const arrayPlusArray = (arr1, arr2) => {
   const result = (a, b) => a + b;
   return join.reduce(result);
 };
+
+
+
+//  5
+
+const arrayPlusArray = (arr1, arr2) => {
+  let suma = 0;
+  for (var i = 0; i < arr1.length; i++) suma += arr1[i];
+  for (var i = 0; i < arr2.length; i++) suma += arr2[i];
+  return suma;
+};
