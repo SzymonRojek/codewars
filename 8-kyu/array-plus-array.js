@@ -22,3 +22,12 @@ console.log(arrayPlusArray([100, 200, 300], [400, 500, 600])); // 2100
 //  2
 
 const arrayPlusArray = (...arrays) => [].concat(...arrays).reduce((a, b) => a + b, 0);
+
+
+
+//  3
+
+const arrayPlusArray = (arr1, arr2) => {
+  const arr = [...arr1, ...arr2];
+  return arr.reduce((a, b) => a + b);
+};
