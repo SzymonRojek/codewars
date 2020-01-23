@@ -38,3 +38,10 @@ const reverseSeq = n =>
         Array(n)
                 .fill(0)
                 .map((e, i) => n - i);
+
+
+        
+
+//  4
+
+const reverseSeq = length => Array.from({ length }, () => length--);
