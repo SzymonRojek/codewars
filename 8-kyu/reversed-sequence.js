@@ -65,3 +65,9 @@ const reverseSeq = n => [...Array(n)].map((_, i) => n - i);
 //  6
 
 const reverseSeq = n => Array.from({ length: n }, (a, i) => n - i);
+
+
+
+//  7
+
+const reverseSeq = n => [...Array(n)].map(_ => n--);
