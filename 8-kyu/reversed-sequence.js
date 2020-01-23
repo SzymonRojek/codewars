@@ -53,3 +53,9 @@ const reverseSeq = n => {
   if (n < 2) return [n];
   return [n].concat(reverseSeq(n - 1));
 };
+
+
+
+//  5
+
+const reverseSeq = n => [...Array(n)].map((_, i) => n - i);
