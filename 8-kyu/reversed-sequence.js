@@ -39,9 +39,17 @@ const reverseSeq = n =>
                 .fill(0)
                 .map((e, i) => n - i);
 
-
         
 
 //  4
 
 const reverseSeq = length => Array.from({ length }, () => length--);
+
+
+
+//  5
+
+const reverseSeq = n => {
+  if (n < 2) return [n];
+  return [n].concat(reverseSeq(n - 1));
+};
