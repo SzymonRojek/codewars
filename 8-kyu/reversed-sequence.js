@@ -56,24 +56,37 @@ const reverseSeq = n => {
 
 
 
-//  5
+//  6
 
 const reverseSeq = n => [...Array(n)].map((_, i) => n - i);
 
 
 
-//  6
+//  7
 
 const reverseSeq = n => Array.from({ length: n }, (a, i) => n - i);
 
 
 
-//  7
+//  8
 
 const reverseSeq = n => [...Array(n)].map(_ => n--); // [...Array(n)].map(()=>n--)
 
 
 
-//  8
+//  9
 
 const reverseSeq = n => (n === 1 ? [1] : [n].concat(reverseSeq(n - 1)));
+
+
+
+// 10
+
+reverseSeq = n => {
+  const arr = [];
+  while (n > 0) {
+          arr.push(n);
+          --n;
+  }
+  return arr;
+};
