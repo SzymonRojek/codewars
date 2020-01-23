@@ -16,3 +16,16 @@ const reverseSeq = n =>
                 .reverse();
 
 console.log(reverseSeq(5)); // [5, 4, 3, 2, 1]
+
+
+
+//  2
+
+const reverseSeq = n => {
+  const arr = [];
+
+  for (let i = n; i > 0; i--) {
+          arr.push(i);
+  }
+  return arr;
+};
