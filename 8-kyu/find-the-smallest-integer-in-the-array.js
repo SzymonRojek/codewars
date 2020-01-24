@@ -47,3 +47,9 @@ const findSmallestInt = args => args.sort((a, b) => a - b)[0];
 //  5
 
 const findSmallestInt = args => args.reduce((prev, curr) => (prev < curr ? prev : curr));
+
+
+
+//  5
+
+const findSmallestInt = args => Math.min.apply(this, args);
