@@ -29,3 +29,9 @@ console.log(findSmallestInt([1, 56, 232, 12, 8])); // 1
 //  2
 
 const findSmallestInt = args => Math.min(...args);
+
+
+
+//  3
+
+const findSmallestInt = args => Math.min.apply(null, args);
