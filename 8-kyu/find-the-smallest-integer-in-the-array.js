@@ -50,6 +50,18 @@ const findSmallestInt = args => args.reduce((prev, curr) => (prev < curr ? prev 
 
 
 
-//  5
+//  6
 
 const findSmallestInt = args => Math.min.apply(this, args);
+
+
+
+//  7
+
+const findSmallestInt = args => {
+  let min = Number.POSITIVE_INFINITY;
+  args.forEach((value, index) => {
+          if (value < min) min = value;
+  });
+  return min;
+};
