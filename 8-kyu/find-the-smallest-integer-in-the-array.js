@@ -65,3 +65,19 @@ const findSmallestInt = args => {
   });
   return min;
 };
+
+
+
+//  8
+
+const findSmallestInt = args => {
+  let lowest;
+  for (const i in args) {
+          if (i == 0) {
+                  lowest = args[i];
+          } else if (lowest >= args[i]) {
+                  lowest = args[i];
+          }
+  }
+  return lowest;
+};
