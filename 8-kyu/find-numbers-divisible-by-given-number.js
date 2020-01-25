@@ -53,3 +53,16 @@ const divisibleBy = (numbers, divisor) => {
   return arr;
 };
 
+
+
+//  5
+
+const divisibleBy = (numbers, divisor) => {
+  const arr = [];
+  for (const i in numbers) {
+          if (numbers[i] % divisor == 0) {
+                  arr.push(numbers[i]);
+          }
+  }
+  return arr;
+};
