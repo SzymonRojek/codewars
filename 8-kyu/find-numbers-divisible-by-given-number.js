@@ -34,3 +34,6 @@ console.log(divisibleBy([1, 3, 5], 2)); // []
 //  2
 
 const divisibleBy = (numbers, divisor) => numbers.filter(el => el % divisor === 0);
+
+
+
