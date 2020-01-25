@@ -41,3 +41,15 @@ const divisibleBy = (numbers, divisor) => numbers.filter(el => el % divisor === 
 
 const divisibleBy = (numbers, divisor) => numbers.filter(el => !(el % divisor));
 
+
+
+//  4
+
+const divisibleBy = (numbers, divisor) => {
+  const arr = [];
+  numbers.map(x => {
+          if (x % divisor === 0) arr.push(x);
+  });
+  return arr;
+};
+
