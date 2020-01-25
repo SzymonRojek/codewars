@@ -37,3 +37,7 @@ const divisibleBy = (numbers, divisor) => numbers.filter(el => el % divisor === 
 
 
 
+//  3
+
+const divisibleBy = (numbers, divisor) => numbers.filter(el => !(el % divisor));
+
