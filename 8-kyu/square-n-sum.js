@@ -50,3 +50,20 @@ const squareSum = numbers => numbers.map(square).reduce(sum);
 
 console.log(squareSum([1, 2])); // 5
 console.log(squareSum([0, 3, 4, 5])); // 50
+
+
+
+//  4
+
+const squareSum = numbers => {
+  let sum = 0;
+
+  numbers.forEach(n => {
+          sum += n * n;
+  });
+
+  return sum;
+};
+
+console.log(squareSum([1, 2])); // 5
+console.log(squareSum([0, 3, 4, 5])); // 50
