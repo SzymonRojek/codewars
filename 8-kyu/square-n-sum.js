@@ -67,3 +67,17 @@ const squareSum = numbers => {
 
 console.log(squareSum([1, 2])); // 5
 console.log(squareSum([0, 3, 4, 5])); // 50
+
+
+
+//  5
+
+const squareSum = numbers => {
+  let sum = 0;
+
+  numbers.forEach(n => {
+          sum += Math.pow(n, 2);
+  });
+
+  return sum;
+};
