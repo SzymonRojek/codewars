@@ -37,3 +37,16 @@ const squareSum = numbers => numbers.reduce((sum, n) => n * n + sum, 0);
 
 console.log(squareSum([1, 2])); // 5
 console.log(squareSum([0, 3, 4, 5])); // 50
+
+
+
+//  3
+
+const square = number => number * number;
+
+const sum = (firstNumber, secondNumber) => firstNumber + secondNumber;
+
+const squareSum = numbers => numbers.map(square).reduce(sum);
+
+console.log(squareSum([1, 2])); // 5
+console.log(squareSum([0, 3, 4, 5])); // 50
