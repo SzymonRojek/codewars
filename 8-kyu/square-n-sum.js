@@ -28,3 +28,12 @@ const squareSum = numbers => {
 
 console.log(squareSum([1, 2])); // 5
 console.log(squareSum([0, 3, 4, 5])); // 50
+
+
+
+//  2
+
+const squareSum = numbers => numbers.reduce((sum, n) => n * n + sum, 0);
+
+console.log(squareSum([1, 2])); // 5
+console.log(squareSum([0, 3, 4, 5])); // 50
