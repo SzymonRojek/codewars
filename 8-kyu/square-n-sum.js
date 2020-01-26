@@ -35,6 +35,11 @@ console.log(squareSum([0, 3, 4, 5])); // 50
 
 const squareSum = numbers => numbers.reduce((sum, n) => n * n + sum, 0);
 
+// numbers.reduce((a, b) => a + b * b, 0);
+
+console.log(squareSum([1, 2])); // 5
+console.log(squareSum([0, 3, 4, 5])); // 50
+
 console.log(squareSum([1, 2])); // 5
 console.log(squareSum([0, 3, 4, 5])); // 50
 
