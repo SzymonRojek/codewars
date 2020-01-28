@@ -71,3 +71,21 @@ const getRealFloor = n => (n <= 0 ? n : n < 13 ? n - 1 : n - 2);
 //  6
 
 const getRealFloor = n => (n > 0 ? n - 1 - (n > 12) : n);
+
+
+
+//  7
+
+const getRealFloor = n => {
+  //   console.log(n);
+  switch (true) {
+          case n <= 0:
+                  return (n = n);
+                  break;
+          case n > 0 && n < 15:
+                  return (n -= 1);
+                  break;
+          default:
+                  return (n -= 2);
+  }
+};
