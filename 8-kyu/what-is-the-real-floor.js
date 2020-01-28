@@ -89,3 +89,20 @@ const getRealFloor = n => {
                   return (n -= 2);
   }
 };
+
+
+
+//  8
+
+const getRealFloor = n => {
+  if (n == 1 || n == 0) {
+          return 0;
+  }
+  if (n >= 2 && n <= 12) {
+          return n - 1;
+  }
+  if (n > 0) {
+          return n - 2;
+  }
+  return n;
+};
