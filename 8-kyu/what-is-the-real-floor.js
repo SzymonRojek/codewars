@@ -59,3 +59,9 @@ function getRealFloor(n) {
   if (n > 0) return n - 1;
   return n;
 }
+
+
+
+//  5
+
+const getRealFloor = n => (n <= 0 ? n : n < 13 ? n - 1 : n - 2);
