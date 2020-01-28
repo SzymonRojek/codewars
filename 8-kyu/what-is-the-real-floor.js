@@ -16,3 +16,23 @@ getRealFloor(15) == 13
 getRealFloor(-3) == -3
 
 */
+
+
+
+//  1
+
+const getRealFloor = n => {
+  if (n > 0 && n < 15) {
+          n -= 1;
+  } else if (n > 14) {
+          return n - 2;
+  } else if (n === 14) {
+          return n === 14;
+  }
+
+  return n;
+};
+
+console.log(getRealFloor(1)); // 0
+console.log(getRealFloor(5)); // 4
+console.log(getRealFloor(15)); // 13
