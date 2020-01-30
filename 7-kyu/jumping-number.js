@@ -51,3 +51,10 @@ console.log(jumpingNumber(98)); //  "Jumping!!"
 console.log(jumpingNumber(8987)); //  "Jumping!!"
 console.log(jumpingNumber(4343456)); //  "Jumping!!"
 console.log(jumpingNumber(98789876)); //  "Jumping!!"
+
+
+
+//  2
+
+const jumpingNumber = n => n.toString().split``.every((e, i, a) => i < 1 || Math.abs(e - a[i - 1]) === 1) ? 'Jumping!!' : 'Not!!';
+
