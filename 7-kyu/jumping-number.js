@@ -79,3 +79,15 @@ function jumpingNumber(n){
   }
   return 'Jumping!!'
 }
+
+
+
+//  5
+
+function jumpingNumber(n){
+  const isJumping = [...`${n}`]
+    .map((num, i, self) => i === 0 ? 1 : num - self[i-1])
+    .every(num => num === 1 || num === -1)
+    
+  return isJumping ? 'Jumping!!' : 'Not!!'
+}
