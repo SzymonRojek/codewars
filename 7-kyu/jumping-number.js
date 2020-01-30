@@ -65,3 +65,17 @@ const jumpingNumber = n => n.toString().split``.every((e, i, a) => i < 1 || Math
 function jumpingNumber(n){
   return [...n+''].every((x,i,a)=>!i||x==+a[i-1]+1||x==a[i-1]-1)?'Jumping!!':'Not!!'
 }
+
+
+
+//  4
+
+function jumpingNumber(n){
+  let arr = n.toString().split('')
+  for(i=0; i < arr.length-1; i++){
+    if(Math.abs(arr[i] - arr[i+1]) !== 1 ){
+      return 'Not!!'
+    }
+  }
+  return 'Jumping!!'
+}
