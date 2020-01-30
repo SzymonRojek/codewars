@@ -91,3 +91,20 @@ function jumpingNumber(n){
     
   return isJumping ? 'Jumping!!' : 'Not!!'
 }
+
+
+
+//  6
+
+function jumpingNumber(n){
+  var str = Number(n).toString();
+  
+  if(str.length === 1) return "Jumping!!";
+  if(isJumpingNumber(str, str.length - 1)) return "Jumping!!";
+  return "Not!!"; 
+}
+
+function isJumpingNumber(str, index){
+  if(index === 0) return str[0];
+  return Math.abs(str[index] - str[index - 1]) === 1 && isJumpingNumber(str, index - 1);
+  }
