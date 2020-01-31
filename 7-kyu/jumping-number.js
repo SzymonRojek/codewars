@@ -108,3 +108,20 @@ function isJumpingNumber(str, index){
   if(index === 0) return str[0];
   return Math.abs(str[index] - str[index - 1]) === 1 && isJumpingNumber(str, index - 1);
   }
+
+
+
+  //  7
+
+  const jumpingNumber = n => {
+    const arr = [...`${n}`];
+
+    for (i = 0; i < arr.length - 1; i++) {
+            const result = Math.abs(arr[i] - arr[i + 1]);
+
+            if (!(result === 1)) {
+                    return 'Not';
+            }
+    }
+    return 'Jumping';
+};
