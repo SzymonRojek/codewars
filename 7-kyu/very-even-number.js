@@ -19,3 +19,33 @@ input(5) => returns false
 
 Note: The numbers will always be positive!
 */
+
+
+
+//  1
+
+const isVeryEvenNumber = n => {
+  const changeToArray = [...`${n}`].map(Number);
+
+  const add1 = [eval(changeToArray.join('+'))];
+  console.log(add1); // [19]
+
+  const separate1 = [...`${add1}`].map(Number);
+  console.log(separate1); // [1, 9]
+
+  const add2 = [eval(separate1.join('+'))];
+  console.log(add2); // [10]
+
+  const separate2 = [...`${add2}`].map(Number);
+  console.log(separate2); // [1, 0]
+
+  const add3 = eval(separate2.join('+'));
+  console.log(add3); // 1
+
+  if (add3 % 2 === 0) {
+          return true;
+  }
+  return false;
+};
+
+console.log(isVeryEvenNumber(568)); // false
