@@ -49,3 +49,34 @@ const isVeryEvenNumber = n => {
 };
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+// Better solution than 1 
+
+const isVeryEvenNumber = n => {
+
+
+  const separate1 = [...String(n)];
+
+  const add1 = eval(separate1.join('+')); // [19]
+
+
+  const separate2 = [...String(add1)]; // [1, 9]
+
+  const add2 = eval(separate2.join('+')); // [10]
+
+
+  const separate3 = [...String(add2)]; // [1, 0]
+
+  const add3 = eval(separate3.join('+')); // 1
+
+
+  if (add3 % 2 === 0) {
+          return true;
+  }
+  return false;
+
+};
+
+console.log(isVeryEvenNumber(568)); // false
