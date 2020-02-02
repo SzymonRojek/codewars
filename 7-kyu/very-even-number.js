@@ -139,3 +139,22 @@ function isVeryEvenNumber(n) {
 }
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  6
+
+function isVeryEvenNumber(n) {
+  let rem = 0;
+  let sum = 0;
+  while (n > 0) {
+          rem = n % 10;
+          sum += rem;
+          n = parseInt(n / 10);
+  }
+  if (sum > 9) return isVeryEvenNumber(sum);
+
+  if (sum % 2 == 0) return true;
+  return false;
+}
+console.log(isVeryEvenNumber(568)); // false
