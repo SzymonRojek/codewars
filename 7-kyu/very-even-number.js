@@ -98,3 +98,11 @@ function isVeryEvenNumber(n) {
 }
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  3
+
+const isVeryEvenNumber = n => !n-- || (n % 9) % 2 === 1;
+
+console.log(isVeryEvenNumber(568)); // false
