@@ -157,4 +157,17 @@ function isVeryEvenNumber(n) {
   if (sum % 2 == 0) return true;
   return false;
 }
+
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  7
+
+function isVeryEvenNumber(n) {
+  return n > 9 ? isVeryEvenNumber(`${n}`.split('').reduce((a, b) => +a + +b)) : n % 2 === 0;
+}
+
+console.log(isVeryEvenNumber(568)); // false
+
+
