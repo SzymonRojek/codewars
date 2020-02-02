@@ -106,3 +106,21 @@ console.log(isVeryEvenNumber(568)); // false
 const isVeryEvenNumber = n => !n-- || (n % 9) % 2 === 1;
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  4
+
+function isVeryEvenNumber(n) {
+  if (n < 10 && n % 2 === 0) return true;
+  if (n > 9) {
+          return isVeryEvenNumber(
+                  String(n)
+                          .split('')
+                          .reduce((a, b) => +a + +b)
+          );
+  }
+  return false;
+}
+
+console.log(isVeryEvenNumber(568)); // false
