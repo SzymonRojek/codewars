@@ -80,3 +80,21 @@ const isVeryEvenNumber = n => {
 };
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  2
+
+function isVeryEvenNumber(n) {
+  while (n.toString().length > 1) {
+          const array = n.toString().split('');
+          n = array.reduce((a, b) => Number(a) + Number(b), 0);
+  }
+  if (!(n % 2 === 0)) {
+          return false;
+  }
+
+  return true;
+}
+
+console.log(isVeryEvenNumber(568)); // false
