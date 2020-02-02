@@ -124,3 +124,18 @@ function isVeryEvenNumber(n) {
 }
 
 console.log(isVeryEvenNumber(568)); // false
+
+
+
+//  5
+
+function isVeryEvenNumber(n) {
+  let array = [...String(n)];
+  array = [...String(n)];
+  while (array.length > 1) {
+          array = [...String(array.reduce((sum, digit) => sum + parseInt(digit, 0), 0))];
+  }
+  return array[0] % 2 === 0;
+}
+
+console.log(isVeryEvenNumber(568)); // false
