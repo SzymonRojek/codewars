@@ -171,3 +171,23 @@ function isVeryEvenNumber(n) {
 console.log(isVeryEvenNumber(568)); // false
 
 
+
+//  8
+
+function isVeryEvenNumber(n) {
+  if (n.toString().length === 1) {
+          return !(n % 2);
+  }
+  return isVeryEvenNumber(parseNumber(n));
+}
+
+function parseNumber(number) {
+  return number
+          .toString()
+          .split('')
+          .reduce((a, b) => Number(a) + Number(b), 0);
+}
+
+console.log(isVeryEvenNumber(568)); // false
+
+
