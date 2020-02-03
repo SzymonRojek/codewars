@@ -30,12 +30,19 @@ function removeDuplicateWords(s) {
   return result.join(' ');
 }
 
-console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
-
 
 
 //  2
 
 const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ');
 
-console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
+
+
+//  3
+
+const removeDuplicateWords = s => {
+  const set = new Set(s.split(' '));
+  return Array.from(set).join(' ');
+};
+
+
