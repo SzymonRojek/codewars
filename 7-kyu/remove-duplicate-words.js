@@ -57,3 +57,17 @@ function removeDuplicateWords(s) {
 }
 
 
+
+//  5
+
+const removeDuplicateWords = s => {
+  const arr = [];
+  s.split(' ').forEach(current => {
+          if (!arr.includes(current)) {
+                  arr.push(current);
+          }
+  });
+  return arr.join(' ');
+};
+
+console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
