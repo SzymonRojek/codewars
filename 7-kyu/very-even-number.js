@@ -205,3 +205,19 @@ function isVeryEvenNumber(n) {
       }
 
 
+
+//  10
+
+
+function isVeryEvenNumber(n) {
+        let sum = 0;
+        while (n) {
+                sum += n % 10;
+                n = Math.floor(n / 10);
+                if (n === 0 && sum > 9) {
+                        n = sum;
+                        sum = 0;
+                }
+        }
+        return sum % 2 === 0;
+}
