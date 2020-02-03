@@ -191,3 +191,17 @@ function parseNumber(number) {
 console.log(isVeryEvenNumber(568)); // false
 
 
+
+//  9
+
+function isVeryEvenNumber(n) {
+        let number = n.toString();
+        
+        while (number.length > 1) {
+           number = number.split('').reduce((a,b) => a + Number(b), 0).toString();
+        }
+        
+        return number % 2 === 0;
+      }
+
+
