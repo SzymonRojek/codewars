@@ -46,3 +46,14 @@ const removeDuplicateWords = s => {
 };
 
 
+
+//  4
+
+function removeDuplicateWords(s) {
+  return s
+          .split(' ')
+          .filter((n, i, s) => s.indexOf(n) === i)
+          .join(' ');
+}
+
+
