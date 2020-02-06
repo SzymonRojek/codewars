@@ -132,3 +132,18 @@ const menFromBoys = a =>
                 .sort((x, y) => x - y)
                 .concat(a.filter(e => e % 2).sort((x, y) => y - x))
                 .filter((e, i, a) => i === a.indexOf(e));
+
+
+
+// 6
+
+function menFromBoys(arr){
+        let men = [];
+        let boys = [];
+        
+        arr.forEach(a => a % 2 ? men.push(a) : boys.push(a));
+        men.sort((a,b) => b - a);
+        boys.sort((c,d) => c - d);
+        
+        return Array.from(new Set(boys.concat(men)));
+      }
