@@ -86,3 +86,38 @@ const menFromBoys = arr => {
   
   return [...evens, ...odds];
 };
+
+
+
+//  4
+
+function menFromBoys(arr) {
+  const even = [];
+  const odd = [];
+  const final = [];
+  for (let i = 0; i < arr.length; i++) {
+          if (arr[i] % 2 === 0) {
+                  even.push(arr[i]);
+          } else {
+                  odd.push(arr[i]);
+          }
+  }
+  even.sort(function(a, b) {
+          return a - b;
+  });
+  odd.sort(function(a, b) {
+          return b - a;
+  });
+
+  function removeDuplicates(arr) {
+          const unique_array = [];
+          for (let j = 0; j < arr.length; j++) {
+                  if (unique_array.indexOf(arr[j]) == -1) {
+                          unique_array.push(arr[j]);
+                  }
+          }
+          return unique_array;
+  }
+
+  return removeDuplicates(even).concat(removeDuplicates(odd));
+}
