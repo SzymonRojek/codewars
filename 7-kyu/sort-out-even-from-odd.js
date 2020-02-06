@@ -121,3 +121,14 @@ function menFromBoys(arr) {
 
   return removeDuplicates(even).concat(removeDuplicates(odd));
 }
+
+
+
+//  5
+
+const menFromBoys = a =>
+        a
+                .filter(e => !(e % 2))
+                .sort((x, y) => x - y)
+                .concat(a.filter(e => e % 2).sort((x, y) => y - x))
+                .filter((e, i, a) => i === a.indexOf(e));
