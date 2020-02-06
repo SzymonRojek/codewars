@@ -61,3 +61,16 @@ console.log(menFromBoys([2, -43, 95, -90, 37]));
 console.log(menFromBoys([82, -61, -87, -12, 21, 1]));
 console.log(menFromBoys([63, -57, 76, -85, 88, 2, -28]));
 console.log(menFromBoys([49, 818, -282, 900, 928, 281, -282, -1]));
+
+
+
+//  2
+
+function menFromBoys(arr) {
+  arr = Array.from(new Set(arr));
+
+  const odd = arr.filter(a => a % 2).sort((a, b) => b - a);
+  const even = arr.filter(a => a % 2 === 0).sort((a, b) => a - b);
+  
+  return even.concat(odd);
+}
