@@ -69,3 +69,9 @@ function litres(time) {
   }
   return Math.floor(time * litre);
 }
+
+
+
+//  6
+
+const litres = time => parseInt(time * 0.5);
