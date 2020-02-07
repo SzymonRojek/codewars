@@ -47,11 +47,25 @@ console.log(litres(0)); // 0, 'should return 0 litres'
 const litres = time => Math.floor(time * 0.5);
 
 
+
 //  3
 
 const litres = time => Math.floor(time / 2);
 
 
+
 //  4
 
 const litres = time => parseInt(time / 2);
+
+
+
+//  5
+
+function litres(time) {
+  const litre = 0.5;
+  if (time * litre < 1) {
+          return 0;
+  }
+  return Math.floor(time * litre);
+}
