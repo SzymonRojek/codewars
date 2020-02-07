@@ -39,3 +39,9 @@ console.log(litres(0.82)); // 0, 'should return 0 litres'
 console.log(litres(11.8)); // 5, 'should return 5 litres'
 console.log(litres(1787)); // 893, 'should return 893 litres'
 console.log(litres(0)); // 0, 'should return 0 litres'
+
+
+
+// 2
+
+const litres = time => Math.floor(time * 0.5);
