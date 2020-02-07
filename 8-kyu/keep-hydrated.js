@@ -50,3 +50,8 @@ const litres = time => Math.floor(time * 0.5);
 //  3
 
 const litres = time => Math.floor(time / 2);
+
+
+//  4
+
+const litres = time => parseInt(time / 2);
