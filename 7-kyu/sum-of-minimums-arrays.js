@@ -45,3 +45,17 @@ console.log(
           [9, 8, 6, 7],
   ])
 ); // 76
+
+
+//  2
+
+const sumOfMinimums = arr => {
+
+  let result = 0;
+  
+  for (let i = 0; i < arr.length; i++) {
+          result += Math.min(...arr[i]);
+  }
+
+  return result;
+};
