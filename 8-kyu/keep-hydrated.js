@@ -75,3 +75,12 @@ function litres(time) {
 //  6
 
 const litres = time => parseInt(time * 0.5);
+
+
+
+//  7
+
+const litres = time => {
+  const heDrinks = 0.5;
+  return Math.floor(time * heDrinks);
+};
