@@ -42,6 +42,11 @@ console.log(litres(0)); // 0, 'should return 0 litres'
 
 
 
-// 2
+//  2
 
 const litres = time => Math.floor(time * 0.5);
+
+
+//  3
+
+const litres = time => Math.floor(time / 2);
