@@ -37,3 +37,9 @@ const noOdds = values => {
 
   return getEven;
 };
+
+
+
+//  3
+
+const noOdds = values => values.filter(e => !(e % 2));
