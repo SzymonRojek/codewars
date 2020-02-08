@@ -95,3 +95,17 @@ const noOdds = values => {
   return even;
 };
 
+
+
+//  8
+
+function noOdds(values) {
+  const nonOdd = [];
+  for (i = 0; i < values.length; i++) {
+          if (values[i] / 2 == 0 || values[i] / 2 == 1) {
+                  nonOdd.push(values[i]);
+          }
+  }
+  return nonOdd;
+}
+
