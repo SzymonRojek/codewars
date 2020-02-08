@@ -16,7 +16,7 @@ function noOdds( values )
 const noOdds = values => {
 
   const even = [];
-  
+
   for (let i = 0; i < values.length; i++) {
           if (values[i] % 2 === 0) {
                   even.push(values[i]);
@@ -26,4 +26,14 @@ const noOdds = values => {
 };
 
 console.log(noOdds([0, 1])); // [0]
-console.log(noOdds([0, 1, 2, 3])); // [0,2]
+console.log(noOdds([0, 1, 2, 3])); // [0, 2]
+
+
+
+//  2
+
+const noOdds = values => {
+  const getEven = values.filter(e => e % 2 === 0);
+
+  return getEven;
+};
