@@ -84,3 +84,14 @@ const noOdds = values => {
 };
 
 
+
+//  7
+
+const noOdds = values => {
+  let even = [];
+  for (const i in values) {
+          if (values[i] % 2 === 0) even = even.concat(values[i]);
+  }
+  return even;
+};
+
