@@ -43,3 +43,17 @@ const noOdds = values => {
 //  3
 
 const noOdds = values => values.filter(e => !(e % 2));
+
+
+
+//  4
+
+function noOdds(values) {
+  
+  const arr = [];
+  
+  for (const num in values) {
+          if (num % 2 === 0) arr.push(+num);
+  }
+  return arr;
+}
