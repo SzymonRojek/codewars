@@ -109,3 +109,12 @@ function noOdds(values) {
   return nonOdd;
 }
 
+
+
+//  9
+
+const noOdds = values => {
+  const even = [];
+  values.forEach(value => (!(value % 2) ? even.push(value) : ''));
+  return even;
+};
