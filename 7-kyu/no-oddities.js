@@ -70,3 +70,17 @@ function noOdds(values) {
   
   return even;
 }
+
+
+
+//  6
+
+const noOdds = values => {
+  const evenArr = [];
+  for (const even of values) {
+          even % 2 === 0 ? evenArr.push(even) : null;
+  }
+  return evenArr;
+};
+
+
