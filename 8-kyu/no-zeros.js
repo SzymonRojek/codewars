@@ -13,3 +13,27 @@ Get rid of them. Only the ending ones.
 1050 -> 105
 -1050 -> -105
 */
+
+
+
+//  1
+
+function noBoringZeros(n) {
+
+  n = n.toString().split('');
+
+  for (i = n.length - 1; i >= 0; i--) {
+          if (n[i] == 0) {
+                  n.pop();
+          } else {
+                  break;
+          }
+  }
+  return +n.join('');
+}
+
+console.log(noBoringZeros(1450)); // 145
+console.log(noBoringZeros(960000)); // 96
+console.log(noBoringZeros(1050)); // 105
+console.log(noBoringZeros(-1050)); // -105
+console.log(noBoringZeros(-105)); // -105
