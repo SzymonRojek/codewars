@@ -80,3 +80,25 @@ function noBoringZeros(n) {
   }
   return n;
 }
+
+
+
+//  7
+
+function noBoringZeros(n) {
+  const digitArray = Array.from(String(n), Number);
+
+  while (digitArray[digitArray.length - 1] === 0) {
+          digitArray.pop();
+  }
+
+  return +digitArray.map(i => (isNaN(i) ? '-' : i)).join('');
+}
+
+console.log(noBoringZeros(1450)); // 145
+console.log(noBoringZeros(960000)); // 96
+console.log(noBoringZeros(1050)); // 105
+console.log(noBoringZeros(-1050)); // -105
+console.log(noBoringZeros(-105)); // -105
+
+// https://stackoverflow.com/questions/7540397/convert-nan-to-0-in-javascript
