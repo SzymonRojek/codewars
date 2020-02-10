@@ -43,3 +43,9 @@ console.log(noBoringZeros(-105)); // -105
 //  2
 
 const noBoringZeros = n => +`${n}`.replace(/0*$/, '');
+
+
+
+//  3
+
+const noBoringZeros = n => +('' + n).replace(/0 + $/, '');
