@@ -37,3 +37,9 @@ console.log(noBoringZeros(960000)); // 96
 console.log(noBoringZeros(1050)); // 105
 console.log(noBoringZeros(-1050)); // -105
 console.log(noBoringZeros(-105)); // -105
+
+
+
+//  2
+
+const noBoringZeros = n => +`${n}`.replace(/0*$/, '');
