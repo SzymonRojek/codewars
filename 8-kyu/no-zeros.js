@@ -61,3 +61,22 @@ const noBoringZeros = n => +n.toString().replace(/0+$/, '');
 //  5
 
 const noBoringZeros = n => Number(n.toString().replace(/0+$/, ''));
+
+
+
+//  6
+
+function noBoringZeros(n) {
+  const nString = n.toString();
+  if (nString.length > 1) {
+          const arrOfNums = nString.split('');
+
+          while (arrOfNums[arrOfNums.length - 1] === '0') {
+                  arrOfNums.pop();
+          }
+
+          const nString2 = arrOfNums.join('');
+          return parseInt(nString2, 10);
+  }
+  return n;
+}
