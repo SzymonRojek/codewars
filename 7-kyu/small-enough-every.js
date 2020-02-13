@@ -93,3 +93,9 @@ function smallEnough(a, limit) {
   });
   return oldLength == a.length;
 }
+
+
+
+//  11
+
+const smallEnough = (a, limit) => a.reduce((smallEnough, num) => smallEnough && num <= limit, true);
