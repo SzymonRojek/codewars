@@ -39,3 +39,10 @@ function smallEnough(a, limit) {
   a.sort((c, d) => d - c);
   return a[0] <= limit;
 }
+
+
+
+//  4
+
+const smallEnough = (a, limit) => a.map(num => num > limit).reduce((a, b) => a + b, 0) == 0;
+
