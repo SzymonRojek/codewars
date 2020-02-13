@@ -57,3 +57,14 @@ const smallEnough = (a, limit) => a.map( num => num > limit ).reduce((a,b) => a+
 //  6
 
 const smallEnough = (a, limit) => a.filter(v => v <= limit).length == a.length;
+
+
+
+//  7
+
+const smallEnough = (a, limit) => {
+  if (a.some(el => el > limit)) {
+          return false;
+  }
+  return true;
+};
