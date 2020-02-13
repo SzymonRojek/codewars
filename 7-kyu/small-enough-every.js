@@ -30,3 +30,12 @@ console.log(smallEnough([80, 117, 115, 104, 45, 85, 112, 115], 120)); // true
 //  2
 
 const smallEnough = (a, limit) => Math.max(...a) <= limit;
+
+
+
+//  3
+
+function smallEnough(a, limit) {
+  a.sort((c, d) => d - c);
+  return a[0] <= limit;
+}
