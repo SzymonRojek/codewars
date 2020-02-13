@@ -74,3 +74,9 @@ const smallEnough = (a, limit) => {
 //  8
 
 const smallEnough = (a,l) => a.filter(i => i > l).length > 0 ? false : true
+
+
+
+//  9
+
+const smallEnough = (a, l) => !(a.filter(i => i > l).length > 0);
