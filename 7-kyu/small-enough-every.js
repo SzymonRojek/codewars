@@ -80,3 +80,16 @@ const smallEnough = (a,l) => a.filter(i => i > l).length > 0 ? false : true
 //  9
 
 const smallEnough = (a, l) => !(a.filter(i => i > l).length > 0);
+
+
+
+//  10
+
+
+function smallEnough(a, limit) {
+  const oldLength = a.length;
+  a.filter((elem, index) => {
+          if (elem > limit) a.splice(index, 1);
+  });
+  return oldLength == a.length;
+}
