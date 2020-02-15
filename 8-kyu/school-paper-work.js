@@ -18,3 +18,9 @@ Note! if n or m < 0 return 0! Waiting for translations and Feedback! Thanks!
 const paperwork = (n, m) => (n < 0 || m < 0 ? 0 : n * m);
 
 console.log(paperwork(2, 4));
+
+
+
+//  2
+
+const paperwork = (n, m) => (n > 0 && m > 0 ? n * m : 0);
