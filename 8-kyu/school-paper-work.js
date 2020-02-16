@@ -24,3 +24,9 @@ console.log(paperwork(2, 4));
 //  2
 
 const paperwork = (n, m) => (n > 0 && m > 0 ? n * m : 0);
+
+
+
+//  3
+
+const paperwork = (n, m) => Math.max(0, n) * Math.max(0, m);
