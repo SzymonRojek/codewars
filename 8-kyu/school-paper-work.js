@@ -30,3 +30,14 @@ const paperwork = (n, m) => (n > 0 && m > 0 ? n * m : 0);
 //  3
 
 const paperwork = (n, m) => Math.max(0, n) * Math.max(0, m);
+
+
+
+//  4
+
+const paperwork = (n, m) => {
+  if (n <= 0 || m <= 0) {
+          var pages = 0;
+  } else pages = n * m;
+  return pages;
+};
