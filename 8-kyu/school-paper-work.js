@@ -41,3 +41,12 @@ const paperwork = (n, m) => {
   } else pages = n * m;
   return pages;
 };
+
+
+
+//  5
+
+function paperwork(classmates, pages) {
+  if (Array.from(arguments).some(arg => arg < 0) ) return 0;
+  return classmates * pages;
+}
