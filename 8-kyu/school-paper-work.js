@@ -50,3 +50,15 @@ function paperwork(classmates, pages) {
   if (Array.from(arguments).some(arg => arg < 0) ) return 0;
   return classmates * pages;
 }
+
+
+
+//  6
+
+function paperwork(n, m) {
+  if(n < 0 || m < 0){
+    return 0;
+  } else if(n >= 0 || m>= 0){
+    return n * m;
+  }
+}
