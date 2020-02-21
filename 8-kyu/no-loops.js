@@ -15,3 +15,13 @@ https://www.codewars.com/kata/no-loops-1-small-enough
 
 https://www.codewars.com/kata/no-loops-3-copy-within
 */ 
+
+
+
+//  1
+
+const check = (a, x) => {
+  const checkTheValue = a.includes(x);
+
+  return checkTheValue;
+};
