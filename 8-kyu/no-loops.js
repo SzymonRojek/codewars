@@ -37,3 +37,13 @@ console.log(check(['what', 'a', 'great', 'kata'], 'kat')); // false
 
 check = (a, x) => a.some(v => v === x);
 
+
+
+//  3
+
+function check(a,x){
+  let result = a.indexOf(x);
+  return result < 0 ? false : true;
+};
+
+
