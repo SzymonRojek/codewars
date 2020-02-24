@@ -47,3 +47,13 @@ function check(a,x){
 };
 
 
+
+//  4
+
+function check(a, x) {
+  const result = a.indexOf(x);
+  return !(result < 0);
+}
+
+
+
