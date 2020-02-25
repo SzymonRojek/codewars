@@ -57,3 +57,9 @@ function check(a, x) {
 
 
 
+//  5
+
+const check = Function.prototype.call.bind(Array.prototype.includes);
+
+
+
