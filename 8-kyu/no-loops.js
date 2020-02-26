@@ -63,3 +63,10 @@ const check = Function.prototype.call.bind(Array.prototype.includes);
 
 
 
+//  6
+
+function check(a, x) {
+  return a.find(element => element === x) !== undefined;
+}
+
+
