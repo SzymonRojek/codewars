@@ -57,3 +57,12 @@ function twoOldestAges(ages) {
 
   return [max_1, max_2];
 }
+
+
+
+//  5
+
+function twoOldestAges(ages) {
+  const max = Math.max(...ages);
+  return [Math.max(...ages.filter(age => age < max)), max];
+}
