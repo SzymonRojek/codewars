@@ -31,16 +31,29 @@ console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); // 45, 87
 
 //  2
 
-
 const twoOldestAges = ages => ages.sort((a, b) => a - b).slice(-2);
-
-console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); // 45, 87
 
 
 
 //  3
 
-
 const twoOldestAges = ages => [...ages].sort((a, b) => a - b).slice(-2);
 
-console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); // 45, 87
+
+
+//  4
+
+function twoOldestAges(ages) {
+  let max_1 = 0;
+  let max_2 = 0;
+
+  for (const age of ages) {
+          if (age > max_2) {
+                  max_2 = age;
+          } else if (age > max_1) {
+                  max_1 = age;
+          }
+  }
+
+  return [max_1, max_2];
+}
