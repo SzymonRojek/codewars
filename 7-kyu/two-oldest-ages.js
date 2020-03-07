@@ -14,3 +14,15 @@ For example:
 twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 
 */
+
+
+//  1
+
+function twoOldestAges(ages) {
+  ages.sort(function(a, b) {
+          return b - a;
+  });
+  return Array(ages[1], ages[0]);
+}
+
+console.log(twoOldestAges([1, 5, 87, 45, 8, 8])); // 45, 87
