@@ -29,3 +29,26 @@ console.log(capitalize('abcdef')); // ['AbCdEf', 'aBcDeF']
 console.log(capitalize('codewars')); // ['CoDeWaRs', 'cOdEwArS']
 console.log(capitalize('abracadabra')); // ['AbRaCaDaBrA', 'aBrAcAdAbRa']
 console.log(capitalize('codewarriors')); // ['CoDeWaRrIoRs', 'cOdEwArRiOrS']
+
+
+
+//  2
+
+function capitalize(s) {
+  const evenUpper = s
+          .split('')
+
+          .map((c, i) => {
+                  if (i % 2 === 0) {
+                          return c.toUpperCase();
+                  }
+                  return c;
+          })
+          .join('');
+
+  const oddUpper = s
+          .split('')
+          .map((c, i) => (i & 1 ? c.toUpperCase() : c))
+          .join('');
+  return [evenUpper, oddUpper];
+}
