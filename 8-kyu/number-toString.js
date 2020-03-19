@@ -26,3 +26,9 @@ const a = String(123);
 //  3
 
 const a = `${123}`;
+
+
+
+//  4
+
+const a = 123 + '';
