@@ -38,3 +38,9 @@ const a = 123 + '';
 //  5
 
 const a = (123)['toString']();
+
+
+
+//  6
+
+const a = '123';
