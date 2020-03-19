@@ -21,3 +21,8 @@ const a = (123).toString();
 //  2
 
 const a = String(123); 
+
+
+//  3
+
+const a = `${123}`;
