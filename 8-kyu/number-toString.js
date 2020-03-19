@@ -32,3 +32,9 @@ const a = `${123}`;
 //  4
 
 const a = 123 + '';
+
+
+
+//  5
+
+const a = (123)['toString']();
