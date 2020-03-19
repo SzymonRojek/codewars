@@ -15,3 +15,9 @@ Fix it!
 //  1
 
 const a = (123).toString();
+
+
+
+//  2
+
+const a = String(123); 
