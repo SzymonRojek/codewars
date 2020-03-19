@@ -12,3 +12,6 @@ Fix it!
 */
 
 
+//  1
+
+const a = (123).toString();
