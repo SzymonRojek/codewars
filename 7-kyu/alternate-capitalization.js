@@ -71,3 +71,15 @@ function capitalize(s) {
         }
         return [a, b];
 }
+
+
+
+//   4
+
+
+const capitalize = string =>
+        [0, 1].map(
+                alternate =>
+                        [...string.toLowerCase()].map((char, i) => (i % 2 === alternate ? char.toUpperCase() : char))
+                                .join``
+        );
