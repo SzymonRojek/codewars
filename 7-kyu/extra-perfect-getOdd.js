@@ -38,6 +38,22 @@ console.log(extraPerfect(39)); // [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33
 const extraPerfect = n => [...Array(n + 1).keys()].filter(cur => cur % 2);
 
 
+
 //  3
 
 const extraPerfect = n => new Array(Math.ceil(n / 2)).fill(0).map((a, i) => i * 2 + 1);
+
+
+
+//  4
+
+function extraPerfect(n) {
+  const res = [];
+  for (let i = 1; i <= n; i++) {
+          const str = i.toString(2);
+          if (str[0] === '1' && str[str.length - 1] === '1') {
+                  res.push(i);
+          }
+  }
+  return res;
+}
