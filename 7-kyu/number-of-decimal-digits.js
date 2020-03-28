@@ -28,3 +28,9 @@ console.log(digits(9876543210)); // 10
 //  2
 
 const digits = n => `${n}`.length;
+
+
+
+//  3
+
+const digits = n => String(n).length;
