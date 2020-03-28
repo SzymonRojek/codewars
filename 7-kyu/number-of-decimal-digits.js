@@ -57,13 +57,15 @@ const digits = n => [...n.toString()].length;
 
 //  7
 
-const digits = n => {
-  const str = `${n}`;
-  let conut = 0;
-
-  for (const i of str) {
-          conut++;
+function digits(n) {
+  let result = 0;
+  if (n == 0) {
+          result++;
   }
-
-  return conut;
-};
+  // code goes here
+  while (n >= 1) {
+          n = Math.floor(n / 10);
+          result++;
+  }
+  return result;
+}
