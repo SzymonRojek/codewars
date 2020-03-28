@@ -46,3 +46,9 @@ const digits = n => n.toString().length;
 //  5
 
 const digits = n => ('' + n).length;
+
+
+
+//  6
+
+const digits = n => [...n.toString()].length;
