@@ -34,3 +34,9 @@ const digits = n => `${n}`.length;
 //  3
 
 const digits = n => String(n).length;
+
+
+
+//  4
+
+const digits = n => n.toString().length;
