@@ -52,3 +52,18 @@ const digits = n => ('' + n).length;
 //  6
 
 const digits = n => [...n.toString()].length;
+
+
+
+//  7
+
+const digits = n => {
+  const str = `${n}`;
+  let conut = 0;
+
+  for (const i of str) {
+          conut++;
+  }
+
+  return conut;
+};
