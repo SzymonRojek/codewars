@@ -113,3 +113,15 @@ String.prototype.count = function(c) {
 console.log('Hello'.count('o')); // 1
 console.log('Hello'.count('l')); // 2
 console.log(''.count('z')); // 0
+
+
+
+//  9
+
+function strCount(str, letter) {
+  let n = 0;
+  for (const x of str) {
+          if (x == letter) n++;
+  }
+  return n;
+}
