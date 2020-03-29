@@ -91,3 +91,9 @@ function strCount(str, letter) {
   });
   return counter;
 }
+
+
+
+//  7
+
+const strCount = (w, l) => [...w].reduce((a, b) => a + +(b == l), 0);
