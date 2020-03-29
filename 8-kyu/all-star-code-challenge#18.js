@@ -79,3 +79,15 @@ function strCount(str, letter) {
   const length = str.split(letter.toString()).length;
   return length ? length - 1 : 0;
 }
+
+
+
+//  6
+
+function strCount(str, letter) {
+  let counter = 0;
+  [...str].forEach(function(char) {
+          char == letter ? counter++ : counter;
+  });
+  return counter;
+}
