@@ -26,7 +26,9 @@ The second string argument will always be of length 1
 
 const strCount = (str, letter) => str.split(letter).length - 1;
 
-console.log(strCount('Hello', 'l'));
+console.log('Hello'.count('o')); // 1
+console.log('Hello'.count('l')); // 2
+console.log(''.count('z')); // 0
 
 
 
@@ -97,3 +99,17 @@ function strCount(str, letter) {
 //  7
 
 const strCount = (w, l) => [...w].reduce((a, b) => a + +(b == l), 0);
+
+
+
+// 8 Another method:
+
+String.prototype.count = function(c) {
+  let result = 0;
+
+  for (i = 0; i < this.length; i++) if (this[i] == c) result++;
+  return result;
+};
+console.log('Hello'.count('o')); // 1
+console.log('Hello'.count('l')); // 2
+console.log(''.count('z')); // 0
