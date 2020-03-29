@@ -68,3 +68,14 @@ function strCount(str, letter) {
 
   return count;
 }
+
+
+
+//  5
+
+function strCount(str, letter) {
+  // The number of occurences of a letter is the number of array elements
+  // the given strings splits by the .split() method
+  const length = str.split(letter.toString()).length;
+  return length ? length - 1 : 0;
+}
