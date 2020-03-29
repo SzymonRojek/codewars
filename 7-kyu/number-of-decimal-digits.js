@@ -57,6 +57,21 @@ const digits = n => [...n.toString()].length;
 
 //  7
 
+const digits = n => {
+  const str = `${n}`;
+  let conut = 0;
+
+  for (const i of str) {
+          conut++;
+  }
+
+  return conut;
+};
+
+
+
+//  8
+
 function digits(n) {
   let result = 0;
   if (n == 0) {
