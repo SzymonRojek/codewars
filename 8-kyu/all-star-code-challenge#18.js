@@ -27,3 +27,11 @@ The second string argument will always be of length 1
 const strCount = (str, letter) => str.split(letter).length - 1;
 
 console.log(strCount('Hello', 'l'));
+
+
+
+//  2
+
+function strCount(str, letter) {
+  return str.split('').filter(c => c == letter).length;
+}
