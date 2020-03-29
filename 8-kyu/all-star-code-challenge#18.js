@@ -20,3 +20,10 @@ The first argument can be an empty string
 The second string argument will always be of length 1
 */
 
+
+
+//  1
+
+const strCount = (str, letter) => str.split(letter).length - 1;
+
+console.log(strCount('Hello', 'l'));
