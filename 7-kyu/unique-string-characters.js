@@ -60,3 +60,24 @@ function solve(a, b){
 const solve = (a, b) => [...a, ...b].reduce((acc, cur) => (
   acc += a.includes(cur) && b.includes(cur) ? '' : cur
 ), '');
+
+
+
+// 4
+
+function solve(a, b){
+  let result = '';
+  a.split('').forEach(charFromA => {
+      if (!b.includes(charFromA)) {
+          result = result + charFromA;
+      }
+  });
+
+  b.split('').forEach(charFromB => {
+      if (!a.includes(charFromB)) {
+          result = result + charFromB;
+      }
+  });
+  
+ return result;
+};
