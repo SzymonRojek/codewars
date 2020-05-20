@@ -52,3 +52,11 @@ console.log(solve("xxx","xzca")); // zca
 function solve(a, b){
   return (a + b).split('').filter(c => ! a.includes(c) || ! b.includes(c)).join('');
  };
+
+
+
+ // 3
+
+const solve = (a, b) => [...a, ...b].reduce((acc, cur) => (
+  acc += a.includes(cur) && b.includes(cur) ? '' : cur
+), '');
