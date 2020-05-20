@@ -15,3 +15,31 @@ solve("xyab","xzca") = "ybzc"
 
 */
 
+
+// 1
+
+function solve(a, b) {
+  let arrayA = [...a];
+  let arrayB = [...b];
+  let str = '';
+  
+  arrayA.forEach(a => {
+    if (! arrayB.includes(a) ) {
+      str += a;
+    } 
+  })
+
+  arrayB.forEach(b => {
+    if (! arrayA.includes(b) ) {
+      str += b;
+    } 
+  })
+  
+  return str;
+};
+
+
+console.log(solve("xyab","xzca")); // 'ybzc'
+console.log(solve("xyabb","xzca")); // ybbzc
+console.log(solve("abcd","xyz")); // abcdxyz
+console.log(solve("xxx","xzca")); // zca
