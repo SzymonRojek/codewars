@@ -44,3 +44,22 @@ countChar('Jestem jutro lub popojutrze w domu', 'j'); // 3
 const countChar = (s, c) => s.toLowerCase().split('').filter(x => x == c.toLowerCase()).length;
 
 console.log(countChar('Jestem jutro lub popojutrze w domu', 'j')); // 3
+
+
+
+// 3:
+
+function countChar(str, char) {
+  let count = 0;
+  
+    for (let i = 0; i < str.length; i++) {
+      const letter = str[i];
+
+      if (letter == char.toLowerCase() || letter == char.toUpperCase()) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+console.log(countChar('Jestem jutro lub popojutrze w domu', 'j')); // 3
