@@ -43,3 +43,12 @@ console.log(solve("xyab","xzca")); // 'ybzc'
 console.log(solve("xyabb","xzca")); // ybbzc
 console.log(solve("abcd","xyz")); // abcdxyz
 console.log(solve("xxx","xzca")); // zca
+
+
+
+
+// 2
+
+function solve(a, b){
+  return (a + b).split('').filter(c => ! a.includes(c) || ! b.includes(c)).join('');
+ };
