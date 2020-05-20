@@ -16,7 +16,7 @@ The character can be any alphanumeric character.
 */
 
 
-// solution:
+// 1:
 
 function countChar( string, char ) {
   let counterChar = 0;
@@ -36,3 +36,11 @@ function countChar( string, char ) {
 }
 
 countChar('Jestem jutro lub popojutrze w domu', 'j'); // 3
+
+
+
+// 2:
+
+const countChar = (s, c) => s.toLowerCase().split('').filter(x => x == c.toLowerCase()).length;
+
+console.log(countChar('Jestem jutro lub popojutrze w domu', 'j')); // 3
