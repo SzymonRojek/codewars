@@ -21,3 +21,33 @@ encryptThis("hello world") === "104olle 119drlo"
 
 // 1:
 
+function encryptThis(message) {
+  const words = message.split(' ');
+
+  const encryptedWords = [];
+
+  words.forEach( word => {
+console.log(word);
+
+    let newWord = word.charCodeAt(0);
+console.log(newWord);
+
+    [...word].forEach((letter, index) => {
+      const wordLength = word.length;
+
+      if( index == 1 && wordLength >= 3 ) {
+        newWord += word[wordLength -1];
+      } else if ( index == wordLength - 1 && wordLength >= 3 ) {
+        newWord += word[1];
+      } else if ( index > 0) {
+        newWord += letter;
+      }
+    })
+    encryptedWords.push(newWord);
+  })
+  return encryptedWords.join(' ');
+}
+
+console.log(encryptThis('hello')); // 104olle
+console.log(encryptThis('good')); // 103doo
+console.log(encryptThis('hello world')); // 104olle 119drlo

@@ -84,3 +84,32 @@ function divisibleByThree(str){
   // 4:
 
   const divisibleByThree = str => [...str].reduce((a,b) => a + Number(b), 0) % 3 == 0;
+
+
+
+  // 5:
+
+  const divisibleByThree = s => s.split``.reduce((s, n) => s + +n, 0) % 3 === 0;
+
+
+
+  // 6:
+
+  function divisibleByThree(str){
+    return str.split('').reduce((a,b) => +a + +b, 0) % 3 == 0;
+  }
+
+
+
+  // 7:
+
+  function divisibleByThree(str){
+    let count = 0;
+      for ( let num of str){
+        num = parseInt(num);
+        count += num
+        console.log(count)
+      }
+  
+      return count % 3 === 0
+  }
