@@ -79,3 +79,8 @@ function divisibleByThree(str){
   
     return sum % 3 ? false : true
   }
+
+
+  // 4:
+
+  const divisibleByThree = str => [...str].reduce((a,b) => a + Number(b), 0) % 3 == 0;
