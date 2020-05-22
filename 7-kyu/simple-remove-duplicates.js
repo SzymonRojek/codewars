@@ -60,3 +60,22 @@ function divisibleByThree(str){
 
   return sum % 3 === 0;
 }
+
+
+
+
+// 3:
+
+function divisibleByThree(str){
+
+  let getNum = str.split('').map(Number);
+  
+  let sum = getNum.reduce((acc, value) => {
+    
+        let add = (acc + value)
+      
+          return add;
+    })
+  
+    return sum % 3 ? false : true
+  }
