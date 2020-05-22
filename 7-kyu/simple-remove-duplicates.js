@@ -24,6 +24,7 @@ Example:
 
 // 1:
 
+
 function divisibleByThree(str){
 
   let sum = 0;
