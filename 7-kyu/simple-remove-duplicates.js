@@ -45,3 +45,18 @@ console.log(divisibleByThree('123')); // true
 console.log(divisibleByThree('19254')); // true
 console.log(divisibleByThree('88')); // false
 console.log(divisibleByThree('1')); // false
+
+
+
+// 2:
+
+function divisibleByThree(str){
+
+  let sum = 0;
+
+  [...str].forEach(num => {
+    sum += parseInt(num);
+  });
+
+  return sum % 3 === 0;
+}
