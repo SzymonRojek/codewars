@@ -58,3 +58,17 @@ function firstNonRepeated(s) {
   }
   return null
 }
+
+
+
+// 4:
+
+function firstNonRepeated(str) {
+  var s = [...new Set(str)]
+  for(let x of s){
+    if(str.lastIndexOf(x)==str.indexOf(x)){
+      return x
+    }
+  }
+  return null
+}
