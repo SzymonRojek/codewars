@@ -72,3 +72,14 @@ function firstNonRepeated(str) {
   }
   return null
 }
+
+
+
+
+// 5:
+
+  
+const firstNonRepeated = s => {
+  let result = [...s].filter(char => [...s].indexOf(char) === [...s].lastIndexOf(char))[0] 
+  return result ? result : null
+  }
