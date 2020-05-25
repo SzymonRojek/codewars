@@ -44,4 +44,17 @@ console.log(firstNonRepeated('aabb')); // null
 
 // 2:
 
-const firstNonRepeated = s => [...s].find(i => s.indexOf(i) == s.lastIndexOf(i)) || null
+const firstNonRepeated = s => [...s].find(i => s.indexOf(i) == s.lastIndexOf(i)) || null;
+
+
+
+// 3:
+
+function firstNonRepeated(s) {
+  for(var i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+      return s[i]
+    }
+  }
+  return null
+}
