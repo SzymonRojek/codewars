@@ -39,3 +39,9 @@ console.log(firstNonRepeated("teeter")); // r
 console.log(firstNonRepeated("1122321235121222")); // 5
 console.log(firstNonRepeated('arek')); // a  
 console.log(firstNonRepeated('aabb')); // null
+
+
+
+// 2:
+
+const firstNonRepeated = s => [...s].find(i => s.indexOf(i) == s.lastIndexOf(i)) || null
