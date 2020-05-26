@@ -102,14 +102,18 @@ function highestRank(arr) {
 
 // 4:
 
-function highestRank(arr){
-  let high,max=0,rec={}
-  for(let x of arr){
-    rec[x]=(rec[x]||0)+1
-    if(rec[x]>max){
-      max=rec[x]
-      high=x
+function highestRank(arr) {
+  let high, max = 0, counts = {}
+  
+  for (let num of arr){
+    counts[num] = (counts[num] || 0) + 1
+    //counts[num] = counts[num] ? counts[num] + 1 : 1
+    
+    if (counts[num] > max){
+      max = counts[num]
+      high = num
     }
   }
+  
   return high
 }
