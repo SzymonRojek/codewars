@@ -44,3 +44,11 @@ function highestRank(arr) {
   console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12, 10])); // 12   
   console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10] )); // 3   
           
+
+
+  
+// 2:
+
+function highestRank(arr){
+  return arr.sort((a,b)=>arr.filter(i=>i===b).length - arr.filter(i=>i===a).length)[0];
+}
