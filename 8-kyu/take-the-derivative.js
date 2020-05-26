@@ -59,3 +59,15 @@ function derive(x,y) {
   let res = x * y;
   return (`${res+'x'}^${y -1}`)
   }
+
+
+
+  // 5:
+
+  function derive(x, y) {
+    if (x !== 0 && y !== 0) {
+      return (`${x * y}x^${y - 1}`);
+    } else {
+    return false
+    }
+  }
