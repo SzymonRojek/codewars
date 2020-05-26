@@ -13,3 +13,34 @@ Examples
 [12, 10, 8, 12, 7, 6, 4, 10, 12, 10]          -->  12
 [12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10]  -->   3
 */
+
+
+
+// 1:
+
+function highestRank(arr) {
+  const counts = {};
+   
+  for (let i = 0; i < arr.length; i++) {
+    const num = arr[i];
+    counts[num] = counts[num] ? counts[num] + 1 : 1;
+  }
+  
+  const max = Math.max(...Object.values(counts));
+  const nums = [];
+  
+  for (const num in counts) {
+    const count = counts[num];
+    
+    if (count == max)
+      nums.push(num);
+  }
+  
+  return Math.max(...nums);
+}
+
+
+  console.log(highestRank([3, 10, 8, 7, 4, 10, 3])); // 10  
+  console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12, 10])); // 12   
+  console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10] )); // 3   
+          
