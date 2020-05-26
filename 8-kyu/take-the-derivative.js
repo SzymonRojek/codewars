@@ -42,3 +42,11 @@ console.log(derive(5,9)); // "45x^8"
 function derive(coefficient,exponent) {
   return `${coefficient*exponent}x^${exponent-1}`
 }
+
+
+
+// 3:
+
+function derive(a, b) {
+  return (a * b) + "x^" + (b - 1);
+}
