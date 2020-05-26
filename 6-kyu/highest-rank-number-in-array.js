@@ -98,3 +98,18 @@ function highestRank(arr) {
   console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10] )); // 3   
 
 
+
+
+// 4:
+
+function highestRank(arr){
+  let high,max=0,rec={}
+  for(let x of arr){
+    rec[x]=(rec[x]||0)+1
+    if(rec[x]>max){
+      max=rec[x]
+      high=x
+    }
+  }
+  return high
+}
