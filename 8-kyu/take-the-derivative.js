@@ -50,3 +50,12 @@ function derive(coefficient,exponent) {
 function derive(a, b) {
   return (a * b) + "x^" + (b - 1);
 }
+
+
+
+// 4:
+
+function derive(x,y) {
+  let res = x * y;
+  return (`${res+'x'}^${y -1}`)
+  }
