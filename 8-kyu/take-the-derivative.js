@@ -23,3 +23,12 @@ The exponent will never be 1, and neither number will ever be 0
 
 */
 
+
+function derive(coefficient,exponent) {
+  const multiply = coefficient * exponent;
+  const minus = exponent - 1;
+  return `${multiply}x^${minus}`
+}
+
+console.log(derive(7,8)); // "56x^7"
+console.log(derive(5,9)); // "45x^8"
