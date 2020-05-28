@@ -162,3 +162,24 @@ function stringEncodeDecode(string) {
   
   return string;
 }
+
+
+
+// 7: 
+
+var vowels = "aeiou".split("");
+function encode(string){
+  var s = "";
+  for (var i = 0; i < string.length; i++) {
+    s += vowels.indexOf(string[i])+1 || string[i];
+  }
+  return s;
+}
+
+function decode(string){
+  var s = "";
+  for (var i = 0; i < string.length; i++) {
+    s += vowels[string[i]-1] || string[i];
+  }
+  return s;
+}
