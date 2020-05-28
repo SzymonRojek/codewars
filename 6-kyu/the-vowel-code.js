@@ -76,3 +76,16 @@ console.log(decode('dtzfpt231y')); // 'dtzfpty'
 console.log(decode('H4w 1r2 y45 t4d1y?')); // How are you today?
 console.log(decode('Th3s 3s 1n 2nc4d3ng.')); // This is an encoding.
  
+
+
+// 2:
+
+// turn vowels into numbers
+function encode(string){
+  return string.replace(/[aeiou]/g, function (x) { return '_aeiou'.indexOf(x) });
+}
+
+//turn numbers back into vowels
+function decode(string){
+  return string.replace(/[1-5]/g, function (x) { return '_aeiou'.charAt(x) });
+}
