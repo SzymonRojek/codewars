@@ -183,3 +183,17 @@ function decode(string){
   }
   return s;
 }
+
+
+
+// 8:
+
+// turn vowels into numbers
+function encode(string){
+  return string.replace(/[aeiou]/g, (x)=>"_aeiou".indexOf(x));
+}
+
+//turn numbers back into vowels
+function decode(string){
+  return string.replace(/\d/g, (x)=>"_aeiou"[x]);
+}
