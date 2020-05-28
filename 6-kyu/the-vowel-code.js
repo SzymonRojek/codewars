@@ -89,3 +89,10 @@ function encode(string){
 function decode(string){
   return string.replace(/[1-5]/g, function (x) { return '_aeiou'.charAt(x) });
 }
+
+
+
+// 3:
+
+const encode = s => s.replace(/[aeiou]/g, v => ' aeiou'.indexOf(v));
+const decode = s => s.replace(/\d/g, v => ' aeiou'[v]);
