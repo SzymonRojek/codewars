@@ -130,3 +130,35 @@ function decode(string){
     return vowels[x-1];
   });
 }
+
+
+
+// 6
+
+// turn vowels into numbers
+function encode(string){
+  return stringEncodeDecode(string);
+}
+
+//turn numbers back into vowels
+function decode(string){
+  return stringEncodeDecode(string);
+}
+
+function stringEncodeDecode(string) {
+  var index;
+  var char;
+  var map = { a: '1', e: '2', i: '3', o: '4', u: '5', 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
+  
+  for (index = 0; index < string.length; index++) {
+    char = string[index];
+    
+    if (map[char]) {
+      char = map[char];
+    }
+    
+    string = string.replace(string[index], char);
+  }
+  
+  return string;
+}
