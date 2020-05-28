@@ -197,3 +197,16 @@ function encode(string){
 function decode(string){
   return string.replace(/\d/g, (x)=>"_aeiou"[x]);
 }
+
+
+
+// 9:
+function encode(string) {
+  var charArr = ['a', 'e', 'i', 'o', 'u']
+  return string.split('').map(char => charArr.findIndex(arrChar => arrChar === char) == -1 ? char : charArr.findIndex(arrChar => arrChar === char) + 1).join('');
+}
+
+function decode(string) {
+  var charArr = ['a', 'e', 'i', 'o', 'u']
+  return string.split('').map(char => isNaN(char) ? char : charArr[+char - 1]).join('');
+}
