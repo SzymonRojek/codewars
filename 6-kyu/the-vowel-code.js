@@ -96,3 +96,37 @@ function decode(string){
 
 const encode = s => s.replace(/[aeiou]/g, v => ' aeiou'.indexOf(v));
 const decode = s => s.replace(/\d/g, v => ' aeiou'[v]);
+
+
+
+// 4:
+
+const encode = s => s.split``.map(e => {
+  let i = 'aeiou'.indexOf(e);
+  return i > -1 ? ++i : e;
+}).join``;
+
+const decode = s => s.split``.map(e => {
+  const i = '12345'.indexOf(e);
+  return i > -1 ? 'aeiou'[i] : e;
+}).join``;
+
+
+
+// 5:
+
+let vowels =['a','e','i','o','u'];
+
+// turn vowels into numbers
+function encode(string){
+  return string.replace(/./g, function(x){
+    return vowels.indexOf(x)!=-1 ? vowels.indexOf(x)+1 : x;
+  });
+}
+
+//turn numbers back into vowels
+function decode(string){
+  return string.replace(/\d/g, function(x){
+    return vowels[x-1];
+  });
+}
