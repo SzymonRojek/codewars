@@ -22,3 +22,57 @@ For example, decode("h3 th2r2") would return "hi there".
 
 For the sake of simplicity, you can assume that any numbers passed into the function will correspond to vowels.
 */
+
+
+// 1:
+
+function encode(string) {
+  const dictionary = { a: 1, e: 2, i: 3, o: 4, u: 5 };
+  let newStr = '';
+  
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i]
+    let encodedChar = dictionary[char];
+    
+    if (encodedChar) {
+      newStr += encodedChar;
+    } else {
+      newStr += char;
+    }
+  }
+
+  return newStr;
+}
+
+
+console.log(encode('dtzfpteiay')); // dtzfpt231y
+console.log(encode('How are you today?')); // 'H4w 1r2 y45 t4d1y?'
+console.log(encode('This is an encoding test.')); // 'Th3s 3s 1n 2nc4d3ng.' t2st.'
+
+
+
+function decode(string) {
+
+  const dictionary = { 1: 'a', 2: 'e', 3: 'i', 4: 'o', 5: 'u' };
+
+  let newStr = '';
+
+  for (let i = 0; i < string.length; i++) {
+    const char = string[i];
+    let decodedChar = dictionary[char];
+
+    if(decodedChar) {
+      newStr += decodedChar;
+    } else {
+      newStr += char;
+    }
+    
+  }
+
+  return newStr;
+}
+ 
+console.log(decode('dtzfpt231y')); // 'dtzfpty' 
+console.log(decode('H4w 1r2 y45 t4d1y?')); // How are you today?
+console.log(decode('Th3s 3s 1n 2nc4d3ng.')); // This is an encoding.
+ 
