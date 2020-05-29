@@ -67,3 +67,24 @@ function completeSeries(arr) {
 
   return newArr;
 }
+
+
+
+// 3:
+
+function completeSeries(arr) {
+
+  let serie = (arr) => {
+    let array = []
+    let maxNum = Math.max(...arr)
+    let initialNum = 0
+
+    while (initialNum <= maxNum) {
+      array.push(initialNum)
+      initialNum++
+    }
+    return array
+  }
+
+ return arr.filter((item, index) => arr.indexOf(item) !== index).length === 0 ? serie(arr) : [0] 
+}
