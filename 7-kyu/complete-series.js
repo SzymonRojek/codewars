@@ -48,3 +48,22 @@ console.log(completeSeries([1,4,6])); // [0,1,2,3,4,5,6]
 console.log(completeSeries([3,4,5])); //  [0,1,2,3,4,5]
 console.log(completeSeries([2,1])); // [0,1,2],
 console.log(completeSeries([1,4,4,6])); // [0];
+
+
+
+// 2:
+
+function completeSeries(arr) {
+
+  const maxValue = Math.max(...arr);
+  const duplicates = new Set(arr).size !== arr.length;
+  
+    if(duplicates) return [0];
+
+   let newArr = [];
+    for (let i = 0; i < maxValue + 1; i++) {
+     newArr.push(i); 
+    }
+
+  return newArr;
+}
