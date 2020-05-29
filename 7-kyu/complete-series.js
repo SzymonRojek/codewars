@@ -23,3 +23,28 @@ inputs        outputs
 [0,1,0] ->    [0]
 */
 
+
+// 1:
+
+function completeSeries( arr ) {
+ 
+  arr = arr.sort((a, b) => a - b)
+ 
+  const last = arr[arr.length -1];
+    const duplicates = new Set(arr).size !== arr.length;
+ 
+        if(duplicates) return [0];
+ 
+    let newArr = [];
+        for (let i = 0; i < last + 1; i++) {
+            newArr.push(i);
+        }
+ 
+  return newArr;
+}
+ 
+console.log(completeSeries([0,1])); // [0,1]
+console.log(completeSeries([1,4,6])); // [0,1,2,3,4,5,6]
+console.log(completeSeries([3,4,5])); //  [0,1,2,3,4,5]
+console.log(completeSeries([2,1])); // [0,1,2],
+console.log(completeSeries([1,4,4,6])); // [0];
