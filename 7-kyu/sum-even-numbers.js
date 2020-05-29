@@ -38,3 +38,15 @@ console.log(sumEvenNumbers([2, 4, 3, 10, 2, 1, 0, 1, 2])); // 20
 // 2:
 
 const sumEvenNumbers = input => input.filter(x => x % 2 == 0).reduce((x, y) => x + y, 0);
+
+
+
+// 3:
+
+function sumEvenNumbers(input) {
+  let x = 0;
+  input.forEach(e => {
+    if(e % 2 == 0) x += e;
+  });
+  return x;
+}
