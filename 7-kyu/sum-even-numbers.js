@@ -64,3 +64,11 @@ const sumEvenNumbers = input => input.reduce((acc, currentValue) => acc + (curre
 const sumEvenNumbers = input => input.reduce((sum, item) => item % 2 == 0 ? sum + item : sum + 0, 0);
 
 console.log(sumEvenNumbers([2, 4, 3, 10, 2, 1, 0, 1, 2])); // 20
+
+
+
+// 6:
+
+function sumEvenNumbers(input) {
+  return input.filter((e)=> !(e % 2)).reduce((acc, cur)=> (acc + cur))
+ }
