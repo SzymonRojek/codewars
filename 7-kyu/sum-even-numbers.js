@@ -55,4 +55,4 @@ function sumEvenNumbers(input) {
 
 // 4:
 
-const sumEvenNumbers = input => input.reduce((acc, currentValue) => acc + (currentValue % 2 ? 0 : currentValue));
+const sumEvenNumbers = input => input.reduce((acc, currentValue) => acc + (currentValue % 2 ? 0 : currentValue), 0);
