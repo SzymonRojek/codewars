@@ -210,3 +210,5 @@ function decode(string) {
   var charArr = ['a', 'e', 'i', 'o', 'u']
   return string.split('').map(char => isNaN(char) ? char : charArr[+char - 1]).join('');
 }
+
+
