@@ -50,3 +50,9 @@ function sumEvenNumbers(input) {
   });
   return x;
 }
+
+
+
+// 4:
+
+const sumEvenNumbers = input => input.reduce((acc, currentValue) => acc + (currentValue % 2 ? 0 : currentValue));
