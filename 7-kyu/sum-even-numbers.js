@@ -56,3 +56,11 @@ function sumEvenNumbers(input) {
 // 4:
 
 const sumEvenNumbers = input => input.reduce((acc, currentValue) => acc + (currentValue % 2 ? 0 : currentValue), 0);
+
+
+
+// 5:
+
+const sumEvenNumbers = input => input.reduce((sum, item) => item % 2 == 0 ? sum + item : sum + 0, 0);
+
+console.log(sumEvenNumbers([2, 4, 3, 10, 2, 1, 0, 1, 2])); // 20
