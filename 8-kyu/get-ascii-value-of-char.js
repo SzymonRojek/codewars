@@ -31,3 +31,10 @@ function getASCII(c) {
 // 3:
 
 const getASCII = c => c.charCodeAt();
+
+
+
+// 4:
+
+
+const getASCII = chars => [...chars].map(char => char.charCodeAt()).reduce((curr, prev) => prev + curr);
