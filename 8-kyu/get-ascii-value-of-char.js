@@ -26,3 +26,8 @@ function getASCII(c) {
   return c.charCodeAt(0);
 }
 
+
+
+// 3:
+
+const getASCII = c => c.charCodeAt();
