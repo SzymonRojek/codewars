@@ -75,3 +75,14 @@ function roundToNext5(n){
 // 4:
 
 const roundToNext5 = n => Math.ceil(n / 5) * 5;
+
+
+
+// 5:
+
+function roundToNext5(n){
+  if (n % 5 === 0) {
+    return n;
+  }
+  return roundToNext5(n + 1);
+}
