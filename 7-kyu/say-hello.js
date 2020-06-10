@@ -46,3 +46,9 @@ function greet(name) {
     
   return 'hello ' + name + '!';
 }
+
+
+
+// 5:
+
+const greet = name => (!name || name.length == 0)? null : `hello ${name}!`;
