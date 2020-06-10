@@ -30,3 +30,9 @@ console.log(greet('')); // null
 // 2: 
 
 const greet = name => name? `hello ${name}!` : null;
+
+
+
+// 3:
+
+const greet = n => n !== null && n !== '' ? `hello ${n}!` : null;
