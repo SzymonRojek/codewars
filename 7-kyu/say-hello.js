@@ -52,3 +52,19 @@ function greet(name) {
 // 5:
 
 const greet = name => (!name || name.length == 0)? null : `hello ${name}!`;
+
+
+
+// 6:
+
+function greet(name) {
+  
+  switch (name) {
+    case '':
+      return null;
+    case null:
+      return null;
+    default:
+      return `hello ${name}!`;
+  }
+}
