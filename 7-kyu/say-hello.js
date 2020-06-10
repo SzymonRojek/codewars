@@ -68,3 +68,18 @@ function greet(name) {
       return `hello ${name}!`;
   }
 }
+
+
+
+// 7:
+
+function greet(name) {
+  if(name === '' || name === ' ') {
+      return null;
+  } else if (name === null) {
+      return null;
+  }
+  else {
+      return `hello ${name}!`;
+  }
+}
