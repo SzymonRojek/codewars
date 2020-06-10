@@ -36,3 +36,13 @@ const greet = name => name? `hello ${name}!` : null;
 // 3:
 
 const greet = n => n !== null && n !== '' ? `hello ${n}!` : null;
+
+
+
+// 4:
+
+function greet(name) {
+  if (!name || name.length == 0) return null;
+    
+  return 'hello ' + name + '!';
+}
