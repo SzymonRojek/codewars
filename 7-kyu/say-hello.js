@@ -14,3 +14,13 @@ greet("Niks") === "hello Niks!";
 greet("") === null; // Return null if input is empty string
 greet(null) === null; // Return null if input is null
 */
+
+
+
+// 1:
+
+const greet = name => (name === '' || name === null)? null : `hello ${name}!`;
+
+console.log(greet("Niks")); // "hello Niks!"
+console.log(greet(null)); // null
+console.log(greet('')); // null
