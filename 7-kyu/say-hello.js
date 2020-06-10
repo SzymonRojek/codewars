@@ -24,3 +24,9 @@ const greet = name => (name === '' || name === null)? null : `hello ${name}!`;
 console.log(greet("Niks")); // "hello Niks!"
 console.log(greet(null)); // null
 console.log(greet('')); // null
+
+
+
+// 2: 
+
+const greet = name => name? `hello ${name}!` : null;
