@@ -82,3 +82,17 @@ console.log(digital_root(456)); // 6
 console.log(digital_root(942)); // 6
 console.log(digital_root(132189)); // 6
 console.log(digital_root(493193)); // 2
+
+
+
+// 5:
+
+function digital_root(n){
+  n = eval(n.toString().split('').join('+'));
+
+  if (n > 9) {
+      return digital_root(n);
+  }
+
+  return n;
+}
