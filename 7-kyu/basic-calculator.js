@@ -78,3 +78,9 @@ function calculate(a, o, b) {
          return null;
  }
  }
+
+
+
+ // 4:
+
+ const calculate = (a, o, b) => /[^-+/*]/.test(o) || !b && o == '/' ? null : eval(a + o + b) || 0;
