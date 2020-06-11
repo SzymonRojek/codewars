@@ -43,3 +43,18 @@ console.log(calculate(4,'/',0)); // null
 console.log(calculate(-3,'/', 0)); //null
 console.log(calculate(-3,'w', 0)); // null
 console.log(calculate(8,'w', 2)); // null
+
+
+
+
+// 2:
+
+function calculate(num1, operation, num2) {
+  var ops = {
+    '+': function(x, y) { return x + y; },
+    '-': function(x, y) { return x - y; },
+    '*': function(x, y) { return x * y; },
+    '/': function(x, y) { return y === 0 ? null : x / y; }
+  };
+  return (ops[operation] || function() { return null; })(num1, num2);
+}
