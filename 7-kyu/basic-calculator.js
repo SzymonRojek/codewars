@@ -16,3 +16,30 @@ calculate(8,"m", 2); //Should return null
 calculate(4,"/",0) //should return null
 */
 
+
+// 1: my solution
+
+const calculate = (num1, operation, num2) => {
+  const check = /^([*/+-])$/;
+ 
+  if(!check.test(operation)) return null;
+  if(operation === '/' && num2 === 0) return null;
+  if(num1 < 0 && operation === '*' && num2 === 0) return 0;
+ 
+ return  eval(`${num1} ${operation} ${num2}`);
+}
+ 
+console.log(calculate(3.2,'+', 8)); // 11.2
+console.log(calculate(2,'+', 4)); // 6
+console.log(calculate(3.2,'-', 8)); // -4.8
+console.log(calculate(3.2,'/', 8)); // 0.4
+console.log(calculate(3.2,'*', 8)); // 25.6
+console.log(calculate(-3,'+', 0)); // -3
+console.log(calculate(-3,'-', 0)); // -3
+console.log(calculate(49,'/', -7)); // -7
+console.log(calculate(-3,'*', 0)); // 0
+console.log(calculate(-4,'*', 8)); // -32
+console.log(calculate(4,'/',0)); // null
+console.log(calculate(-3,'/', 0)); //null
+console.log(calculate(-3,'w', 0)); // null
+console.log(calculate(8,'w', 2)); // null
