@@ -50,11 +50,31 @@ console.log(calculate(8,'w', 2)); // null
 // 2:
 
 function calculate(num1, operation, num2) {
-  var ops = {
+  let ops = {
     '+': function(x, y) { return x + y; },
     '-': function(x, y) { return x - y; },
     '*': function(x, y) { return x * y; },
     '/': function(x, y) { return y === 0 ? null : x / y; }
   };
+
   return (ops[operation] || function() { return null; })(num1, num2);
 }
+
+
+
+// 3:
+
+function calculate(a, o, b) {
+  switch(o) {
+     case '+':
+         return a+b;
+     case '-':
+         return a-b;
+     case '*':
+         return a*b;
+     case '/':
+         return b===0?null:a/b;
+     default:
+         return null;
+ }
+ }
