@@ -84,3 +84,22 @@ function calculate(a, o, b) {
  // 4:
 
  const calculate = (a, o, b) => /[^-+/*]/.test(o) || !b && o == '/' ? null : eval(a + o + b) || 0;
+
+
+
+ // 5:
+ 
+ function calculate(num1, operation, num2) {
+  if (operation === "/" && num2 !== 0) {
+      return  num1/num2;
+  } else if (operation === "+"){
+      return  num1+num2;
+  } else if (operation === "*") {
+      return  num1 * num2;
+  } else if (operation === "-"){
+      return  num1 - num2;
+  }
+  else {
+      return null;
+  }
+}
