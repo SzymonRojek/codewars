@@ -15,3 +15,30 @@ Examples
 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 */
+
+
+
+// 1: my solution
+
+function digital_root(n) {
+  n = [...String(n)];
+  
+  let sum = 0;
+    n.forEach(num => sum += Number(num));
+  
+  let result = 0;
+    sum = [...String(sum)];
+      sum.forEach(num => result += Number(num));
+
+  let finalResult = 0;
+    result = [...String(result)];
+      result.forEach(num => finalResult += Number(num));
+
+  return finalResult;
+}
+
+console.log(digital_root(16)); // 7
+console.log(digital_root(456)); // 6
+console.log(digital_root(942)); // 6
+console.log(digital_root(132189)); // 6
+console.log(digital_root(493193)); // 2
