@@ -42,3 +42,18 @@ console.log(digital_root(456)); // 6
 console.log(digital_root(942)); // 6
 console.log(digital_root(132189)); // 6
 console.log(digital_root(493193)); // 2
+
+
+
+
+// 2: This solution above is not perfect because what if parameter has got a very long number? Then the best way is to use a recursive function:
+
+function digital_root(n) {
+  
+  if (n < 10) return n;
+
+  let sum = 0;
+  [...String(n)].forEach(num => sum += Number(num));
+   
+  return digital_root(sum);
+}
