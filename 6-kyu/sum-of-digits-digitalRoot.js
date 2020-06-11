@@ -65,3 +65,20 @@ function digital_root(n) {
 function digital_root(n) {
   return (n - 1) % 9 + 1;
 }
+
+
+// 4:
+
+function digital_root(n) {
+  if (n < 10) return n;
+  
+  const result = [...String(n)].reduce((acc, num) => acc + Number(num), 0);
+  
+  return digital_root(result);  
+}
+
+console.log(digital_root(16)); // 7
+console.log(digital_root(456)); // 6
+console.log(digital_root(942)); // 6
+console.log(digital_root(132189)); // 6
+console.log(digital_root(493193)); // 2
