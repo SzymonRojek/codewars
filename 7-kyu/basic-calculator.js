@@ -28,6 +28,10 @@ const calculate = (num1, operation, num2) => {
  
  return  eval(`${num1} ${operation} ${num2}`);
 }
+
+// put two if with return null together:
+  if(!check.test(operation) || operation === '/' && num2 === 0) return null;
+ 
  
 console.log(calculate(3.2,'+', 8)); // 11.2
 console.log(calculate(2,'+', 4)); // 6
