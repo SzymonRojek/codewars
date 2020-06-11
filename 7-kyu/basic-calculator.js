@@ -88,7 +88,7 @@ function calculate(a, o, b) {
 
 
  // 5:
- 
+
  function calculate(num1, operation, num2) {
   if (operation === "/" && num2 !== 0) {
       return  num1/num2;
@@ -103,3 +103,17 @@ function calculate(a, o, b) {
       return null;
   }
 }
+
+
+
+// 6:
+
+function calculate(num1, op, num2) {
+  switch(op){
+    case '+': return num1 + num2;
+    case '-': return num1 - num2;
+    case '*': return num1 * num2;
+    case '/': return (num2 === 0)? null: num1 / num2;
+    default: return null;
+  }
+ }
