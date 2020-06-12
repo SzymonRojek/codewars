@@ -36,3 +36,18 @@ console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}])); // [['Goodbye']]
 function removeEveryOther(arr){
   return arr.filter((elem, index) => index % 2 === 0);
 }
+
+
+
+// 3:
+
+function removeEveryOther(arr){
+  let newArr=[];
+
+    for (let i = 0; i < arr.length; i+=2){
+      newArr.push(arr[i]);
+    }
+
+  return newArr;
+}
+
