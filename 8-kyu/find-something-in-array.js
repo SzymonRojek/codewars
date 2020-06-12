@@ -25,3 +25,9 @@ console.log(find("anything", ["bye bye","hello"])); // false
 // 2:
 
 const find = (string, array) => array.indexOf(string) > -1;
+// also >=0
+
+
+// 3: 
+
+const find = (word, array) => array.some(element => element === word);
