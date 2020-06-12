@@ -31,3 +31,22 @@ const find = (string, array) => array.indexOf(string) > -1;
 // 3: 
 
 const find = (word, array) => array.some(element => element === word);
+
+
+
+// 4:
+
+const find = (word, array) => {
+
+  let result = false;
+    for (let i = 0; i < array.length; i++) {
+      const element = array[i];
+  
+       if(word === element) result = true;
+    
+    }
+  
+    return result;
+  }
+
+  
