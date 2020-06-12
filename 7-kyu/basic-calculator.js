@@ -121,3 +121,18 @@ function calculate(num1, op, num2) {
     default: return null;
   }
  }
+
+
+
+ // 7:
+
+ function calculate(num1, operation, num2) {
+  const OPS = {
+    '+': (a,b)=>a+b,
+    '-': (a,b)=>a-b,
+    '*': (a,b)=>a*b || 0,
+    '/': (a,b)=>b === 0 ? null : a/b,
+  }
+  
+  return OPS[operation] ? OPS[operation](num1, num2) : null;
+}
