@@ -49,4 +49,25 @@ const find = (word, array) => {
     return result;
   }
 
+
+
+// 5:
+
+const find = (word, array) => {
+
+  let result = false;
+    
+    array.forEach(string => {
+     
+      if(word === string) result = true;
+    });
+    
+    return result;
+  }
   
+  console.log(find("hello", ["bye bye","hello"])); // true
+  console.log(find("anything", ["bye bye","hello"])); // false
+
+
+
+ 
