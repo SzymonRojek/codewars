@@ -82,3 +82,9 @@ const find = (word, array) => {
   
     return result;
   }
+
+
+
+  //  7:
+
+  const find = (string, array) => array.findIndex(value => value === string) !== -1;
