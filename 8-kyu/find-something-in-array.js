@@ -70,4 +70,15 @@ const find = (word, array) => {
 
 
 
- 
+  // 6:
+
+  const find = (word, array) => {
+
+    let result = false;
+  
+    array.filter(str => {
+      if(str === word) result = true;
+    });
+  
+    return result;
+  }
