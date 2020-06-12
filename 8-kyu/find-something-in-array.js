@@ -19,3 +19,9 @@ const find = (string, array) => array.includes(string);
 
 console.log(find("hello", ["bye bye","hello"])); // true
 console.log(find("anything", ["bye bye","hello"])); // false
+
+
+
+// 2:
+
+const find = (string, array) => array.indexOf(string) > -1;
