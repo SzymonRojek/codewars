@@ -140,6 +140,3 @@ const narcissistic = num =>[...s = String(num)].reduce((sum, value)=> sum + valu
 
 const narcissistic = number => [...String(number)].reduce((accumulator, nextNumber) => accumulator += Math.pow(nextNumber, String(number).length), 0) === number;
 
-console.log(narcissistic(7)); 
-console.log(narcissistic(371));
-console.log(narcissistic(11176)); 
