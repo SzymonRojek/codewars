@@ -42,7 +42,7 @@ function narcissistic1(digit) {
   // get sum of digits from an array - convert to number:
   const sumDigits = powDigits.reduce((sum, num) => sum + num, 0);
 
-  return sumDigits === digit? true : false;
+  return sumDigits === digit;
 }
 
 console.log(narcissistic1(7)); // true
@@ -113,3 +113,17 @@ function narcissistic( num ) {
 // 5:
 
 const narcissistic = num => [...String(num)].map( (digit, i, arr) => digit ** arr.length).reduce( (sum, value) => Number(sum) + Number(value)) === num;
+
+
+
+// 6:
+
+
+function narcissistic(digit) {
+  
+  let sum = 0;
+
+    [...String(digit)].forEach( el => sum += Math.pow(el, String(digit).length));
+
+  return sum === digit;
+}
