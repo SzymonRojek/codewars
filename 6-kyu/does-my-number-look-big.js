@@ -91,3 +91,19 @@ function narcissistic(digit) {
 // 3
 
 const narcissistic = digit => [...String(digit)].reduce((sum, value) => sum + Math.pow(value, (String(digit)).length), 0) === digit;
+
+
+
+// 4
+
+function narcissistic( num ) {
+  let remaining = num;
+  const digits = [];
+
+  while (remaining > 0) {
+    digits.push(remaining % 10);
+    remaining = Math.floor(remaining / 10);
+  }
+  
+  return num === digits.reduce((sum, value) => sum + Math.pow(value, digits.length), 0);
+}
