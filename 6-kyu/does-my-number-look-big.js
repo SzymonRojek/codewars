@@ -107,3 +107,9 @@ function narcissistic( num ) {
   
   return num === digits.reduce((sum, value) => sum + Math.pow(value, digits.length), 0);
 }
+
+
+
+// 5:
+
+const narcissistic = num => [...String(num)].map( (digit, i, arr) => digit ** arr.length).reduce( (sum, value) => Number(sum) + Number(value)) === num;
