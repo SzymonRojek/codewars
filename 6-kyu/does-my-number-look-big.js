@@ -138,5 +138,5 @@ const narcissistic = num =>[...s = String(num)].reduce((sum, value)=> sum + valu
 
 // 8:
 
-const narcissistic = number => [...String(number)].reduce((accumulator, nextNumber) => accumulator += Math.pow(nextNumber, String(number).length), 0) === number;
+const narcissistic = number => [...String(number)].reduce((acc, nextNum) => acc += Math.pow(nextNum, String(number).length), 0) === number;
 
