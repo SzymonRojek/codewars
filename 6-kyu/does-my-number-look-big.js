@@ -48,3 +48,40 @@ function narcissistic1(digit) {
 console.log(narcissistic1(7)); // true
 console.log(narcissistic1(371)); // true
 console.log(narcissistic1(11176)); // false
+
+
+
+// 2:
+
+
+function narcissistic(digit) {
+ 
+  const strDigits = String(digit);
+  const strDigitsLength = strDigits.length;
+ 
+  // digit in the array
+    const digitsArr = [];
+      for(let i = 0; i < strDigits.length; i++){
+        digitsArr.push(strDigits[i]);
+      }
+
+  // get power of every digit:
+    const powDigits = [];
+      for (let i = 0; i < digitsArr.length; i++) {
+        powDigits.push(Math.pow(digitsArr[i], Number(strDigitsLength)));
+      }
+
+  // get sum of all powers digits: 
+
+    let sumDigits = 0;  
+      for (let i = 0; i < powDigits.length; i++) {
+        sumDigits += powDigits[i];
+      }
+
+  // condition - digit has to be equal to the sum all power of digits:
+    const result = false;
+
+      if(sumDigits == digit) return true;
+
+  return result;
+}
