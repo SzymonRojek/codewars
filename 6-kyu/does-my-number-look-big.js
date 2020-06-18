@@ -127,3 +127,19 @@ function narcissistic(digit) {
 
   return sum === digit;
 }
+
+
+
+// 7:
+
+const narcissistic = num =>[...s = String(num)].reduce((sum, value)=> sum + value ** s.length, 0) === num;
+
+
+
+// 8:
+
+const narcissistic = number => [...String(number)].reduce((accumulator, nextNumber) => accumulator += Math.pow(nextNumber, String(number).length), 0) === number;
+
+console.log(narcissistic(7)); 
+console.log(narcissistic(371));
+console.log(narcissistic(11176)); 
