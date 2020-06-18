@@ -85,3 +85,9 @@ function narcissistic(digit) {
 
   return result;
 }
+
+
+
+// 3
+
+const narcissistic = digit => [...String(digit)].reduce((sum, value) => sum + Math.pow(value, (String(digit)).length), 0) === digit;
