@@ -20,3 +20,31 @@ Your code must return true or false depending upon whether the given number is a
 Error checking for text strings or other invalid inputs is not required, 
 only valid integers will be passed into the function.
 */
+
+
+
+// 1 my solution:
+
+
+function narcissistic1(digit) {
+
+  const separateDigitsArr = [...String(digit)];
+  // get length of digits:
+
+  const digitLength = String(digit).length;
+  
+  // get a power of every digit:
+  const powDigits = [];
+    separateDigitsArr.forEach( el => {
+      powDigits.push(Math.pow(el, digitLength));
+    });
+
+  // get sum of digits from an array - convert to number:
+  const sumDigits = powDigits.reduce((sum, num) => sum + num, 0);
+
+  return sumDigits === digit? true : false;
+}
+
+console.log(narcissistic1(7)); // true
+console.log(narcissistic1(371)); // true
+console.log(narcissistic1(11176)); // false
