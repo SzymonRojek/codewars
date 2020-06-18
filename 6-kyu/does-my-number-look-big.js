@@ -140,3 +140,12 @@ const narcissistic = num =>[...s = String(num)].reduce((sum, value)=> sum + valu
 
 const narcissistic = number => [...String(number)].reduce((acc, nextNum) => acc += Math.pow(nextNum, String(number).length), 0) === number;
 
+
+// 9:
+
+function narcissistic( digit ) {
+  const str = String(digit);
+  let sum = 0;
+    [...str].forEach( el => sum += el ** str.length);
+  return digit === sum;
+}
