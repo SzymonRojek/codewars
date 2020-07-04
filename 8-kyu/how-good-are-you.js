@@ -88,3 +88,19 @@ const average = array => sum(array) / array.length;
 const betterThanAverage = (classPoints, yourPoints) => yourPoints > average(classPoints);
 
 
+
+// 5:
+
+const betterThanAverage = (classPoints, yourPoints) => {
+
+  let sum = 0;
+
+  const points = classPoints.map( x => {
+    return sum = sum + x;
+  });
+
+  sum = sum / classPoints.length;
+
+
+  return yourPoints > sum;
+}
