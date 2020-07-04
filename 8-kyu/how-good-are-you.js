@@ -104,3 +104,9 @@ const betterThanAverage = (classPoints, yourPoints) => {
 
   return yourPoints > sum;
 }
+
+
+
+// 6:
+
+const betterThanAverage = (classPoints, yourPoints) => (eval(classPoints.join('+')) / classPoints.length < yourPoints);
