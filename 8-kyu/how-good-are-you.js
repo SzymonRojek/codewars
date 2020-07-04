@@ -34,7 +34,7 @@ function betterThanAverage(classPoints, yourPoints) {
 
   const average = Math.floor(sumArr / lengthArr);
 
-  return yourPoints > average? true : false;
+  return yourPoints > average;
 
 }
 
