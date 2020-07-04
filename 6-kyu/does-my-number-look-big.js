@@ -149,3 +149,7 @@ function narcissistic( digit ) {
     [...str].forEach( el => sum += el ** str.length);
   return digit === sum;
 }
+
+
+// read an article:
+https://medium.com/@VanessaOsuka/finding-narcissistic-numbers-javascript-19ca06fb63ec
