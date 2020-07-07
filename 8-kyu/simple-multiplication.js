@@ -21,3 +21,17 @@ console.log(simpleMultiplication(5)); // 45
 // 2:
 
 const simpleMultiplication = n => n * (n % 2 ? 9 : 8);
+
+
+
+// 3:
+
+function simpleMultiplication (number) {
+    
+  if(number % 2 === 0 ) {
+   return number * 8
+  } else {
+   return number * 9;
+  }   
+
+}
