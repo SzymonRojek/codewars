@@ -15,3 +15,9 @@ console.log(simpleMultiplication(1)); // 9
 console.log(simpleMultiplication(8)); // 64
 console.log(simpleMultiplication(4)); // 32
 console.log(simpleMultiplication(5)); // 45
+
+
+
+// 2:
+
+const simpleMultiplication = n => n * (n % 2 ? 9 : 8);
