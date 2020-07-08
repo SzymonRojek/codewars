@@ -47,5 +47,21 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
   if (mpg * fuelLeft >= distanceToPump) return true;
   if (mpg * fuelLeft <= distanceToPump) return false;
-  
+
+};
+
+
+
+// 6:
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+
+  const range = fuelLeft * mpg;
+
+  if (range >= distanceToPump){
+    return true;
+  } else {
+    return false;
+  }
+
 };
