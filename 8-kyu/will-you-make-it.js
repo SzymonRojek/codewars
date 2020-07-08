@@ -11,3 +11,12 @@ Function should return true (1 in Prolog) if it is possible and false (0 in Prol
 
 The input values are always positive.
 */
+
+
+
+// 1: my solution
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => distanceToPump <= (mpg * fuelLeft);
+
+console.log(zeroFuel(50, 25, 2)); // true
+console.log(zeroFuel(100, 50, 1)); // false
