@@ -32,6 +32,14 @@ console.log(solution('U', 'False')); // 'UFalseU'
 function solution(a, b) {
 
   if (a.length < b.length) return a + b + a;
-  
+
   return b + a + b;
+}
+
+
+
+// 3:
+
+function solution(a, b) {
+  return (a.length < b.length) ? (a + b + a) : (b + a + b);
 }
