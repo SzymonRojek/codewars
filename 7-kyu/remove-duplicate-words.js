@@ -17,7 +17,7 @@ Output:
 
 
 
-// 1
+// 1: My solution
 
 function removeDuplicateWords(s) {
   const str = s.split(' ');
@@ -32,7 +32,7 @@ function removeDuplicateWords(s) {
 
 
 
-//  2
+//  2: My solution
 
 const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ');
 
