@@ -24,3 +24,21 @@ there will be no punctuation besides full stops and spaces
 
 all but the last full stop will be followed by a space and at least one word
 */ 
+
+
+
+// 1: my solution
+
+
+function fix(p){
+  p = p.split('. ');
+
+   let indices = [];
+
+   p.forEach(el => indices.push( el.charAt(0).toUpperCase() + el.slice(1)));
+
+ return String(indices).replace(/,/g, ". ");
+}  
+
+console.log(fix("hello. my name is inigo montoya. you killed my father. prepare to die."));
+// 'Hello. My name is inigo montoya. You killed my father. Prepare to die.'
