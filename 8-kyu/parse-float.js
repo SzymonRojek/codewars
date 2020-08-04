@@ -18,3 +18,14 @@ console.log(parseF('eee02')); // null
 console.log(parseF('1.3')); // 1.3
 console.log(parseF('2')); // 2
 
+
+
+
+// 2: my solution
+
+function parseF(s) {
+  if (isNaN(parseFloat(s))) {
+    return null;
+  }
+  return parseFloat(s) 
+}
