@@ -29,4 +29,12 @@ console.log(sayHello('Dr. McCoy')); //  'Hello, Dr. McCoy'
 
 // 2:
 
+function sayHello(name) {
+  return 'Hello, ' + name 
+}
+
+
+
+// 3:
+
 const sayHello = name => `Hello, ${name}`;
