@@ -41,3 +41,9 @@ const parseF = s => isNaN(parseFloat(s)) ? null : parseFloat(s);
 // 4: my solution
 
 const parseF = s => isNaN(+s) ? null : +s;
+
+
+
+// 5
+
+const parseF = s => isNaN(s) || typeof s == 'boolean' ? null : parseFloat(s);
