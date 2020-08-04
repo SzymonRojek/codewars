@@ -29,3 +29,9 @@ function parseF(s) {
   }
   return parseFloat(s) 
 }
+
+
+
+// 3: my solution
+
+const parseF = s => isNaN(parseFloat(s)) ? null : parseFloat(s);
