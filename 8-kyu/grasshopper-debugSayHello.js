@@ -38,3 +38,11 @@ function sayHello(name) {
 // 3:
 
 const sayHello = name => `Hello, ${name}`;
+
+
+
+// 4:
+
+const sayHello = name => 'Hello, '.concat(name);
+
+
