@@ -47,3 +47,18 @@ const parseF = s => isNaN(+s) ? null : +s;
 // 5
 
 const parseF = s => isNaN(s) || typeof s == 'boolean' ? null : parseFloat(s);
+
+
+
+// 6:
+
+function parseF(s) {
+  let num = parseFloat(s);
+
+  if (isNaN(num)) {
+    return null;
+  } else{
+   return num;
+  }
+  
+}
