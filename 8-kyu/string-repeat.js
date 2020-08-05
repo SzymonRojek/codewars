@@ -95,3 +95,14 @@ function repeatStr (times, string) {
 
     return string.repeat(times);
 }
+
+
+
+// 9
+
+function repeatStr (n, s) {
+
+  if (!n || !s) return '';
+
+  return s.repeat(n);
+}
