@@ -46,3 +46,9 @@ function repeatStr (n, s) {
 
   return newStr;
 }
+
+
+
+// 3
+
+const repeatStr = (n, s) => s.repeat(n);
