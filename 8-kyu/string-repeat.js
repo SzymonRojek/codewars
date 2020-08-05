@@ -85,3 +85,13 @@ function repeatStr (n, s) {
 
   return newStr;
 }
+
+
+
+// 8
+
+function repeatStr (times, string) {
+  if (times > 0);
+
+    return string.repeat(times);
+}
