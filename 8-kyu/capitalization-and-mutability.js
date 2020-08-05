@@ -13,3 +13,16 @@ Fix the helper function they wrote so that it works as intended
 Don't worry about numbers, special characters, or non-string types being passed to the function. 
 The string lengths will be from 1 character up to 10 characters, but will never be empty.
 */
+
+
+
+// 1:
+
+
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+console.log(capitalizeWord('word')); // Word
+console.log(capitalizeWord('i')); // I
+console.log(capitalizeWord('glasswear')); // Glasswear
