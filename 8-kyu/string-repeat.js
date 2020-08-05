@@ -31,3 +31,18 @@ console.log(repeatStr(2, 'ha')); // "ha ha ")
 console.log(repeatStr(6, 'I')); // "IIIIII"
 console.log(repeatStr(5, 'Hello')); // "HelloHelloHelloHelloHello"
 
+
+
+// 2
+
+function repeatStr (n, s) {
+  
+  let newStr = '';
+  
+ 
+  for (let i =0; i < n; i++) {
+    newArr += s;
+  }
+
+  return newStr;
+}
