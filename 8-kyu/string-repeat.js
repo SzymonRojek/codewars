@@ -52,3 +52,12 @@ function repeatStr (n, s) {
 // 3
 
 const repeatStr = (n, s) => s.repeat(n);
+
+
+
+
+// 4
+
+function repeatStr (n, s) {
+  return n > 1 ? s + repeatStr(--n, s) : s;
+}
