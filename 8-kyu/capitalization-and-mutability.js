@@ -26,3 +26,11 @@ function capitalizeWord(word) {
 console.log(capitalizeWord('word')); // Word
 console.log(capitalizeWord('i')); // I
 console.log(capitalizeWord('glasswear')); // Glasswear
+
+
+
+// 2:
+
+function capitalizeWord(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
