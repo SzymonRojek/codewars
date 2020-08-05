@@ -73,3 +73,15 @@ const repeatStr = (n, s) => Array(n+1).join(s);
 // 6
 
 const repeatStr = (n, s) => Array(n).fill(s).join``;
+
+
+
+// 7
+
+function repeatStr (n, s) {
+  let newStr = s;
+  
+  for ( let i = 1; i < n; i++) newStr += s;
+
+  return newStr;
+}
