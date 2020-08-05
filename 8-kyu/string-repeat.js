@@ -61,3 +61,9 @@ const repeatStr = (n, s) => s.repeat(n);
 function repeatStr (n, s) {
   return n > 1 ? s + repeatStr(--n, s) : s;
 }
+
+
+
+// 5
+
+const repeatStr = (n, s) => Array(n+1).join(s);
