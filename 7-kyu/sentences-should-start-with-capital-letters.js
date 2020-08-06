@@ -27,7 +27,7 @@ all but the last full stop will be followed by a space and at least one word
 
 
 
-// 1: my solution
+// 1:
 
 
 function fix(p){
@@ -42,3 +42,9 @@ function fix(p){
 
 console.log(fix("hello. my name is inigo montoya. you killed my father. prepare to die."));
 // 'Hello. My name is inigo montoya. You killed my father. Prepare to die.'
+
+
+
+// 2:
+
+const fix = p => p.split('. ').map(el => el.charAt(0).toUpperCase() + el.slice(1)).join('. ');
