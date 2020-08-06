@@ -79,9 +79,24 @@ function solve(str){
 
 function solve(str){
   let c = 0;
+
   for (let i = 0; i < str.length; i++) {
     if (str[i] === str[i].toUpperCase()) c++;
   }
   
   return (c > str.length/2) ? str.toUpperCase() : str.toLowerCase()
+}
+
+
+
+// 5:
+
+const solve = s => {
+
+  const lowerCaseLetters = s.split('').reduce((a, c) => {
+    if(c === c.toLowerCase()) a++
+    return a
+  }, 0);
+  
+  return lowerCaseLetters >= s.length / 2 ? s.toLowerCase() : s.toUpperCase();
 }
