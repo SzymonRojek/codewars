@@ -103,7 +103,7 @@ const solve = s => {
 
 
 
-// 6
+// 6:
 
 function solve(str){
   let [up,low] = [0,0];
