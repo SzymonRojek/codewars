@@ -51,7 +51,7 @@ const fix = p => p.split('. ').map(el => el.charAt(0).toUpperCase() + el.slice(1
 
 
 
-// 3
+// 3:
 
 function fix(paragraph){
   let returnParagraph = '';
@@ -66,3 +66,9 @@ function fix(paragraph){
   
   return returnParagraph;
 }
+
+
+
+// 4:
+
+const fix = p => p.split('. ').map(i => i.slice(0, 1).toUpperCase() + i.slice(1)).join('. ');
