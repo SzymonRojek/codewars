@@ -48,3 +48,21 @@ console.log(fix("hello. my name is inigo montoya. you killed my father. prepare 
 // 2:
 
 const fix = p => p.split('. ').map(el => el.charAt(0).toUpperCase() + el.slice(1)).join('. ');
+
+
+
+// 3
+
+function fix(paragraph){
+  let returnParagraph = '';
+  
+  for (let i = 0; i < paragraph.length; i++) {
+    if (i === 0 || paragraph[i - 2] === '.') {
+      returnParagraph += paragraph[i].toUpperCase();
+    } else {
+      returnParagraph += paragraph[i];
+    }
+  }
+  
+  return returnParagraph;
+}
