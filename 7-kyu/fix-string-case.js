@@ -112,3 +112,9 @@ function solve(str){
   
   return up > low ? str.toUpperCase() : str.toLowerCase();
 }
+
+
+
+// 7:
+
+const solve = str => str.split('').reduce(( a, v ) => v === v.toUpperCase() ? a+1 : a-1,0) > 0 ? str.toUpperCase() : str.toLowerCase();
