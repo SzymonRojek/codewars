@@ -17,3 +17,26 @@ solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to 
 solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 */
 
+
+
+// 1:
+
+function solve(str){
+  let countUpperCase = 0, countLowerCase = 0;
+  
+  for(let i = 0; i < str.length; i++) {
+    if(/[A-Z]/.test(str.charAt(i))) {
+      countUpperCase++;
+    } else {
+      countLowerCase++;
+    }
+  }
+
+  return countUpperCase > countLowerCase? str.toUpperCase() : str.toLowerCase();
+}
+
+console.log(solve("code")); // "code"
+console.log(solve("CODe")); // "CODE"
+console.log(solve("COde")); // "code"
+console.log(solve("Code")); // "code"
+
