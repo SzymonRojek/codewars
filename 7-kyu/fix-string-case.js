@@ -72,3 +72,16 @@ function solve(str){
 
   return (upper > lower) ? str.toUpperCase() : str.toLowerCase(); 
 }
+
+
+
+// 4:
+
+function solve(str){
+  let c = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toUpperCase()) c++;
+  }
+  
+  return (c > str.length/2) ? str.toUpperCase() : str.toLowerCase()
+}
