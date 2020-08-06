@@ -78,3 +78,23 @@ const fix = p => p.split('. ').map(i => i.slice(0, 1).toUpperCase() + i.slice(1)
 // 5:
 
 const fix = p =>  !p ? p : p.split`. `.map(x => x[0].toUpperCase() + x.slice(1)).join`. `;
+
+
+
+// 6:
+
+unction fix(paragraph){
+  let arr = [];
+  const ar = paragraph.split('. ');
+
+  for (let i = 0; i < ar.length; i++) {
+   
+    let a = ar[i][0].toUpperCase();
+    
+    for (let j = 1; j < ar[i].length; j++) a += ar[i][j];
+
+      arr.push(a);
+  }
+  
+    return arr.join('. ');
+  }
