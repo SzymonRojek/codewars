@@ -100,3 +100,15 @@ const solve = s => {
   
   return lowerCaseLetters >= s.length / 2 ? s.toLowerCase() : s.toUpperCase();
 }
+
+
+
+// 6
+
+function solve(str){
+  let [up,low] = [0,0];
+
+  str.split('').map( l => l == l.toUpperCase() ? up += 1: low += 1);
+  
+  return up > low ? str.toUpperCase() : str.toLowerCase();
+}
