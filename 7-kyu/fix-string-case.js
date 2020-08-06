@@ -60,3 +60,15 @@ function solve(str) {
   
   return lowerC >= upperC ? str.toLowerCase() : str.toUpperCase();
 }
+
+
+
+// 3:
+
+function solve(str){
+  const upper = str.split('').filter(x => x === x.toUpperCase()).length;
+
+  const lower = str.length - upper;
+
+  return (upper > lower) ? str.toUpperCase() : str.toLowerCase(); 
+}
