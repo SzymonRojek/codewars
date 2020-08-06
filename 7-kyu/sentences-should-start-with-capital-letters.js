@@ -98,3 +98,28 @@ unction fix(paragraph){
   
     return arr.join('. ');
   }
+
+
+
+
+// 7:
+
+function fix(paragraph){
+  let str = '';
+  
+  for(let i = 0; i < paragraph.length; i++){
+    if( i === 0){
+      str += paragraph[i].toUpperCase();
+      continue;
+    }
+    
+    if(paragraph[i-1] === ' ' && paragraph[i-2] === '.'){
+      str += paragraph[i].toUpperCase();
+      continue;
+    }
+    
+    str += paragraph[i];
+  }
+  
+  return str;
+}
