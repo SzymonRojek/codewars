@@ -72,3 +72,9 @@ function fix(paragraph){
 // 4:
 
 const fix = p => p.split('. ').map(i => i.slice(0, 1).toUpperCase() + i.slice(1)).join('. ');
+
+
+
+// 5:
+
+const fix = p =>  !p ? p : p.split`. `.map(x => x[0].toUpperCase() + x.slice(1)).join`. `;
