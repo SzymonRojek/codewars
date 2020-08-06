@@ -40,3 +40,23 @@ console.log(solve("CODe")); // "CODE"
 console.log(solve("COde")); // "code"
 console.log(solve("Code")); // "code"
 
+
+
+
+// 2:
+
+function solve(str) {
+  let lowerC = 0;
+  let upperC = 0;
+
+  for( let i = 0; i < str.length; i++) {
+
+    if( str[i] == str[i].toUpperCase()){
+      upperC++;
+    } else {
+      lowerC++;
+    }
+  }
+  
+  return lowerC >= upperC ? str.toLowerCase() : str.toUpperCase();
+}
