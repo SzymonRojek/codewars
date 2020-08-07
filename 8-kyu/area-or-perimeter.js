@@ -10,3 +10,9 @@ If it is a square, return its area. If it is a rectangle, return its perimeter.
 area_or_perimeter(6, 10) --> 32
 area_or_perimeter(4, 4) --> 16
 */
+
+
+
+// 1:
+
+const areaOrPerimeter = (a , b) => a !== b ? 2*(a+b) : a * b;
