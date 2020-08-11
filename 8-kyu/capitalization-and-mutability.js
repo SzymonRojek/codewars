@@ -40,3 +40,17 @@ function capitalizeWord(word) {
 // 3
 
 const capitalizeWord = str => `${str[0].toUpperCase()}${str.slice(1)}`;
+
+
+
+// 4
+
+function capitalizeWord(str) {
+  let firstUp = str[0].toUpperCase();
+
+  for (let i = 1; i < str.length; i++) {
+    firstUp += str[i];
+  }
+
+  return firstUp;
+}
