@@ -54,3 +54,9 @@ function capitalizeWord(str) {
 
   return firstUp;
 }
+
+
+
+// 5
+
+const capitalizeWord = str => str = str[0].toUpperCase().concat(str.substring(1, str.length));
