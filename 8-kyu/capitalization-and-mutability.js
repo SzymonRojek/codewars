@@ -34,3 +34,9 @@ console.log(capitalizeWord('glasswear')); // Glasswear
 function capitalizeWord(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
+
+
+
+// 3
+
+const capitalizeWord = str => `${str[0].toUpperCase()}${str.slice(1)}`;
