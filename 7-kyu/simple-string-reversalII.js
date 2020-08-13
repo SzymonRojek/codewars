@@ -35,3 +35,17 @@ console.log((solve("codingIsFun",2,100))); // "conuFsIgnid"
 console.log((solve("FunctionalProgramming", 2, 15))); // "FuargorPlanoitcnmming"
 console.log((solve("abcdefghijklmnopqrstuvwxyz",0,20))); // "utsrqponmlkjihgfedcbavwxyz"
 console.log((solve("abcdefghijklmnopqrstuvwxyz",5,20))); // "abcdeutsrqponmlkjihgfvwxyz"
+
+
+
+// 4:
+
+function solve(str, from, to){
+  const first = str.slice(0, from);
+
+  const last = str.slice(to + 1);
+
+  const mid = str.slice(from, to + 1).split('').reverse().join('');
+
+  return first + mid + last;
+ }
