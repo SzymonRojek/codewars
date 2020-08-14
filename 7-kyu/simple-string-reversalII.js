@@ -38,6 +38,7 @@ console.log((solve("abcdefghijklmnopqrstuvwxyz",5,20))); // "abcdeutsrqponmlkjih
 
 
 
+
 // 4:
 
 function solve(str, from, to){
