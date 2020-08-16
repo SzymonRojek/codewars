@@ -58,3 +58,10 @@ const countBits = num => {
   if(val === 1) acc++;
     return acc;
 }, 0);
+
+
+
+
+// 4
+
+const countBits = num => [...(num >>> 0).toString(2)].map(Number).reduce((acc, val) => acc + val, 0);
