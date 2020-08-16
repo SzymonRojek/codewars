@@ -97,3 +97,10 @@ const countBits = num => {
 
   return num === null ? 0 : num.length;
 };
+
+
+
+
+// 9
+
+const countBits = num => [...num.toString(2)].map(Number).reduce((a, b) => a + b);
