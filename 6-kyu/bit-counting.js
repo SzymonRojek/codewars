@@ -9,7 +9,7 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 
 
 
-// 1:
+// 1
 
 const countBits = num => {
 
@@ -32,7 +32,7 @@ const countBits = num => {
 
 
 
- // 2:
+ // 2
 
 const countBits = num => {
 
@@ -49,3 +49,12 @@ const countBits = num => {
  
   return countOnes;
  }
+
+
+
+ // 3
+
+ const countBits = num => [...(num >>> 0).toString(2)].map(Number).reduce((acc, val) => {
+  if(val === 1) acc++;
+    return acc;
+}, 0);
