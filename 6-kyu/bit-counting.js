@@ -86,3 +86,14 @@ const countBits = num => num.toString(2).split('0').join('').length;
 // 7
 
 const countBits = num =>  num.toString(2).replace(/0/g,'').length;
+
+
+
+
+// 8
+
+const countBits = num => {
+  num = num.toString(2).match(/1/g);
+
+  return num === null ? 0 : num.length;
+};
