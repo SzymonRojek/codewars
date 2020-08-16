@@ -28,3 +28,24 @@ const countBits = num => {
  console.log(countBits(7)); // 3
  console.log(countBits(9)); // 2
  console.log(countBits(10)); // 2
+
+
+
+
+ // 2:
+
+const countBits = num => {
+
+  let countOnes = 0;
+ 
+  const getBinary = [...(num >>> 0).toString(2)].map(Number);
+ 
+ 
+ for (let i = 0; i < getBinary.length; i++) {
+   const num = getBinary[i];
+ 
+   if(num === 1) countOnes++;
+ }
+ 
+  return countOnes;
+ }
