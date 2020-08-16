@@ -65,3 +65,10 @@ const countBits = num => {
 // 4
 
 const countBits = num => [...(num >>> 0).toString(2)].map(Number).reduce((acc, val) => acc + val, 0);
+
+
+
+
+// 5
+
+const countBits = num => [...(num >>> 0).toString(2)].map(Number).filter(num => num).length;
