@@ -104,3 +104,12 @@ const countBits = num => {
 // 9
 
 const countBits = num => [...num.toString(2)].map(Number).reduce((a, b) => a + b);
+
+
+
+
+// 10
+
+const countBits = function(n) {
+  return n.toString(2).split('1').length - 1;
+};
