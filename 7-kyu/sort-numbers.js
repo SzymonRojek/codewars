@@ -11,3 +11,37 @@ For example:
 solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 solution(null); // should return []
 */ 
+
+
+
+// 1 
+
+const solution = nums => {
+
+  return Array.isArray(nums) ? nums.reduce((acc, val) => {
+ 
+     if(acc.length) {
+       let temp = [];
+ 
+       while(acc[acc.length -1] > val) {
+       temp.push(acc.pop());
+       } 
+ 
+         acc.push(val);
+ 
+       while(temp.length) {
+       acc.push(temp.pop());
+       }
+     } else {
+         acc.push(val);  
+       }
+ 
+   return acc;
+   
+   }, []) : [];
+ 
+ }
+ 
+ console.log(solution()); // []
+ console.log(solution(null)); // []
+ console.log(solution([5,4,3,1,2])); // [1,2,3,4,5]
