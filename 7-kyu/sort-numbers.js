@@ -45,3 +45,16 @@ const solution = nums => {
  console.log(solution()); // []
  console.log(solution(null)); // []
  console.log(solution([5,4,3,1,2])); // [1,2,3,4,5]
+
+
+
+ // 2
+
+ function solution(nums){
+  if( nums === null || nums === undefined) {
+    return []
+  } else {
+    return nums.sort((a, b) =>a - b);
+  }
+ 
+ }
