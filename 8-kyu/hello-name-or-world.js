@@ -15,3 +15,15 @@ hello "aliCE"  => "Hello, Alice!"
 hello          => "Hello, World!" # name not given
 hello ''       => "Hello, World!" # name is an empty String
 */
+
+
+
+// 1
+
+const hello = name => `Hello, ${name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "World"}!`;
+
+
+console.log((hello('johN'))); // 'Hello, John!' when given 'johN'
+console.log((hello('alice'))); // 'Hello, Alice!' when given 'alice'
+console.log((hello(''))); // 'Hello, World!'
+console.log((hello())); // 'Hello, World!'
