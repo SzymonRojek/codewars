@@ -27,3 +27,9 @@ console.log((hello('johN'))); // 'Hello, John!' when given 'johN'
 console.log((hello('alice'))); // 'Hello, Alice!' when given 'alice'
 console.log((hello(''))); // 'Hello, World!'
 console.log((hello())); // 'Hello, World!'
+
+
+
+// 2
+
+const hello = str => `Hello, ${str ? (str[0].toUpperCase() + str.slice(1).toLowerCase()) : 'World'}!`;
