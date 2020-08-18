@@ -60,7 +60,13 @@ const solution = nums => {
  }
 
 
- 
+
  // 3
 
  const solution = nums => nums === null || nums === undefined ? [] : nums.sort((a, b) =>a - b);
+
+
+
+ // 4
+
+ const solution = nums => (nums || []).sort((a, b) =>a - b);
