@@ -70,3 +70,9 @@ const solution = nums => {
  // 4
 
  const solution = nums => (nums || []).sort((a, b) =>a - b);
+
+
+
+ // 5
+
+ const solution = nums => Array.isArray(nums)? nums.sort((a, b) =>a - b) : [];
