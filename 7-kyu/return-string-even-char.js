@@ -79,7 +79,6 @@ const evenChars = str => (str.length < 2 || str.length > 100) ? "invalid string"
 
 
 
-
 // 6
 
 const evenChars = str => {
@@ -94,7 +93,21 @@ const evenChars = str => {
 
 
 
-
 // 7
 
 const evenChars = string => (string.length < 2 || string.length > 100) ? "invalid string" : [...string].filter((_, index) => [index + 1] % 2 === 0);
+
+
+
+// 8
+
+function evenChars(string) {
+  
+  const list = [...string],
+  nums = [...Array(list.length).keys()],
+  odds = [];
+
+  for (num of nums) { if(num % 2) odds.push(list[num]) }
+
+  return list.length < 2 || list.length > 100 ? "invalid string": odds;
+}
