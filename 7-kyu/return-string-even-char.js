@@ -43,3 +43,9 @@ console.log((evenChars ("abcdefghijklm"))); //  ["b", "d", "f", "h", "j", "l"]
 
 const evenChars = string => (string.length < 2 || string.length > 100)? 'invalid string' : [...string].filter((el, i) => i % 2);
 
+
+
+
+// 3
+
+const evenChars = string => (string.length > 2 && string.length < 100) ? Array.from(string).filter((_, i) => i % 2) : 'invalid string';
