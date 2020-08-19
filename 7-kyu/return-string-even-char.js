@@ -52,6 +52,7 @@ const evenChars = string => (string.length > 2 && string.length < 100) ? Array.f
 
 
 
+
 // 4
 
 const evenChars = string => {
@@ -75,3 +76,19 @@ const evenChars = string => {
 // 5
 
 const evenChars = str => (str.length < 2 || str.length > 100) ? "invalid string" : str.replace(/.(.)?/g, '$1').split('');
+
+
+
+
+// 6
+
+const evenChars = str => {
+
+  if(str.length < 2 || str.length > 100) {
+    return 'invalid string';
+  } else {
+    return [...str].filter((_, index) => index % 2 === 1);
+  }
+
+}
+
