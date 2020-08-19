@@ -35,3 +35,11 @@ function evenChars(string) {
 
 console.log((evenChars ("a"))); //  "invalid string"
 console.log((evenChars ("abcdefghijklm"))); //  ["b", "d", "f", "h", "j", "l"]
+
+
+
+
+// 2
+
+const evenChars = string => (string.length < 2 || string.length > 100)? 'invalid string' : [...string].filter((el, i) => i % 2);
+
