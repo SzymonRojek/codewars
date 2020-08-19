@@ -68,3 +68,10 @@ const evenChars = string => {
   return string.length < 2 || string.length > 100 ? 'invalid string' : newArr;
 
 }
+
+
+
+
+// 5
+
+const evenChars = str => (str.length < 2 || str.length > 100) ? "invalid string" : str.replace(/.(.)?/g, '$1').split('');
