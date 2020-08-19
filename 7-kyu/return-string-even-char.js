@@ -11,4 +11,27 @@ For example:
 
 "abcdefghijklm" --> ["b", "d", "f", "h", "j", "l"]
 "a"             --> "invalid string"
+
 */
+
+
+
+
+// 1
+
+function evenChars(string) {
+  
+  if(string.length < 2 || string.length > 100) return 'invalid string';
+
+  let newArr = [];  
+
+  [...string].forEach((el, i) => {
+    if(i % 2 === 1) newArr.push(el);
+  })
+
+  return newArr;
+}
+
+
+console.log((evenChars ("a"))); //  "invalid string"
+console.log((evenChars ("abcdefghijklm"))); //  ["b", "d", "f", "h", "j", "l"]
