@@ -49,3 +49,22 @@ const evenChars = string => (string.length < 2 || string.length > 100)? 'invalid
 // 3
 
 const evenChars = string => (string.length > 2 && string.length < 100) ? Array.from(string).filter((_, i) => i % 2) : 'invalid string';
+
+
+
+// 4
+
+const evenChars = string => {
+
+  const newArr = [];
+
+  for (let i = 0; i < string.length; i++) {
+    const char = string[i];
+
+    if(i % 2) newArr.push(char);
+    
+  }
+
+  return string.length < 2 || string.length > 100 ? 'invalid string' : newArr;
+
+}
