@@ -109,5 +109,5 @@ function evenChars(string) {
 
   for (num of nums) { if(num % 2) odds.push(list[num]) }
 
-  return list.length < 2 || list.length > 100 ? "invalid string": odds;
+  return list.length < 2 || list.length > 100 ? "invalid string" : odds;
 }
