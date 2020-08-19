@@ -92,3 +92,9 @@ const evenChars = str => {
 
 }
 
+
+
+
+// 7
+
+const evenChars = string => (string.length < 2 || string.length > 100) ? "invalid string" : [...string].filter((_, index) => [index + 1] % 2 === 0);
