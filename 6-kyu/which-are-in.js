@@ -45,3 +45,27 @@ a1 = ["live", "strong", "arp"]
 console.log(inArray(a1, a2)); // ["arp", "live", "strong"]
 a1 = ["tarp", "mice", "bull"]
 console.log(inArray(a1, a2)); // []
+
+
+
+// 2
+
+function inArray(arr1, arr2){
+  
+  const result = [];
+
+  arr2.forEach( word => {
+
+    for (let i = arr1.length-1; i >= 0; i--) {
+      const ending = arr1[i];
+
+      if(word.includes(ending)) {
+        arr1.splice(i, 1);
+        result.push(ending);
+        break;
+      }
+    }
+  });
+
+  return result.sort();
+}
