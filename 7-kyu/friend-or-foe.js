@@ -201,8 +201,6 @@ console.log(whoIsARealFriend(['Krzysztof', 'Ilona', 'Basia']));
 
 
 
-
-
 //   12 
 
 const whoIsMyFriend = friends => {
@@ -226,3 +224,20 @@ const whoIsMyFriend = friends => {
 };
 
 console.log(whoIsMyFriend(['Basia', 'Krzysztof', 'Monika', 'Anna'])); // ["Basia"];
+
+
+
+
+// 13
+
+function friend(friends){
+  
+  for (let i = friends.length-1; i >= 0; i--) {
+    const friend = friends[i];
+
+    if(friend.length !== 4) friends.splice(i, 1);
+    
+  }
+
+  return friends;
+}
