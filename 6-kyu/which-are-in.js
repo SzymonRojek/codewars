@@ -131,3 +131,27 @@ function inArray(arr1, arr2) {
   
   return [...new Set(result)].sort();
 }
+
+
+
+
+// 7
+
+function inArray(arr1, arr2) {
+
+  const result = [];
+  
+  for (let i = 0; i < arr1.length; i++) {
+    const char = arr1[i];
+    
+    for (let j = 0; j < arr2.length; j++) {
+      const word = arr2[j];
+      
+      if (word.indexOf(char) !== -1 && result.indexOf(char) === -1) {
+        result.push(char);
+      }
+    }
+  }
+  
+  return result.sort();
+}
