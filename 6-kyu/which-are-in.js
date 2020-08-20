@@ -69,3 +69,25 @@ function inArray(arr1, arr2){
 
   return result.sort();
 }
+
+
+
+// 3
+
+function inArray(arr1, arr2){
+  
+  const result = [];
+
+  arr2.forEach( word => {
+
+    arr1.forEach( (ending, i) =>{
+
+      if(word.includes(ending)) {
+    
+        result.push(ending);
+      }
+    });
+  });
+
+  return [...new Set(result)].sort();
+}
