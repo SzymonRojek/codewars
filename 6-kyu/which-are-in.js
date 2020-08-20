@@ -27,3 +27,21 @@ In Shell bash a1 and a2 are strings. The return is a string where words are sepa
 Beware: r must be without duplicates.
 Don't mutate the inputs.
 */ 
+
+
+
+// 1
+
+
+function inArray(arr1, arr2){
+  return arr1.filter( ending => arr2.some( word => word.includes(ending))).sort();
+}
+
+let a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+let a1 = ["xyz", "live", "strong"]
+console.log(inArray(a1, a2)); // ["live", "strong"]
+a1 = ["live", "strong", "arp"]
+console.log(inArray(a1, a2)); // ["arp", "live", "strong"]
+a1 = ["tarp", "mice", "bull"]
+console.log(inArray(a1, a2)); // []
