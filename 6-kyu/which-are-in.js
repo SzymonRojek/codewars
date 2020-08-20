@@ -97,6 +97,14 @@ function inArray(arr1, arr2){
 // 4
 
 function inArray(arr1, arr2) {
-  
+
   return arr1.filter(end => arr2.join(' ').indexOf(end) !== -1);
+}
+
+
+
+// 5
+
+function inArray(arr1, arr2) {
+  return arr1.filter(end => arr2.find(word => word.match(end))).sort();
 }
