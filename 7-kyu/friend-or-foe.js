@@ -257,3 +257,16 @@ function friend(friends){
           // do not have to write false because function returns undefined, it is falsy value
         });
 }
+
+
+
+// 15
+
+const friend = friends => {
+  return friends.reduceRight((_, val, index, arr) => (val.length !== 4 && arr.splice(index, 1), arr), null);
+}
+
+console.log(friend(["Ryan", "Kieran", "Mark"])); // ["Ryan", "Mark"]
+console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])); // ["Ryan"]
+console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])); // ["Jimm", "Cari", "aret"]
+console.log(friend(["Love", "Your", "Face", "1"])); // ["Love", "Your", "Face"]
