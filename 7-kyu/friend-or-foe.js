@@ -241,3 +241,19 @@ function friend(friends){
 
   return friends;
 }
+
+
+
+// 14
+
+function friend(friends){
+  
+        return friends.filter(friend => {
+          if(friend.length === 4) {
+            return true
+          }
+      
+          return false;
+          // do not have to write false because function returns undefined, it is falsy value
+        });
+}
