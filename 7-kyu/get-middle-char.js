@@ -40,7 +40,14 @@ function getMiddle(str) {
   
   return str.substring(position, position + length);
 }
+
 console.log(getMiddle("test")); // 'es'
 console.log(getMiddle("testing")); // 't'
 console.log(getMiddle("middle")); // 'dd'
 console.log(getMiddle("A")); // 'A'
+
+
+
+// 2
+
+const getMiddle = str => (str.length % 2 === 1) ? str.substring(str.length / 2, str.length / 2 + 1) : str.substring(str.length / 2 - 1, str.length / 2 - 1 + 2);
