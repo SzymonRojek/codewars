@@ -51,3 +51,11 @@ console.log(getMiddle("A")); // 'A'
 // 2
 
 const getMiddle = str => (str.length % 2 === 1) ? str.substring(str.length / 2, str.length / 2 + 1) : str.substring(str.length / 2 - 1, str.length / 2 - 1 + 2);
+
+
+
+// 3
+
+function getMiddle(str) {
+  return str.substr(Math.ceil(str.length / 2 - 1), str.length % 2 === 0 ? 2 : 1);
+}
