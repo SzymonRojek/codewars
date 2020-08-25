@@ -65,3 +65,15 @@ const reverseList = ([h, ...t]) => h == undefined ? [] : [...reverseList(t), h];
 function reverseList(list) {
   return list.reduce((reverseList, element) => [element, ...reverseList], []);
 }
+
+
+
+// 6
+
+function reverseList(list) {
+  let reversed = [];
+
+  list.map(num => reversed.unshift(num));
+
+  return reversed;
+}
