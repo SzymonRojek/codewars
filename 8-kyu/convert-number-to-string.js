@@ -37,3 +37,9 @@ function numberToString(num) {
 function numberToString(num) {
   return num.toString();
 }
+
+
+
+// 4
+
+const numberToString = num => `${num}`;
