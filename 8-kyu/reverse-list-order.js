@@ -12,6 +12,10 @@ As input you have got a string with digits and return array of digits.
 
 */
 
+
+
+// 1
+
 function reverseList(list) {
   
   let reversedArr = [];
@@ -28,3 +32,11 @@ function reverseList(list) {
 console.log(reverseList([1,2,3,4])); // [4,3,2,1]
 console.log(reverseList([3,1,5,4])); // [4,5,1,3]
  
+
+
+
+// 2
+
+function reverseList(list) {
+  return list.reverse();
+}
