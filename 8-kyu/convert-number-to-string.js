@@ -21,3 +21,11 @@ function numberToString(num) {
 }
 
 console.log(numberToString(67)); // '67'
+
+
+
+// 2
+
+function numberToString(num) {
+  return num + ''; 
+}
