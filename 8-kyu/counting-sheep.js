@@ -103,7 +103,15 @@ function countSheeps(arrayOfSheep) {
 
 
 
+
 // 7
+
+const countSheeps = arrayOfSheep => arrayOfSheep.reduce((sum, i) => i === true ? sum+1 : sum, 0);
+// const countSheeps = arrayOfSheep => arrayOfSheep.reduce((sum, i) => i ? sum+1 : sum, 0);
+
+
+
+// 8
 
 function countSheeps(arrayOfSheep) {
   let count = 0;
