@@ -40,3 +40,13 @@ console.log(reverseList([3,1,5,4])); // [4,5,1,3]
 function reverseList(list) {
   return list.reverse();
 }
+
+
+
+// 3
+
+function reverseList(list) {
+  return list.slice().reverse();
+}
+
+// slice method creates a shallow copy of the array to not mutate the input.
