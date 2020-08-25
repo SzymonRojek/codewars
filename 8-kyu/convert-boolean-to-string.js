@@ -16,3 +16,15 @@ function boolToWord(bool) {
 
 console.log(boolToWord(true)); // 'Yes'
 console.log(boolToWord(false)); // 'No'
+
+
+
+// 2
+
+function boolToWord(bool){
+  if (bool) {
+    return 'Yes';
+  } else {
+    return 'No';
+  }
+}
