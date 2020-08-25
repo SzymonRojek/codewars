@@ -55,3 +55,18 @@ const disemvowel = str => {
 
   return withoutVowels;
 }
+
+
+
+// 3
+
+const disemvowel = str => {
+
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
+  let withoutVowels = '';
+
+  [...str].forEach(letter => (vowels.indexOf(letter) === -1) ? withoutVowels += letter : letter);
+
+  return withoutVowels;
+}
