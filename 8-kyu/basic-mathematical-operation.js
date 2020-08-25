@@ -16,3 +16,19 @@ basicOp('-', 15, 18)       // Output: -3
 basicOp('*', 5, 5)         // Output: 25
 basicOp('/', 49, 7)        // Output: 7
 */
+
+
+
+// 1
+
+function basicOp(operation, num1, num2) {
+  if(operation === '*') return num1 * num2;
+  if(operation === '/') return num1 / num2;
+  if(operation === '+') return num1 + num2;
+  if(operation === '-') return num1 - num2;
+}
+
+console.log(basicOp('+', 4, 7)); // 11
+console.log(basicOp('-', 15, 18)); // -3
+console.log(basicOp('*', 5, 5)); // 25
+console.log(basicOp('/', 49, 7)); // 7
