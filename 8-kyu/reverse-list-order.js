@@ -57,3 +57,11 @@ function reverseList(list) {
 // 4
 
 const reverseList = ([h, ...t]) => h == undefined ? [] : [...reverseList(t), h];
+
+
+
+// 5
+
+function reverseList(list) {
+  return list.reduce((reverseList, element) => [element, ...reverseList], []);
+}
