@@ -80,3 +80,8 @@ const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLow
 
 const disemvowel = str => [...str].map(letter => /[aeiouyAEIOUY]/.test(letter) ? letter = '' : letter).join('');
 
+
+
+// 6
+
+const disemvowel = str => str.replace(/[aeiouAEIOU]/g, '');
