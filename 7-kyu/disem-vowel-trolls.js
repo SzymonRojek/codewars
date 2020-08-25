@@ -13,3 +13,27 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 Note: for this kata y isn't considered a vowel.
 */
+
+
+
+// 1
+
+const disemvowel = str => {
+
+  return [...str].map(letter => {
+
+      if(/[aeiouyAEIOUY]/.test(letter)){
+     letter = '';
+    } else {
+      return letter;
+    }
+    }).join('');
+
+}
+
+const vowels = 'aeiouAEIOU';
+const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLowerCase())).join('');
+
+
+console.log(disemvowel("This website is for losers LOL!"));  // "Ths wbst s fr lsrs LL!"
+
