@@ -60,3 +60,18 @@ function basicOp(operation, value1, value2) {
 function basicOp(o, a, b) {
   return eval(a + o + b);
 }
+
+
+
+// 4
+
+function basicOp(operation, value1, value2) {
+  const cases = {
+    '+': value1 + value2,
+    '-': value1 - value2,
+    '*': value1 * value2,
+    '/': value1 / value2
+  };
+  
+  return cases[operation]
+}
