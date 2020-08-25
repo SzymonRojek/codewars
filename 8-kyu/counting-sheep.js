@@ -87,3 +87,15 @@ function countSheeps(arrayOfSheep) {
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.reduce((a, b) => a + (b === true ? 1 : 0), 0);
 }
+
+
+
+// 6
+
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.reduce((result, current) => {
+    if(current) result++;
+
+    return result;
+  }, 0);
+}
