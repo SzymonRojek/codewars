@@ -45,3 +45,12 @@ function boolToWord( bool ){
 Putting an integer in square brackets next to the list gets the item at that index. 
 Since, the Boolean is converted to an integer, it is used to access the list by giving the index of the item.
 */
+
+
+
+// 4
+
+function boolToWord( bool ){
+  let map = new Map ([[true, "Yes"],[false, "No"]]);
+  return map.get(bool);
+}
