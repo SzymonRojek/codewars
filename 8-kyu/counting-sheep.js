@@ -52,3 +52,20 @@ console.log(countSheeps(array1)); // "There are 17 sheeps in total"
 function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
 }
+
+
+
+// 3
+
+function countSheeps(arrayOfSheep) {
+  
+  let num = 0;
+  
+  for(let i = 0; i < arrayOfSheep.length; i++) {
+    let bool = arrayOfSheep[i];
+    
+    if(bool === true) num++;
+  }
+      
+  return num;
+}
