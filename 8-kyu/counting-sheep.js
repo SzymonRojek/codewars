@@ -86,6 +86,7 @@ function countSheeps(arrayOfSheep) {
 
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.reduce((a, b) => a + (b === true ? 1 : 0), 0);
+  // arrayOfSheep.reduce((a, b) => a + (b ? 1 : 0), 0);
 }
 
 
@@ -98,4 +99,16 @@ function countSheeps(arrayOfSheep) {
 
     return result;
   }, 0);
+}
+
+
+
+// 7
+
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  
+  arrayOfSheep.map(current => current ? count++ : false);
+  
+  return count;
 }
