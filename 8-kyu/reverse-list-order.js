@@ -50,3 +50,10 @@ function reverseList(list) {
 }
 
 // slice method creates a shallow copy of the array to not mutate the input.
+
+
+
+
+// 4
+
+const reverseList = ([h, ...t]) => h == undefined ? [] : [...reverseList(t), h];
