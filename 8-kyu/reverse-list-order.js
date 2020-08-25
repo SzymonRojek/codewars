@@ -77,3 +77,9 @@ function reverseList(list) {
 
   return reversed;
 }
+
+
+
+// 7 recursive solution
+
+const reverseList = l => l.length ? [...reverseList(l.slice(1)), l[0]] : '';
