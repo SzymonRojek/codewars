@@ -29,3 +29,11 @@ console.log(numberToString(67)); // '67'
 function numberToString(num) {
   return num + ''; 
 }
+
+
+
+// 3
+
+function numberToString(num) {
+  return num.toString();
+}
