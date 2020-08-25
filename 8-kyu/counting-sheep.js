@@ -64,7 +64,8 @@ function countSheeps(arrayOfSheep) {
   for(let i = 0; i < arrayOfSheep.length; i++) {
     let bool = arrayOfSheep[i];
     
-    if(bool === true) num++;
+    if(bool === true) num++; 
+    //  if(bool) num++;
   }
       
   return num;
@@ -77,4 +78,12 @@ function countSheeps(arrayOfSheep) {
 function countSheeps(arrayOfSheep) {
   
   return arrayOfSheep.filter(bool => bool).length;
- }
+}
+
+
+
+// 5
+
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.reduce((a, b) => a + (b === true ? 1 : 0), 0);
+}
