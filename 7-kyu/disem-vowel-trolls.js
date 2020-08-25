@@ -73,3 +73,10 @@ const disemvowel = str => {
 
 const vowels = 'aeiouAEIOU';
 const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLowerCase())).join('');
+
+
+
+// 5
+
+const disemvowel = str => [...str].map(letter => /[aeiouyAEIOUY]/.test(letter) ? letter = '' : letter).join('');
+
