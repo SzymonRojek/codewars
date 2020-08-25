@@ -43,3 +43,12 @@ const array1 = [true,  true,  true,  false,
   false, false, true,  true ];
 
 console.log(countSheeps(array1)); // "There are 17 sheeps in total"
+
+
+
+
+// 2
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
