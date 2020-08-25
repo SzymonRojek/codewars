@@ -37,3 +37,21 @@ const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLow
 
 console.log(disemvowel("This website is for losers LOL!"));  // "Ths wbst s fr lsrs LL!"
 
+
+
+
+// 2
+
+const disemvowel = str => {
+
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let withoutVowels = '';
+
+  for (let i = 0; i < str.length; i++) {
+    const letter = str[i];
+
+    if(vowels.indexOf(letter) === -1) withoutVowels += letter; 
+  }
+
+  return withoutVowels;
+}
