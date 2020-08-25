@@ -13,3 +13,11 @@ numberToString(123); // returns '123';`
 numberToString(999); // returns '999';`
 */
 
+
+// 1
+
+function numberToString(num) {
+  return String(num);
+}
+
+console.log(numberToString(67)); // '67'
