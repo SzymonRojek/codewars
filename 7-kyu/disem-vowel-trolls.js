@@ -31,10 +31,6 @@ const disemvowel = str => {
 
 }
 
-const vowels = 'aeiouAEIOU';
-const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLowerCase())).join('');
-
-
 console.log(disemvowel("This website is for losers LOL!"));  // "Ths wbst s fr lsrs LL!"
 
 
@@ -70,3 +66,10 @@ const disemvowel = str => {
 
   return withoutVowels;
 }
+
+
+
+// 4
+
+const vowels = 'aeiouAEIOU';
+const disemvowel = str => [...str].filter(letter => !vowels.indexOf(letter.toLowerCase())).join('');
