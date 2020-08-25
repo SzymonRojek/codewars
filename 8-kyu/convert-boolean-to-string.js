@@ -28,3 +28,20 @@ function boolToWord(bool){
     return 'No';
   }
 }
+
+
+
+// 3
+
+function boolToWord( bool ){
+  return ['No','Yes'][+bool];
+}
+
+/*
++bool converts the Boolean to an integer. false = 0, true = 1.
+
+['No','Yes'] is a list with "No" being index 0, and "Yes" being index 1.
+
+Putting an integer in square brackets next to the list gets the item at that index. 
+Since, the Boolean is converted to an integer, it is used to access the list by giving the index of the item.
+*/
