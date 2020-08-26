@@ -67,3 +67,10 @@ function oddCount(n) {
 
   return Number(arr)
 }
+
+
+
+
+// 5
+
+const oddCount = n => +String(n).split().map(num => (num%2===0) ? (num/2 + 0.0) : (num/2 - 0.5));
