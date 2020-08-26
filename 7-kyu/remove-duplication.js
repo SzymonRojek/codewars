@@ -29,6 +29,18 @@ function removeDuplication(arr) {
   arr.forEach(n => {
 
     counter[n] = (n in counter) ? counter[n]+1 : 1;
+
+    // if (! (n in counter)) {
+    // 	counter[n] = 0
+    // }
+    // counter[n]++
+
+    // or:
+    
+    // if (!counter.hasOwnProperty(n)) {
+    // 	counter[n] = 0
+    // }
+    // counter[n]++
   })
   
   for (const key in counter) {
