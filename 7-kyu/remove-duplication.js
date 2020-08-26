@@ -79,3 +79,9 @@ const removeDuplication = arr => {
     .filter(n => numbers[n] === 1);
     .map(n => +n);
 };
+
+
+
+// 4
+
+const removeDuplication = arr => arr.filter(x => arr.filter(y => y === x).length === 1);
