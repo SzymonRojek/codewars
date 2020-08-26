@@ -46,3 +46,24 @@ function oddCount(n) {
 }
 
 
+
+
+// 4
+
+function oddCount(n) {
+  
+  let arr = [];
+ 
+  n = String(n).split();
+
+  n.forEach(num => {
+    if(num % 2 === 0) {
+      arr.push(num / 2 + 0.0)
+    } else {
+      arr.push(num / 2 - 0.5)
+    }
+   
+  })
+
+  return Number(arr)
+}
