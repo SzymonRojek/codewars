@@ -17,3 +17,32 @@ Input : [1,2,1,2,1,1,2,2] , Output : [].
 
 Input : [2,5,6,7,5,2,6] , Output: [7].
 */
+
+
+
+// 1
+
+function removeDuplication(arr) {
+  const counter = {};
+  const noDuplicates = [];
+  
+  arr.forEach(n => {
+
+    counter[n] = (n in counter) ? counter[n]+1 : 1;
+  })
+  
+  for (const key in counter) {
+    const amount = counter[key];
+    
+    if (amount === 1) {
+      noDuplicates.push( Number(key) );
+    }
+  }
+  
+  return noDuplicates;
+}
+
+console.log((removeDuplication([1,2,3,2,4,6,2,6,7]))); //  [1,3,4,7]
+console.log((removeDuplication([1,2,1,2,1,1,2,2]))); // []
+console.log((removeDuplication([2,5,6,7,5,2,6]))); // [7]
+console.log((removeDuplication([0,1]))); // [0,1]
