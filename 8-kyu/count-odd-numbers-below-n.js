@@ -100,3 +100,13 @@ function oddCount(n){
 /*
 There is a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory - in this solution 7.
 */
+
+
+
+// 8
+
+function oddCount(n) {
+  const odd = Math.round((n - 1) / 2);
+
+  return odd;
+}
