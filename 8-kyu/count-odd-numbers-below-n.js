@@ -31,3 +31,18 @@ console.log(oddCount(100)); // 50
 // 2
 
 const oddCount = n => (n - n % 2) / 2; 
+
+
+
+// 3
+
+function oddCount(n) {
+  
+  let arr = [];
+
+  String(n).split().forEach(num => num % 2 === 0 ? arr.push(num/2 + 0.0) : arr.push(num/2 - 0.5));
+
+  return +arr;
+}
+
+
