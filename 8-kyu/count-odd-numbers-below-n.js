@@ -27,3 +27,7 @@ console.log(oddCount(100)); // 50
 
 
 
+
+// 2
+
+const oddCount = n => (n - n % 2) / 2; 
