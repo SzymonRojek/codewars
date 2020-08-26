@@ -81,3 +81,22 @@ const oddCount = n => +String(n).split().map(num => (num%2===0) ? (num/2 + 0.0) 
 
 const oddCount = n => parseInt(n / 2);
 
+
+
+
+// 7
+
+function oddCount(n){
+  
+  const returnArray = [];
+
+  for(let i = 1; i < n; i = i+2) {
+    returnArray.push(i);
+  }
+
+  return returnArray.length;
+}
+
+/*
+There is a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory - in this solution 7.
+*/
