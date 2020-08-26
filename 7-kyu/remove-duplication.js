@@ -64,3 +64,18 @@ console.log((removeDuplication([0,1]))); // [0,1]
 // 2
 
 const removeDuplication = a => a.filter( v => a.indexOf(v) === a.lastIndexOf(v) ) ;
+
+
+
+// 3
+
+const removeDuplication = arr => {
+  const numbers = {};
+  
+  arr.forEach(n => numbers[n] ? numbers[n]++ : numbers[n] = 1);
+
+  return Object
+    .keys(numbers);
+    .filter(n => numbers[n] === 1);
+    .map(n => +n);
+};
