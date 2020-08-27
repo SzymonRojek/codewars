@@ -35,5 +35,21 @@ console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6")); // "542 -214"
 
 function highAndLow(numbers){
   numbers = numbers.split(' ').map(Number);
+
+  // Math.max.apply(null, arr) + ' ' + Math.min.apply(null, arr);
   return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+}
+
+
+
+
+// 3
+
+function highAndLow(numbers) {
+  numbers = numbers.split(' ').map(Number);
+  
+  const min = Math.min.apply(null, numbers);
+  const max = Math.max.apply(null, numbers);
+  
+  return max + ' ' + min;
 }
