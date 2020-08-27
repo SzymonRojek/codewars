@@ -64,3 +64,15 @@ function fakeBin(str) {
   
   return newStr;
 }
+
+
+
+// 5
+
+function fakeBin(str) {
+  let binaryStr = '';
+
+  [...str].forEach( num => num >= 5 ? binaryStr += 1 : binaryStr += 0);
+  
+  return binaryStr;
+}
