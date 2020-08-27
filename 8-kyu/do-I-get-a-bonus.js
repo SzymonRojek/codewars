@@ -42,3 +42,9 @@ const bonusTime = (salary, bonus) => bonus ? '£'+ (salary * 10).toString() : '�
 // 3
 
 const bonusTime = (salary, bonus) => '£' + salary * (bonus ? 10 : 1);
+
+
+
+// 4
+
+const bonusTime = ( salary, bonus ) => `£${salary * (bonus ? 10 : 1)}`;
