@@ -35,3 +35,32 @@ console.log(fakeBin('366058562030849490134388085')); // '01101111000010101000001
 // 2
 
 const fakeBin = x => [...x].map(num => (num < 5) ? 0 : 1).join('');
+
+
+
+
+// 3
+
+function fakeBin(x) {
+  return x.replace(/\d/g, d => d < 5 ? 0 : 1);
+}
+
+
+
+// 4
+
+function fakeBin(str) {
+  let newStr = '';
+
+  for(let i = 0; i < str.length; i++){
+    const num = str[i];
+
+    if(Number(num) >= 5) {
+      newStr += '1';
+    } else {
+      newStr += '0';
+    }
+  }
+  
+  return newStr;
+}
