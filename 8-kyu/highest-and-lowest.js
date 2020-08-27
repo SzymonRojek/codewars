@@ -64,3 +64,26 @@ function highAndLow(numbers) {
   
   return arr[arr.length -1] + ' ' + arr[0];
 }
+
+
+
+
+// 5
+
+function highAndLow(numbers){
+
+  const arr = numbers.split(' ');
+  let max = Number(arr[0]);
+  let min = Number(arr[0]);
+  
+  
+  for(let i = 1; i < arr.length; i++) {
+  
+    let num = Number(arr[i]);
+    
+    if(num > max) max = num;
+    if(num < min) min = num;
+  }
+  
+    return max + " " + min;
+}
