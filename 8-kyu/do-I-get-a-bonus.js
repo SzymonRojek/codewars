@@ -36,3 +36,9 @@ console.log(bonusTime(67890, true)); // '£678900'
 // 2
 
 const bonusTime = (salary, bonus) => bonus ? '£'+ (salary * 10).toString() : '£' + salary.toString(); 
+
+
+
+// 3
+
+const bonusTime = (salary, bonus) => '£' + salary * (bonus ? 10 : 1);
