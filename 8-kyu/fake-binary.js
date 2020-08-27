@@ -76,3 +76,9 @@ function fakeBin(str) {
   
   return binaryStr;
 }
+
+
+
+// 6
+
+const fakeBin = x => x.replace(/[1234]/g, '0').replace(/[56789]/g, '1');
