@@ -53,3 +53,12 @@ console.log(isSquare( 3)); // false, "3 is not a square number"
 console.log(isSquare( 4)); // true, "4 is a square number (2 * 2)"
 console.log(isSquare(25)); // true, "25 is a square number (5 * 5)"
 console.log(isSquare(2)); //  false, "26 is not a square number"
+
+
+
+
+// 2
+
+function isSquare(n) {
+  return Math.sqrt(n) % 1 === 0;
+}
