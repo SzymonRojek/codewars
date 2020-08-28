@@ -22,3 +22,43 @@ Example
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 
 */
+
+
+
+// 1
+
+function duplicateCount(text){
+    
+  const counter = {};
+  const checkDuplicates = [];
+  
+  [...text.toLowerCase()].forEach(n => {
+
+    // !counter.hasOwnProperty(n)
+
+    //if (! (n in counter)) {
+    //  counter[n] = 0
+    //}
+    //counter[n]++
+    
+    counter[n] = (n in counter) ? counter[n]+1 : 1;
+  })
+  
+  for (const key in counter) {
+    const amount = counter[key];
+    
+    if (amount > 1) {
+      checkDuplicates.push( key );
+    }
+  }
+
+  return checkDuplicates.length;
+}
+  
+
+console.log(duplicateCount("")); // 0
+console.log(duplicateCount("abcde")); // 0
+console.log(duplicateCount("aabbcde")); // 2
+console.log(duplicateCount("aabBcde")); // 2 - should ignore the case
+console.log(duplicateCount("Indivisibility")); // 1
+console.log(duplicateCount("Indivisibilities")); //  2 - characters may not be adjacent
