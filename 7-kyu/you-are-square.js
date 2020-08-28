@@ -34,3 +34,22 @@ Examples
 26  =>  false
 
 */
+
+
+
+// 1
+
+function isSquare(num) {
+  const sqrt = Math.sqrt(num);
+  const floor = Math.floor(sqrt);
+  const checkPerfectSquare = floor - sqrt;
+
+  return checkPerfectSquare === 0;
+}
+
+console.log(isSquare(-1)); // false,  "-1: Negative numbers cannot be square numbers"
+console.log(isSquare( 0)); // true, "0 is a square number (0 * 0)"
+console.log(isSquare( 3)); // false, "3 is not a square number"
+console.log(isSquare( 4)); // true, "4 is a square number (2 * 2)"
+console.log(isSquare(25)); // true, "25 is a square number (5 * 5)"
+console.log(isSquare(2)); //  false, "26 is not a square number"
