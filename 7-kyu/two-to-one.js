@@ -29,3 +29,12 @@ console.log(longest("aretheyhere", "yestheyarehere")); // "aehrsty"
 console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding")) // "abcdefghilnoprstu"
 console.log(longest("inmanylanguages", "theresapairoffunctions")); "acefghilmnoprstuy"
 
+
+
+// 2
+
+function longest(s1, s2) {
+  let str = new Set([...s1, ...s2]);
+
+  return [...str].sort().join('');
+}
