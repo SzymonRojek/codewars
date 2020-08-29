@@ -99,6 +99,23 @@ function summation (num) {
 
 
 
+
 // 6
 
-const summation = num => (num <= 1 ) ? 1 : num + summation(num - 1);
+const summation = num => (num <= 1) ? 1 : num + summation(num - 1);
+
+
+
+
+// 7
+const summation = num => (num === 1) ? 1 : num + summation(num - 1);
+
+
+
+
+
+
+
+
+
+
