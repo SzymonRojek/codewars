@@ -57,3 +57,19 @@ const summation = num => {
  
   return sum;
 }
+
+
+
+// 3
+
+const summation = n => n * (n + 1) / 2;
+
+
+
+// 4
+
+const summation = (num, count = 0) => {
+  for (var i=num+1; i--;) count+=i;
+  
+  return count;
+}
