@@ -113,6 +113,8 @@ const summation = num => (num === 1) ? 1 : num + summation(num - 1);
 
 
 
+// 8
+const summation = num => num ? num + summation(num - 1) : 0;
 
 
 
