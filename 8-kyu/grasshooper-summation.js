@@ -125,5 +125,9 @@ const summation = num => num ? num + summation(num - 1) : 0;
 
 
 
+// 10
+
+const summation = num => (num >= 1) ? num + summation(num - 1) : 0;
+
 
 
