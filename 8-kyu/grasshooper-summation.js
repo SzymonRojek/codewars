@@ -31,7 +31,7 @@ const summation = num => {
   for (let i = 0; i < num; i++) {
     const number = i+1;
 
-    sum +=number;
+    sum += number;
   }
  
   return sum;
@@ -39,3 +39,21 @@ const summation = num => {
  
 console.log(summation(1)); // 1
 console.log(summation(8)); // 36
+
+
+
+
+// 2
+
+const summation = num => {
+  
+  let sum = 0;
+
+  for (let i = 0; i <= num; i++) {
+    const number = i;
+
+    sum +=number;
+  }
+ 
+  return sum;
+}
