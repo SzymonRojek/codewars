@@ -71,6 +71,14 @@ const number = function(busStops) {
 
 
 
+
 // 3
 
-const number = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
+const number = busStops => busStops.reduce((a, b) => a + (b[0] - b[1]), 0);
+
+
+
+
+// 4
+
+const number = busStops => busStops.reduce((n, [on, off]) => n + (on - off), 0);
