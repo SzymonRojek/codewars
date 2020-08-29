@@ -62,7 +62,15 @@ const number = function(busStops) {
 
     allPeople += el[0];
     allPeople -= el[1];
+
+    // allPeople += el[0] - el[1];
   }
 
   return allPeople;
 }
+
+
+
+// 3
+
+const number = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
