@@ -60,16 +60,39 @@ const summation = num => {
 
 
 
+
 // 3
 
 const summation = n => n * (n + 1) / 2;
 
 
 
+
 // 4
 
+const summation = num => num * ++num / 2;
+
+
+
+
+// 5
+
 const summation = (num, count = 0) => {
-  for (var i=num+1; i--;) count+=i;
+  for (let i = num + 1; i--;) count+=i;
   
   return count;
+}
+
+
+
+// 5
+
+function summation (num) {
+
+  const addToSum = (sum, n) => { 
+      sum += n;
+      return n === 0 ? sum : addToSum(sum, n - 1); 
+  };
+
+  return addToSum(0, num);
 }
