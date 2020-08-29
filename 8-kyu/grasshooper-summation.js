@@ -96,3 +96,9 @@ function summation (num) {
 
   return addToSum(0, num);
 }
+
+
+
+// 6
+
+const summation = num => (num <= 1 ) ? 1 : num + summation(num - 1);
