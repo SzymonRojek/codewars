@@ -37,3 +37,9 @@ function main(verb, noun) {
 // 3
 
 const main = (...a) => a.join('');
+
+
+
+// 4
+
+const main = ''.concat.bind('');
