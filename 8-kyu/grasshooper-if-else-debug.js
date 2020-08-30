@@ -69,3 +69,9 @@ function checkAlive (health) {
     return false;
   }
 }
+
+
+
+// 4
+
+const checkAlive = (health) => (health <= 0) ? false : true;
