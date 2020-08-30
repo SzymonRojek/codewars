@@ -27,3 +27,33 @@ function checkAlive (health) {
 
 console.log(checkAlive(5)); // true
 console.log(checkAlive(0)); // false
+
+
+
+// 2
+
+function checkAlive (health) {
+  if( health < -10 ) throw "What The Health !?"
+  if( health ==-10 ) return false;
+  if( health == -9 ) return false;
+  if( health == -8 ) return false;
+  if( health == -7 ) return false;
+  if( health == -6 ) return false;
+  if( health == -5 ) return false;
+  if( health == -4 ) return false;
+  if( health == -3 ) return false;
+  if( health == -2 ) return false;
+  if( health == -1 ) return false;
+  if( health ==  0 ) return false;
+  if( health ==  1 ) return true;
+  if( health ==  2 ) return true;
+  if( health ==  3 ) return true;
+  if( health ==  4 ) return true;
+  if( health ==  5 ) return true;
+  if( health ==  6 ) return true;
+  if( health ==  7 ) return true;
+  if( health ==  8 ) return true;
+  if( health ==  9 ) return true;
+  if( health == 10 ) return true;
+  if( health >  10 ) throw "What The Health ?!";
+}
