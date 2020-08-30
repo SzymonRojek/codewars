@@ -22,3 +22,12 @@ function main (verb, noun) {
 
 console.log(main('take ', 'item')); // 'take item'
 console.log(main('use ', 'sword')); // 'use sword'
+
+
+
+// 2
+
+function main(verb, noun) {
+  if(arguments.length > 1)
+    return verb.trim() + ' ' + noun.trim();
+}
