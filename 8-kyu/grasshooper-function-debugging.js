@@ -43,3 +43,9 @@ const main = (...a) => a.join('');
 // 4
 
 const main = ''.concat.bind('');
+
+
+
+// 5
+
+const main = (verb, noun) => `${verb}${noun}`;
