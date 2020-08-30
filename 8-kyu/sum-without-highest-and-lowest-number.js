@@ -44,3 +44,10 @@ console.log(sumArray([ 6, 2, 1, 8, 10 ])); // 16
 console.log(sumArray([])); // 16
 console.log(sumArray(null)); // 16
 console.log(sumArray([ 6])); // 16
+
+
+
+
+// 2
+
+const sumArray = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((a, b) => a + b, 0) : 0;
