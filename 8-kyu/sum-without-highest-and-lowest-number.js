@@ -24,3 +24,23 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have created other katas. Have a look if you like coding and challenges.
 */
+
+
+
+// 1
+
+function sumArray(array) {
+
+  if(array === null) return 0;
+
+  array = array.sort((a, b) => a - b);
+
+  const popArr = array.pop(), shiftArr = array.shift();
+
+  return array.reduce((a, b) => a + b, 0);
+}
+
+console.log(sumArray([ 6, 2, 1, 8, 10 ])); // 16
+console.log(sumArray([])); // 16
+console.log(sumArray(null)); // 16
+console.log(sumArray([ 6])); // 16
