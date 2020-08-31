@@ -109,3 +109,12 @@ function findNeedle(h) {
 
   return g;
 }
+
+
+
+// 7
+
+function findNeedle(haystack) {
+  
+  return haystack.indexOf('needle') ? 'found the needle at position ' + haystack.indexOf('needle') : false;
+}
