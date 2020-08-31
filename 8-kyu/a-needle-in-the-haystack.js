@@ -81,3 +81,17 @@ function findNeedle(q, q2='needle') {
 
  return(a > -1) ? `found the ${q2} at position ${a}` : `` ;
 }
+
+
+
+// 5
+
+function findNeedle(haystack) {
+  let res = 0;
+
+  for(let i = 0; i < haystack.length; i++) {
+    if(haystack[i] == "needle") res += i;
+  }
+  
+  return `found the needle at position ${res}`;
+}
