@@ -46,7 +46,7 @@ function isDivisible(n, x, y) {
 // 3
 
 function isDivisible(n, ...dividers) {
-  return dividers.every(divider => n % divider == 0);
+  return dividers.every(divider => n % divider === 0);
 }
 
 
@@ -55,4 +55,12 @@ function isDivisible(n, ...dividers) {
 
 function isDivisible(n, x, y) {
   return (n % x) + (n % y) === 0;
+}
+
+
+
+// 5
+
+function isDivisible(n, x, y) {
+  return (Number.isInteger(n / x) && Number.isInteger(n / y));
 }
