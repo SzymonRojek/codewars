@@ -37,3 +37,16 @@ var haystack_3 = [1,2,3,4,5,6,7,8,8,7,5,4,3,4,5,6,67,5,5,3,3,4,2,34,234,23,4,234
 console.log(findNeedle(haystack_1)); // 'found the needle at position 3'
 console.log(findNeedle(haystack_2)); // 'found the needle at position 5'
 console.log(findNeedle(haystack_3)); // 'found the needle at position 30'
+
+
+
+
+// 2
+
+function findNeedle(array) {
+
+  for (let i=0; i < array.length; i++){
+    if (array[i] === 'needle') return 'found the needle at position ' + i;
+  }
+  
+}
