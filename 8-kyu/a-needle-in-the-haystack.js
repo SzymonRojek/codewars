@@ -92,6 +92,20 @@ function findNeedle(haystack) {
   for(let i = 0; i < haystack.length; i++) {
     if(haystack[i] == "needle") res += i;
   }
-  
+
   return `found the needle at position ${res}`;
+}
+
+
+
+// 6
+
+function findNeedle(h) {
+  let g;
+  
+  h.map((i, p) => {
+    if(i === "needle") g = `found the needle at position ${p}` 
+    });
+
+  return g;
 }
