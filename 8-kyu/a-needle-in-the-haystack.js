@@ -69,3 +69,15 @@ function findNeedle(haystack) {
 
     return item;
 };
+
+
+
+
+// 4
+
+function findNeedle(q, q2='needle') {
+
+  let a=q.findIndex(e => e === q2);
+
+ return(a > -1) ? `found the ${q2} at position ${a}` : `` ;
+}
