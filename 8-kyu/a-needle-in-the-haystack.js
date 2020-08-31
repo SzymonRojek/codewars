@@ -118,3 +118,20 @@ function findNeedle(haystack) {
   
   return haystack.indexOf('needle') ? 'found the needle at position ' + haystack.indexOf('needle') : false;
 }
+
+
+
+// 8
+
+function findNeedle(haystack) {
+  
+  function find(array, value) {
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == value) return i;
+  }
+
+  }
+  
+ return "found the needle at position " + find(haystack, 'needle');
+}
