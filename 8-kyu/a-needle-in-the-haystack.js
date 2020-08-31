@@ -50,3 +50,22 @@ function findNeedle(array) {
   }
   
 }
+
+
+
+
+// 3
+
+function findNeedle(haystack) {
+  let item = null;
+
+    const array1 = haystack;
+
+    array1.forEach((currentValue, index) => {    
+      if(currentValue ==='needle') {
+        item = 'found the needle at position ' + String(index);
+      }
+    });
+
+    return item;
+};
