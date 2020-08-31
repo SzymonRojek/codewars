@@ -39,3 +39,11 @@ console.log(isDivisible(48,3,4)); // true
 function isDivisible(n, x, y) {
   return !(n % x || n % y);
 }
+
+
+
+// 3
+
+function isDivisible(n, ...dividers) {
+  return dividers.every(divider => n % divider == 0);
+}
