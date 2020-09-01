@@ -74,4 +74,18 @@ const countGoals = (arr) => {
 }
 
 const totalGoals = countGoals(goalScoringStatistics);
+
+console.log(totalGoals); // 58
+
+
+
+
+// 3
+
+const goals = [43, 10, 5],
+
+[laLigaGoals, championsLeagueGoals, copaDelReyGoals] = goals,
+
+totalGoals = goals.reduce((s, v) => s + v);
+
 console.log(totalGoals); // 58
