@@ -89,3 +89,14 @@ const goals = [43, 10, 5],
 totalGoals = goals.reduce((s, v) => s + v);
 
 console.log(totalGoals); // 58
+
+
+
+
+// 4
+
+let [laLigaGoals, championsLeagueGoals, copaDelReyGoals] = [43, 10, 5],
+
+    totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+console.log(totalGoals); // 58
