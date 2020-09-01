@@ -100,3 +100,14 @@ let [laLigaGoals, championsLeagueGoals, copaDelReyGoals] = [43, 10, 5],
     totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 console.log(totalGoals); // 58
+
+
+
+
+// 5
+
+const array = [laLigaGoals,championsLeagueGoals,copaDelReyGoals] = [43,10,5];
+
+const totalGoals  = array.reduce((a,b) => a + b);
+
+console.log(totalGoals); // 58
