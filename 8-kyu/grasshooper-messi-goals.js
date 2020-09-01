@@ -111,3 +111,18 @@ const array = [laLigaGoals,championsLeagueGoals,copaDelReyGoals] = [43,10,5];
 const totalGoals  = array.reduce((a,b) => a + b);
 
 console.log(totalGoals); // 58
+
+
+
+
+// 6
+
+const laLigaGoals = 43;
+const championsLeagueGoals = 10;
+const copaDelReyGoals = 5;
+
+const getSum = (num1, num2, num3) => num1 + num2 + num3;
+
+const totalGoals = getSum(laLigaGoals, championsLeagueGoals, copaDelReyGoals);
+
+console.log(totalGoals); // 58
