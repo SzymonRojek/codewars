@@ -25,3 +25,16 @@ Create a fourth variable named totalGoals (javascript, C#, Java) or total_goals 
 . totalGoals/total_goals should store the sum of all of Messi's goals for this year.
 
 */
+
+
+
+
+// 1
+
+const laLigaGoals = 43;
+const championsLeagueGoals = 10;
+const copaDelReyGoals = 5;
+
+const totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+console.log(totalGoals); // 58
