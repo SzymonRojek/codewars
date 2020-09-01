@@ -38,3 +38,40 @@ const copaDelReyGoals = 5;
 const totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 console.log(totalGoals); // 58
+
+
+
+
+// 2
+
+const laLigaGoals = 43;
+const championsLeagueGoals = 10;
+const copaDelReyGoals = 5;
+
+const goalScoringStatistics = [
+  {
+    competition: 'La Liga',
+    goals: laLigaGoals,
+  },
+  {
+    competition: 'Champions League',
+    goals: championsLeagueGoals,
+  },
+  {
+    competition: 'Copa del Rey',
+    goals: copaDelReyGoals,
+  }
+]
+
+const countGoals = (arr) => {
+  let sum = 0;
+
+  arr.forEach((item) => {
+    sum += item.goals;
+  });
+
+  return sum;
+}
+
+const totalGoals = countGoals(goalScoringStatistics);
+console.log(totalGoals); // 58
