@@ -29,5 +29,16 @@ console.log(booleanToString(false)); // "false"
 // 2
 
 function booleanToString(b) {
+
   return b ? 'true' : 'false';
+}
+
+
+
+
+// 3
+
+function booleanToString(b){
+  
+  return b.toString();
 }
