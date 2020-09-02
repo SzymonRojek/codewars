@@ -25,7 +25,7 @@ console.log(find_average([1,2,3])); // 2
 
 // 2
 
-const find_average = arr => arr.reduce((a, b) => a + b / arr.length, 0);
+const find_average = arr => arr.reduce((a, b) => a + (b / arr.length), 0);
 
 
 
@@ -41,4 +41,15 @@ function find_average(array) {
   }
 
   return sum / array.length;
+}
+
+
+
+
+// 4
+
+function find_average(array) {
+  const total = array.reduce((acc, curr) => acc + curr);
+  
+  return total / array.length;
 }
