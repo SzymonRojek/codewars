@@ -52,3 +52,12 @@ function booleanToString(b) {
 
   return `${b}`;
 }
+
+
+
+
+// 5
+
+function booleanToString(b) {
+  return `` + b
+}
