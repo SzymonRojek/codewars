@@ -25,6 +25,13 @@ console.log(find_average([1,2,3])); // 2
 
 // 2
 
+const find_average = arr => arr.reduce((a, b) => a + b / arr.length, 0);
+
+
+
+
+// 3
+
 function find_average(array) {
   let sum = 0;
 
