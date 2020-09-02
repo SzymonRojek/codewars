@@ -39,6 +39,16 @@ function booleanToString(b) {
 // 3
 
 function booleanToString(b){
-  
+
   return b.toString();
+}
+
+
+
+
+// 4
+
+function booleanToString(b) {
+
+  return `${b}`;
 }
