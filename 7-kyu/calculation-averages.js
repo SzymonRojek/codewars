@@ -21,7 +21,7 @@ It expects Calculator.average(3,4,5) to return 4.
 
 // 1
 
-const Calculator = {
+var Calculator = {
   average: function() {
     let result = 0;
     
@@ -37,3 +37,15 @@ const Calculator = {
 
  console.log(Calculator.average(2, 4)); // 3
  console.log(Calculator.average()); // 3
+
+
+
+
+ // 2
+
+ var Calculator = {
+  average: function(...args) {
+    
+     return args.length == 0 ? 0 : args.reduce((a, b) => b + a) /args.length;
+  }
+ };
