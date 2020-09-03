@@ -45,7 +45,30 @@ var Calculator = {
 
  var Calculator = {
   average: function(...args) {
-    
+
      return args.length == 0 ? 0 : args.reduce((a, b) => b + a) /args.length;
   }
  };
+
+
+
+
+ // 3
+
+ var Calculator = {
+  average: function() {
+
+    let sum = 0;
+
+    if(arguments.length > 0)
+     {
+       for(let i = 0; i <arguments.length; i++)
+       {
+         sum += arguments[i];
+       } 
+       return sum/i;
+     }
+     return 0;
+   }
+
+};
