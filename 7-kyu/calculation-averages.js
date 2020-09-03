@@ -72,3 +72,12 @@ var Calculator = {
    }
 
 };
+
+
+
+// 4
+
+var Calculator = {
+  
+  average: (...args) => args.reduce((a, b) => a + b, 0) / (args.length || 1);
+};
