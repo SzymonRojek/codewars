@@ -16,3 +16,24 @@ The test also expects that when you pass no arguments, it returns 0. The argumen
 It expects Calculator.average(3,4,5) to return 4.
 
 */
+
+
+
+// 1
+
+const Calculator = {
+  average: function() {
+    let result = 0;
+    
+    for(i = 0; i < arguments.length; i++) {
+     
+      result += arguments[i];
+    }
+   
+   return result? result / arguments.length : 0;
+  }
+  
+ };
+
+ console.log(Calculator.average(2, 4)); // 3
+ console.log(Calculator.average()); // 3
