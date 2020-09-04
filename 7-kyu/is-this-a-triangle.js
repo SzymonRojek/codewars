@@ -38,3 +38,14 @@ console.log(isTriangle('3','2','2')); // true
 console.log(isTriangle('1','1','2')); // false
 console.log(isTriangle(-1,5,3)); // argument has to be positive
 console.log(isTriangle(5,5,'eee')); // argument is not a number
+
+
+
+// 2
+
+function isTriangle(a, b, c) {
+  
+  [a, b, c] = [a, b, c].sort((x, y) => x - y);
+  
+  return a + b > c;
+}
