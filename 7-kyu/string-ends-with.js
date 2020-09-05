@@ -15,3 +15,16 @@ solution('abc', 'bc') // returns true
 solution('abc', 'd') // returns false
 
 */
+
+
+
+// 1
+
+function solution(str, ending) {
+  
+  return str.endsWith(ending);
+}
+
+
+console.log(solution('abcde', 'cde')); true
+console.log(solution('abcde', 'abc')); false
