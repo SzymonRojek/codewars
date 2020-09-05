@@ -24,3 +24,9 @@ function getEvenNumbers(numbersArray) {
 
   return numbersArray.filter( num => num % 2 === 0);
 }
+
+
+
+// 2
+
+const getEvenNumbers = arr => arr.filter(x => !(x & 1));
