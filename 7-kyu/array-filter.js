@@ -30,3 +30,20 @@ function getEvenNumbers(numbersArray) {
 // 2
 
 const getEvenNumbers = arr => arr.filter(x => !(x & 1));
+
+
+
+// 3
+
+function isEven(num) {
+
+  return num % 2 == 0;
+}
+
+function getEvenNumbers(numbersArray){
+  // filter out the odd numbers
+
+  const filtered = numbersArray.filter(isEven);
+  
+  return filtered;
+}
