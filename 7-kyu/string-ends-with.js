@@ -37,3 +37,12 @@ function solution(str, ending) {
 
   return str.substr(-ending.length) == ending;
 }
+
+
+
+// 3
+
+function solution(str, ending) {
+  
+  return ending === str.substr(str.length - ending.length, str.length);
+}
