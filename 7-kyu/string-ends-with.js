@@ -26,5 +26,14 @@ function solution(str, ending) {
 }
 
 
-console.log(solution('abcde', 'cde')); true
-console.log(solution('abcde', 'abc')); false
+console.log(solution('abcde', 'cde')); // true
+console.log(solution('abcde', 'abc')); // false
+
+
+
+// 2
+
+function solution(str, ending) {
+
+  return str.substr(-ending.length) == ending;
+}
