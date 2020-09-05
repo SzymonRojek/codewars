@@ -46,3 +46,12 @@ function solution(str, ending) {
   
   return ending === str.substr(str.length - ending.length, str.length);
 }
+
+
+
+// 4
+
+function solution(str, ending) {
+  
+  return str.slice(-ending.length).match(ending) ? true : false;
+}
