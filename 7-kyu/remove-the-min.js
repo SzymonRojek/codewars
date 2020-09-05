@@ -42,3 +42,11 @@ console.log(removeSmallest([2, 2, 1, 2, 1])); // result [2, 2, 2, 1]
 console.log(removeSmallest([])); // result []
 
 
+// 2 Secondly I have used the method filter which doesn't mutate an array and I have removed the minimum number only once!
+
+function removeSmallest(array) {
+
+  const min = Math.min(...array);
+  
+  return array.filter((_, idx, arr) => idx !== arr.indexOf(min));
+}
