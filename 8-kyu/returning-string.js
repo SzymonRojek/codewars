@@ -12,3 +12,15 @@ your program should return, "Hello, <name> how are you doing today?".
 [Make sure you type the exact thing I wrote or the program may not execute properly]
 
 */
+
+
+
+// 1
+
+function greet(name) {
+  
+  return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet("Ryan")); // "Hello, Ryan how are you doing today?"
+console.log(greet("Shingles")); // "Hello, Shingles how are you doing today?"
