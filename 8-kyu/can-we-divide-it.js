@@ -32,3 +32,9 @@ console.log(isDivideBy(15, -5, 3)); //  true
 // 2
 
 const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+
+
+
+// 3
+
+const isDivideBy = (number, a, b) => !(number % a || number % b); 
