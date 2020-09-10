@@ -38,3 +38,10 @@ const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
 // 3
 
 const isDivideBy = (number, a, b) => !(number % a || number % b); 
+
+
+
+// 4
+
+const isDivideBy = (n, ...r) => r.every((v) => n % v === 0);
+// r.every((v) => !(n % v))
