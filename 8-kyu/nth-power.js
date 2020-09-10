@@ -48,3 +48,13 @@ console.log(index([75,68,35,61,9,36,89,0,30], 10)); // -1
 // 2
 
 const index = (array, n) => n < array.length ? Math.pow(array[n], n) : -1;
+
+
+
+
+// 3
+
+function index(array, n){
+ 
+  return array[n] ** n || -1;
+}
