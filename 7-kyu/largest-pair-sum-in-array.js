@@ -16,3 +16,14 @@ For example
 Input sequence contains minimum two elements and every element is an integer.
 
 */
+
+
+
+
+// 1
+
+const largestPairSum = num =>  num.map(v => num.sort((a, b) => b - a)) ? num[0] + num[1] : 0;
+  
+console.log(largestPairSum([-10, -8, -16, -18, -19])); // -18
+console.log(largestPairSum([10, 14, 2, 23, 19])); // -->  42 (= 23 + 19)
+console.log(largestPairSum([99, 2, 2, 23, 19])); //  --> 122 (= 99 + 23)
