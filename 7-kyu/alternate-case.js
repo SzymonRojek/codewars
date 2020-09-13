@@ -22,3 +22,30 @@ const alternateCase = s => [...s].map(v => v === v.toLowerCase() ? v.toUpperCase
 console.log(alternateCase("abc")); // "ABC"
 console.log(alternateCase("ABC")); // "abc"
 console.log(alternateCase("Hello World")); // "hELLO wORLD"
+
+
+
+
+// 2
+
+function alternateCase(s) {
+  const newString = [];
+  
+  if(isNaN(s)){
+    for(let i = 0; i < s.length; i++){
+      if(s[i] === s[i].toLowerCase()){
+        // char is lower case
+        newString[i] = s[i].toUpperCase();
+      } else {
+        // char is upper case
+        newString[i] = s[i].toLowerCase();
+      }
+    }
+    
+    return newString.join('');
+  } else {
+    console.log('ERROR: ' + s + ' is a number');
+  }
+}
+
+alternateCase('Hello World');
