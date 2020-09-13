@@ -32,3 +32,9 @@ console.log(arrowArea(25,25)); // 156.25
 // 2
 
 const arrowArea = (a,b) => a * b / 4;
+
+
+
+// 3
+
+const arrowArea = (a,b) => 0.25 * a * b;
