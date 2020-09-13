@@ -49,3 +49,13 @@ function alternateCase(s) {
 }
 
 alternateCase('Hello World');
+
+
+
+// 3
+
+function alternateCase(s) {
+  return s.split('').map(e => {
+    return e.charCodeAt(0) > 96 ? e.toUpperCase() : e.toLowerCase();
+  }).join('');
+}
