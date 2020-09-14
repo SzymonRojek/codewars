@@ -55,3 +55,12 @@ function isIsogram(str){
       
   return true;
 }
+
+
+
+// 4
+
+function isIsogram(str){
+ 
+  return [...str.toLowerCase()].filter((v, i, arr) => arr.indexOf(v) === i).length == str.length;
+}
