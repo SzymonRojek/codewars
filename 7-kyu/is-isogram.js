@@ -28,3 +28,13 @@ function isIsogram(str){
 
 console.log(isIsogram('moose')); // false
 console.log(isIsogram('mose')); // true
+
+
+
+// 2
+
+function isIsogram(str){
+  const noDuplicates = [...new Set(str)].join('');
+
+  return noDuplicates.length === str.length
+}
