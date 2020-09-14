@@ -80,3 +80,21 @@ function isIsogram(str) {
   
   return true;
 }
+
+
+// 6
+
+function isIsogram(str) {
+  let map = {};
+  let result = true;
+
+  str.split('').forEach(function(char) {
+    if (map[char.toUpperCase()] === undefined) {
+      map[char.toUpperCase()] = 1;
+    } else {
+      result = false;
+    }
+  });
+  
+  return result;
+}
