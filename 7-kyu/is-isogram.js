@@ -98,3 +98,40 @@ function isIsogram(str) {
   
   return result;
 }
+
+
+// just trying objects {}
+
+
+function isIsogram(str) {
+  
+  let myObj = {};
+ 
+  [...str].forEach(v => {
+ 
+   if(myObj[v] === undefined) {
+     myObj[v] = 0;
+   } else {
+     myObj[v] = 1;
+   }
+  })
+ 
+  let arr = Object.values(myObj);
+  
+  let flag = true;
+ 
+  arr.forEach(num => {
+   if(num !== 1) {
+     // flag
+   } else {
+     flag = false
+   }
+ })
+ 
+ return flag
+ 
+ }
+ console.log(isIsogram('maase')); // false
+ console.log(isIsogram('mose')); // true
+ 
+ 
