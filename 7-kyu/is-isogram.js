@@ -126,3 +126,23 @@ console.log(isIsogram('isogram')); // true
 console.log(isIsogram('')); // true
 
  
+
+// Also I have written a function, which is changing the string into an object, 
+// every letter is the key and value is counting how many times I have got the same letter.
+
+function isIsogram1( str ) {
+ 
+  str = str.toLowerCase();
+    const obj = {};
+
+      [...str].forEach(char => {
+        
+        if (!obj[char]) obj[char] = 0;
+        
+        for (const letter in obj) {  
+          if(char === letter) obj[letter]++; 
+        }
+      });
+
+  return obj;
+}
