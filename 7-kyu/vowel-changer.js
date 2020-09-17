@@ -40,3 +40,22 @@ const vowelChange = (str, vow) => {
 
   return [...str].map( char => vowels[char] || char).join('');
 }
+
+
+
+// 3
+
+function vowelChange( str, vow ) {
+  newStr = '';
+
+  for(let i = 0; i < str.length; i++){
+    
+    if( 'aeiou'.includes( str.substring(i, i + 1) )){
+      newStr += vow;
+    } else {
+      newStr += str.substring( i, i + 1 );
+    }
+  }
+
+  return newStr;
+}
