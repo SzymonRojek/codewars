@@ -59,3 +59,30 @@ function vowelChange( str, vow ) {
 
   return newStr;
 }
+
+
+
+// 4
+
+function vowelChange(str, vow) {
+  
+  let changedString = '';
+  for (i = 0; i < str.length; i++) {
+    if (str[i] == 'a') {
+      changedString += vow;
+    } else if (str[i] == 'e') {
+      changedString += vow;
+    } else if (str[i] == 'i') {
+      changedString += vow;
+    } else if (str[i] == 'o') {
+      changedString += vow;
+    } else if (str[i] == 'u') {
+      changedString += vow;
+    } else {
+      changedString += str[i];
+    }
+  }
+
+  return changedString;
+
+}
