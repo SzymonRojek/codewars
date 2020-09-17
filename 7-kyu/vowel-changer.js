@@ -31,3 +31,12 @@ console.log(vowelChange('adira wants to go to the park', 'o'));
 console.log(vowelChange('amigo', 'o')); // omogo
 
 
+
+// 2
+
+const vowelChange = (str, vow) => {
+  
+  const vowels = { a: vow, e: vow, i: vow, o: vow, u: vow };
+
+  return [...str].map( char => vowels[char] || char).join('');
+}
