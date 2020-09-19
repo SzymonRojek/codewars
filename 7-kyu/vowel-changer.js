@@ -76,3 +76,22 @@ const vowelChange = (str, vow) => {
 
   return splitedStr.join('');
 }
+
+
+
+// 5
+
+const vowelChange = (str, vow) => {
+  const vowels = 'aeiou';
+
+  let splitText = [...str];
+
+    for (let i = 0; i < splitText.length; i++) {
+     
+      if(vowels.includes(splitText[i].toLowerCase())) {
+       splitText[i] = vow;
+      };
+    }
+
+  return splitText.join('');
+}
