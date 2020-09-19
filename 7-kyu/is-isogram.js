@@ -100,7 +100,7 @@ function isIsogram(str) {
 }
 
 
-// just trying objects {}
+// 7 just trying objects {}
 
 
 function isIsogram( str ) {
@@ -146,3 +146,7 @@ function isIsogram1( str ) {
 
   return obj;
 }
+
+
+
+

@@ -62,4 +62,17 @@ function vowelChange( str, vow ) {
 
 
 
+// 4
 
+const vowelChange = (str, vow) => {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const  splitedStr = [...str];
+
+  splitedStr.forEach(char => {
+    if(vowels.includes(char)) {
+      splitedStr.splice(splitedStr.indexOf(char), 1, vow)
+    }
+  })
+
+  return splitedStr.join('');
+}
