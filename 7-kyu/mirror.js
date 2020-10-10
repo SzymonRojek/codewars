@@ -16,3 +16,19 @@ Examples
 [-8, 42, 18, 0, -16]  -->  [-16, -8, 0, 18, 42, 18, 0, -8, -16]
 
 */
+
+
+// 1
+
+function mirror(data) {
+
+  const sorted = [...data].sort((a, b) => a - b);
+
+  return [...sorted, ...sorted.reverse().slice(1)];
+}
+
+console.log(mirror([1])); // [1]
+console.log(mirror([2, 1])); // [1, 2, 1]
+console.log(mirror([1, 3, 2])); // [1, 2, 3, 2, 1]
+console.log(mirror([-8, 42, 18, 0, -16])); // [-16, -8, 0, 18, 42, 18, 0, -8, -16]
+
