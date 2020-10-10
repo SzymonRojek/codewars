@@ -33,21 +33,21 @@ Good luck!
 // 1
 
 const decodeMorse = function(morseCode) {
-  const morseWords = morseCode.split('   ')
-  let final = ''
+  const morseWords = morseCode.split('   ');
+  let final = '';
   
   morseWords.forEach(morseWord => {
-    const codes = morseWord.split(' ')
+    const codes = morseWord.split(' ');
     
     codes.forEach(code => {
-      const decodedLetter = MORSE_CODE[code]
+      const decodedLetter = MORSE_CODE[code];
       
       if (decodedLetter) {
-        final += decodedLetter
+        final += decodedLetter;
       }
     })
     
-    final += ' '
+    final += ' ';
   })
   
   return final.trim()
