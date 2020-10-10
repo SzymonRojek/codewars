@@ -29,3 +29,30 @@ All the test strings would contain valid Morse code, so you may skip checking fo
 Good luck!
 
 */
+
+// 1
+
+const decodeMorse = function(morseCode) {
+  const morseWords = morseCode.split('   ')
+  let final = ''
+  
+  morseWords.forEach(morseWord => {
+    const codes = morseWord.split(' ')
+    
+    codes.forEach(code => {
+      const decodedLetter = MORSE_CODE[code]
+      
+      if (decodedLetter) {
+        final += decodedLetter
+      }
+    })
+    
+    final += ' '
+  })
+  
+  return final.trim()
+}
+
+console.log( decodeMorse('.... . -.--   .--- ..- -.. .') ) // HEY JUDE
+console.log( decodeMorse('.... .-- -.. .--.') ) // hwdp
+
