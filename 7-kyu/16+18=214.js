@@ -75,7 +75,7 @@ function add(num1, num2) {
   
   const num = Math.abs(nums1.length - nums2.length);
 
-  if(nums1.length > nums2.length) {
+  if (nums1.length > nums2.length) {
     for(let i = 0; i < num; i++) {
       nums2.unshift(0);
     }
@@ -103,4 +103,27 @@ function add(num1, num2) {
   const min = digits(Math.min(num1, num2));
   
   return +max.map((n, i) => n + (min[i] || 0)).reverse().join('')
+}
+
+
+
+// 5
+
+function add(num1, num2) {
+  num1 = [...String(num1)].map(Number).reverse();
+  num2 = [...String(num2)].map(Number).reverse();
+ 
+  const maxLength = Math.max(num1.length, num2.length);
+  let result = [];
+  
+  for (let i = 0; i < maxLength; i++) {
+      if (num1[i] === undefined) {
+          result.push(num2[i]);
+      } else if (num2[i] === undefined) {
+          result.push(num1[i]);
+      } else {
+          result.push(num1[i] + num2[i]);
+      }
+  }
+  return Number(result.reverse().join(''));
 }
