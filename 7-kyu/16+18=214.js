@@ -42,3 +42,23 @@ console.log(add(1222, 30277)); //  31499
 console.log(add(1236, 30977)); // 31111013
 console.log(add(38810, 1383)); // 391193
 console.log(add(49999, 49999)); //  818181818
+
+
+
+// 2
+
+function add(num1, num2) {
+  const snum1 = [...String(num1)].map(Number).reverse();
+  const snum2 = [...String(num2)].map(Number).reverse();
+  const max = Math.max(snum1.length, snum2.length);
+  const result = [];
+
+      for (let i = 0; i < max; i++) {
+          result.push( (
+            snum1[i] !== undefined ? snum1[i] : 0)
+              + 
+            (snum2[i] !== undefined ? snum2[i] : 0))
+      }
+
+  return +result.reverse().join('');
+}
