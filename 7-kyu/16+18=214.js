@@ -62,3 +62,32 @@ function add(num1, num2) {
 
   return +result.reverse().join('');
 }
+
+
+
+// 3
+
+function add(num1, num2) {
+  const nums1 = [...String(num1)];
+  const nums2 = [...String(num2)];
+ 
+  let newArray = [];
+  
+  const num = Math.abs(nums1.length - nums2.length);
+
+  if(nums1.length > nums2.length) {
+    for(let i = 0; i < num; i++) {
+      nums2.unshift(0);
+    }
+  } else if (nums1.length < nums2.length) {
+    for(let i = 0; i < num; i++) {
+      nums1.unshift(0);
+    }
+  }
+
+  for(let i = 0; i < nums1.length; i++) {
+    newArray.push(Number(nums1[i]) + Number(nums2[i]));
+  }
+  
+  return Number(newArray.join(''));
+}
