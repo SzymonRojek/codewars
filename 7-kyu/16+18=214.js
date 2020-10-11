@@ -91,3 +91,16 @@ function add(num1, num2) {
   
   return Number(newArray.join(''));
 }
+
+
+
+// 4
+
+const digits = n => [...String(n)].map(Number).reverse();
+
+function add(num1, num2) {
+  const max = digits(Math.max(num1, num2));
+  const min = digits(Math.min(num1, num2));
+  
+  return +max.map((n, i) => n + (min[i] || 0)).reverse().join('')
+}
