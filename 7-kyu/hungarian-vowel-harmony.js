@@ -32,8 +32,7 @@ function dative(word) {
   word.split('').forEach( letter => {
     if(frontVowel.includes(letter)) {
       newWord = word + 'nek'
-    }
-    if (backVowel.includes(letter)) {
+    } else if (backVowel.includes(letter)) {
       newWord = word + 'nak'
     }
   })
