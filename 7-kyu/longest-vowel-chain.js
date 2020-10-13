@@ -10,3 +10,33 @@ The longest of these has a length of 2. Given a lowercase string that has alphab
 Vowels are any of aeiou.
 
 */
+
+
+// 1
+
+function solve(s) {
+  const arr = [...s];
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  
+  let counter = 0;
+  let maxVal = 0;
+  
+  arr.forEach(letter => {
+    if (vowels.includes(letter)) {
+      counter++;
+      maxVal = Math.max(counter, maxVal)
+    } else {
+      counter = 0;
+    }
+  })
+  
+  return maxVal;
+}
+
+console.log(solve("codewarriors")); // 2
+console.log(solve("suoidea")); // 3
+console.log(solve("ultrarevolutionariees")); // 3
+console.log(solve("strengthlessnesses")); // 1
+console.log(solve("cuboideonavicuare")); // 2
+console.log(solve("chrononhotonthuooaos")); // 5
+console.log(solve("iiihoovaeaaaoougjyaw")); // 8
