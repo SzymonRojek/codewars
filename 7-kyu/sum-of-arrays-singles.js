@@ -22,6 +22,7 @@ function noRepeats(arr) {
   let obj = arr.reduce((acc, val) => {
     acc[val] ? acc[val]++ : acc[val] = 1;
     return acc
+    // return (acc[val] = acc[val]+1 || 1) && acc
   } , {})
 
     for (const key in obj) {
