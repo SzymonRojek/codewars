@@ -77,3 +77,25 @@ function addArrays(arr1, arr2) {
 
   return result
 }
+
+
+// 3
+
+function addArrays(arr1, arr2) {
+  const num1 = +arr1.join('') || 0;
+  const num2 = +arr2.join('') || 0;
+  const sum = Math.abs(num1 + num2);
+
+  const checkNegative = num1 + num2 < 0 ? -1 : 1;
+  const result = [...String(sum)].map(Number);
+  result[0] *= checkNegative;
+  
+  return num1 === 0 && num1 === 0 ? [] : result;
+}
+
+console.log(addArrays([],[])); 
+console.log(addArrays([4,7,3],[1,2,3])); 
+console.log(addArrays([],[5,7,6])); 
+console.log(addArrays([3,2,6,6],[-7,2,2,8])); 
+console.log(addArrays([],[-7,2,2,8])); 
+console.log(addArrays([3,2,6,6],[]));
