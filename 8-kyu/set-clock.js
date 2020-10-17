@@ -12,3 +12,22 @@ past(0, 1, 1) == 61000
 Input constraints: 0 <= h <= 23, 0 <= m <= 59, 0 <= s <= 59
 
 */
+
+
+// 1
+
+
+function past(h, m, s) {
+
+  const hour = 3600000 * h;
+  const minute = 60000 * m;
+  const second = 1000 * s;
+
+  return hour + minute + second;
+}
+
+console.log(past(0,1,1)); // 61000
+console.log(past(1,1,1)); // 3661000
+console.log(past(0,0,0)); // 0
+console.log(past(1,0,1)); // 3601000
+console.log(past(1,0,0)); // 3600000
