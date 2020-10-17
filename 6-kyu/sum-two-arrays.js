@@ -58,3 +58,22 @@ console.log(addArrays([],[5,7,6]));
 console.log(addArrays([3,2,6,6],[-7,2,2,8])); 
 console.log(addArrays([],[-7,2,2,8])); 
 console.log(addArrays([3,2,6,6],[]));
+
+
+
+// 2
+
+function addArrays(arr1, arr2) {
+
+  if(arr1.length === 0 && arr2.length === 0) return [];
+  if(arr1.length === 0) return arr2;
+  if(arr2.length === 0) return arr1;
+
+  arr1 = +arr1.join``;
+  arr2 = +arr2.join``;
+
+  const sum = arr1 + arr2;
+  const result = String(sum).match(/-?\d/g).map(Number);
+
+  return result
+}
