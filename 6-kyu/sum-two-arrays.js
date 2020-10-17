@@ -24,3 +24,37 @@ In this case treat the whole number as a negative number. See below:
 [3,2,6,6],[-7,2,2,8] --> [-3,9,6,2] # 3266 + (-7228) = -3962
 
 */
+
+
+// 1
+
+function addArrays(arr1, arr2) {
+  if(arr1.length === 0 && arr2.length === 0) return [];
+  if(arr1.length === 0) return arr2;
+  if(arr2.length === 0) return arr1;
+
+
+  const sumStr1 = +arr1.map(num => String(num)).reduce((a, b)=> a+b);
+  const sumStr2 = +arr2.map(num => String(num)).reduce((a, b)=> a+b);
+  const sumStr = sumStr1 + sumStr2;
+
+  let arr;
+
+  if(sumStr < 0) {
+    arr = String(sumStr).split('');
+    const delDash = arr.shift()
+    const delFirstIdx = arr.shift()
+    const add = arr.unshift(-delFirstIdx)
+  } else {
+    arr = String(sumStr).split('');
+  }
+
+ return arr.map(Number)
+}
+
+console.log(addArrays([],[])); 
+console.log(addArrays([4,7,3],[1,2,3])); 
+console.log(addArrays([],[5,7,6])); 
+console.log(addArrays([3,2,6,6],[-7,2,2,8])); 
+console.log(addArrays([],[-7,2,2,8])); 
+console.log(addArrays([3,2,6,6],[]));
