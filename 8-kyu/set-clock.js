@@ -63,3 +63,9 @@ function past(h, m, s){
   
   return hours + minutes + seconds;
 }
+
+
+
+// 5
+
+const past = (h, m, s) => new Date(0, 0, 0, h, m, s) - new Date(0, 0, 0);
