@@ -89,3 +89,23 @@ function removeBMW(s) {
     throw new SyntaxError("This program only works for text.");
   };
 }
+
+
+
+// 6
+
+function removeBMW(str){
+  if (typeof str !== "string") throw new Error("This program only works for text.");
+
+  const arr = [...str];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const char = str[i];
+
+    if (char === 'b' || char === 'm' || char === 'w' || char === 'B' || char === 'M' || char === 'W') {
+      arr.splice(i,1);
+    }
+  }
+
+  return arr.join('');
+}
