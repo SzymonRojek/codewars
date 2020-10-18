@@ -41,3 +41,15 @@ function removeBMW(str) {
 console.log(removeBMW("bmwvolvoBMW")); // "volvo"
 console.log(removeBMW("blablahblah")); // "lalahlah"
 console.log(removeBMW([])); // "lalahlah"
+
+
+
+// 2
+
+function removeBMW(str) {
+  if(typeof str === 'string') {
+      return str.replace(/[bmwBMW]/g,'');
+  } else {
+    throw new Error('This program only works for text.');
+  }
+}
