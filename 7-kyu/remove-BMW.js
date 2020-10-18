@@ -109,3 +109,15 @@ function removeBMW(str){
 
   return arr.join('');
 }
+
+
+// 7
+
+function removeBMW(str){
+  if (typeof str !== "string") throw new Error("This program only works for text.");
+
+  const arr = [...str];
+  const specificChar ='bmwBMW';
+
+  return arr.filter( char => !specificChar.includes(char)).join('');
+}
