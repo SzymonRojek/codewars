@@ -151,3 +151,12 @@ function removeBMW(str){
 
   return noBMW.join('');
 }
+
+
+
+// 10
+
+function removeBMW(str){
+  let specChar = ['b', 'm', 'w', 'B', 'M', 'W'];
+  return [...str].filter( char => !specChar.includes(char)).join('');
+}
