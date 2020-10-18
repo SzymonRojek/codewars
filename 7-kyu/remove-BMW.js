@@ -138,3 +138,16 @@ function removeBMW(str){
       return true;
   }).join('');
 }
+
+
+
+// 9
+
+function removeBMW(str){
+  if (typeof str !== 'string')
+    throw new Error('This program only works for text.');
+
+  const noBMW = [...str].filter( char => char !== 'B' && char !== 'M' && char !== 'W' && char !== 'b' && char !== 'm' && char !== 'w');
+
+  return noBMW.join('');
+}
