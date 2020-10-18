@@ -19,3 +19,25 @@ If data of the wrong data type was sent as a parameter the function must throw a
 For Python here's a good resource you might need for the exception type ;)
 
 */
+
+
+// 1
+
+function removeBMW(str) {
+
+  if(typeof str !== 'string') throw new Error('This program only works for text.');
+
+   const newArr = [];
+
+  [...str].forEach( char => {
+    if(!(char === 'b' || char === 'm' || char === 'w' || char === 'B' || char === 'M' || char === 'W')) {
+      newArr.push(char);
+    }
+  })
+ 
+ return newArr.join('');
+}
+
+console.log(removeBMW("bmwvolvoBMW")); // "volvo"
+console.log(removeBMW("blablahblah")); // "lalahlah"
+console.log(removeBMW([])); // "lalahlah"
