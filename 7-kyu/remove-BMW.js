@@ -55,6 +55,7 @@ function removeBMW(str) {
 }
 
 
+
 // 3
 
 function removeBMW(str) {
@@ -63,4 +64,16 @@ function removeBMW(str) {
   } else {
     return str.replace(/[bmwBMW]/g,'');
   }
+}
+
+
+
+// 4
+
+function removeBMW(str) {
+  if(typeof str !== 'string') {
+    throw new Error('This program only works for text.');
+  }
+    
+  return str.replace(/[bmwBMW]/g,'');
 }
