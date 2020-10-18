@@ -77,3 +77,15 @@ function removeBMW(str) {
     
   return str.replace(/[bmwBMW]/g,'');
 }
+
+
+
+// 5
+
+function removeBMW(s) {
+  try {
+    return s.replace(/[bmw]/gi, '');
+  } catch (err) {
+    throw new SyntaxError("This program only works for text.");
+  };
+}
