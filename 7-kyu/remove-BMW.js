@@ -169,3 +169,9 @@ function removeBMW(str){
   let specChar = ['b', 'm', 'w'];
   return [...str].filter( char => !specChar.includes(char.toLowerCase())).join('');
 }
+
+
+
+// 12
+
+const removeBMW = str => [...str].filter( char => !['b', 'm', 'w'].includes(char.toLowerCase())).join('');
