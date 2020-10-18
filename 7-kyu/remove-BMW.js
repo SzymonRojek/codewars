@@ -121,3 +121,20 @@ function removeBMW(str){
 
   return arr.filter( char => !specificChar.includes(char)).join('');
 }
+
+
+// 8
+
+function removeBMW(str){
+  if (typeof str !== 'string')
+    throw new Error('This program only works for text.');
+
+  return [...str].filter( char => {
+    const upperEl = char.toUpperCase();
+
+    if(upperEl === 'B' || upperEl === 'M' || upperEl === 'W')
+      return false;
+    else
+      return true;
+  }).join('');
+}
