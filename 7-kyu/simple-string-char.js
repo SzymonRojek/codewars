@@ -10,7 +10,6 @@ Solve("*'&ABCDabcde12345") = [4,5,5,3].
 */
 
 
-
 // 1: My solution
 
 function solve(s){
