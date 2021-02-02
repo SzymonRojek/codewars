@@ -7,7 +7,6 @@ I'll appreciate for your help.
 P.S. Each array includes only integer numbers. Output is a number too.  */
 
 
-
 //  1
 
 const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((a, b) => a + b, 0);
