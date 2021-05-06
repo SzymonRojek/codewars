@@ -32,7 +32,7 @@ Don't mutate the inputs.
 
 // 1
 
-
+```
 function inArray(arr1, arr2){
   return arr1.filter( ending => arr2.some( word => word.includes(ending))).sort();
 }
@@ -46,10 +46,11 @@ console.log(inArray(a1, a2)); // ["arp", "live", "strong"]
 a1 = ["tarp", "mice", "bull"]
 console.log(inArray(a1, a2)); // []
 
-
+```
 
 // 2
 
+```
 function inArray(arr1, arr2){
   
   const result = [];
@@ -70,10 +71,12 @@ function inArray(arr1, arr2){
   return result.sort();
 }
 
+```
 
 
 // 3
 
+```
 function inArray(arr1, arr2){
   
   const result = [];
@@ -92,27 +95,31 @@ function inArray(arr1, arr2){
   return [...new Set(result)].sort();
 }
 
+```
 
 
 // 4
 
+```
 function inArray(arr1, arr2) {
 
   return arr1.filter(end => arr2.join(' ').indexOf(end) !== -1);
 }
 
-
+```
 
 // 5
 
+```
 function inArray(arr1, arr2) {
   return arr1.filter(end => arr2.find(word => word.match(end))).sort();
 }
 
-
+```
 
 // 6
 
+```
 function inArray(arr1, arr2) {
 
   const result = [];
@@ -132,11 +139,13 @@ function inArray(arr1, arr2) {
   return [...new Set(result)].sort();
 }
 
+```
 
 
 
 // 7
 
+```
 function inArray(arr1, arr2) {
 
   const result = [];
@@ -155,3 +164,5 @@ function inArray(arr1, arr2) {
   
   return result.sort();
 }
+
+```
